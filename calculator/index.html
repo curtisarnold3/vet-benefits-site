@@ -1,0 +1,307 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1613">
+<title>VA Rating & Pay Calculator (2026 rates) – Vet Benefits Guide</title>
+<meta name="description" content="Free VA combined rating calculator. Applies the 38 CFR 4.25 combined ratings table and the 4.26 bilateral factor, with 2026 pay rates effective December 1, 2025. Runs on your device; nothing is sent.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../data/config.js"></script>
+<style>
+:root{
+  --field:#0f1613;--panel:#16201b;--panel2:#1d2a24;--line:#2c3d35;
+  --text:#ebe8dc;--muted:#a2b0a7;--brass:#d2a94e;--brass-d:#a8842f;
+  --go:#7fd39a;--red:#e0544f;--blue:#7ea6e0;
+  --head:'Barlow Condensed','Arial Narrow',Impact,sans-serif;
+  --body:'Barlow',system-ui,-apple-system,'Segoe UI',Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{color-scheme:dark;scroll-behavior:smooth}
+body{margin:0;background:var(--field);color:var(--text);font:17px/1.55 var(--body);
+  background-image:radial-gradient(1200px 500px at 50% -200px,#1d2f26 0,transparent 70%);background-repeat:no-repeat}
+.w{max-width:780px;margin:auto;padding:0 16px 120px}
+.flagbar{height:6px;background:linear-gradient(90deg,#b22234 0 33.3%,#ebe8dc 33.3% 66.6%,#3c5a99 66.6%)}
+header{padding:34px 0 10px;display:flex;gap:16px;align-items:flex-start}
+.star{flex:none;width:54px;height:54px;color:var(--brass)}
+h1{font:800 clamp(2.1rem,7vw,3.2rem)/1 var(--head);letter-spacing:.01em;margin:0 0 10px;text-transform:uppercase}
+.lede{margin:0;color:var(--muted);max-width:60ch}.lede b{color:var(--text)}
+
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:20px;margin:16px 0}
+h2{font:700 1.45rem/1.1 var(--head);letter-spacing:.03em;text-transform:uppercase;margin:0 0 6px}
+h3{font:600 1.05rem/1.3 var(--body);margin:22px 0 8px}
+small,.note{color:var(--muted);font-size:.92rem;display:block}
+a{color:var(--blue)}a:hover{color:#a8c4ee}
+
+.disc{border-left:5px solid var(--brass)}
+.disc h2{color:var(--brass)}
+.disc ul{margin:10px 0 0;padding-left:20px}.disc li{margin:.45em 0}.disc li::marker{color:var(--brass)}
+
+.step{display:flex;gap:14px;align-items:flex-start}
+.num{flex:none;width:34px;height:34px;border-radius:50%;border:2px solid var(--brass);color:var(--brass);font:800 1.3rem/30px var(--head);text-align:center}
+.step>div{flex:1;min-width:0}
+
+:focus-visible{outline:3px solid var(--brass);outline-offset:2px}
+button{font:inherit;cursor:pointer;color:var(--text)}
+
+/* Tabs */
+.tabs{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:14px 0 6px;border:1px solid var(--line);border-radius:6px;overflow:hidden}
+.tab{background:var(--panel2);border:0;padding:12px 8px;font:700 1.1rem/1.1 var(--head);letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.tab+.tab{border-left:1px solid var(--line)}
+.tab[aria-selected=true]{background:var(--brass);color:var(--field)}
+.tab .n{display:inline-block;min-width:22px;padding:1px 6px;margin-left:6px;border-radius:11px;background:#0003;font-size:.95rem}
+
+/* Pills & percent grid */
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{background:var(--panel2);border:1.5px solid var(--line);border-radius:999px;padding:9px 16px;font-weight:600;min-height:44px}
+.pill:hover{border-color:var(--brass-d)}
+.pill[aria-pressed=true]{background:#d2a94e22;border-color:var(--brass);color:var(--brass)}
+.pct{display:grid;grid-template-columns:repeat(5,1fr);gap:8px}
+.pct button{background:var(--panel2);border:1.5px solid var(--line);border-radius:6px;padding:12px 0;min-height:52px;font:800 1.4rem/1 var(--head);letter-spacing:.02em}
+.pct button:hover{border-color:var(--brass);background:#d2a94e1a}
+.pct button:active{transform:scale(.96)}
+
+/* Stepper */
+.rowq{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:12px;background:var(--panel2);border:1px solid var(--line);border-radius:6px;margin:10px 0}
+.rowq>span{flex:1 1 200px}
+.stepper{display:flex;align-items:center;gap:4px}
+.stepper button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--brass-d);background:transparent;color:var(--brass);font:700 1.5rem/1 var(--body)}
+.stepper button:hover{background:#d2a94e1a}
+.stepper output{min-width:42px;text-align:center;font:800 1.7rem/1 var(--head)}
+.hide{display:none!important}
+
+/* Chips */
+.chips{display:flex;flex-wrap:wrap;gap:8px;min-height:48px;margin:6px 0}
+.chip{display:inline-flex;align-items:center;gap:8px;background:#d2a94e22;border:1.5px solid var(--brass);color:var(--text);border-radius:999px;padding:7px 8px 7px 14px;font:700 1.2rem/1 var(--head);letter-spacing:.03em}
+.chip i{font-style:normal;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#0006;color:var(--red);font:700 .95rem/1 var(--body)}
+.chip:hover i{background:var(--red);color:#fff}
+.empty{color:var(--muted);align-self:center;font-size:.95rem}
+.linkbtn{background:none;border:0;color:var(--blue);text-decoration:underline;padding:6px 0;font-size:.95rem}
+.bar2{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.toggle{margin:12px 0 0}
+.how{background:#121b17;border:1px dashed var(--line);border-radius:6px;padding:12px 14px;margin:10px 0;color:var(--muted);font-size:.95rem}
+.how b{color:var(--text)}
+
+/* Result: dog tag */
+.tag{position:relative;margin:6px auto 18px;max-width:420px;padding:34px 26px 26px;text-align:center;border-radius:26px;border:2px solid #7d8a83;
+  background:linear-gradient(145deg,#3a4642 0,#27312d 45%,#1c2420 100%);box-shadow:inset 0 0 0 5px #1c2420,inset 0 0 0 6px #5b6862,0 10px 30px #0008}
+.tag::before{content:"";position:absolute;top:12px;left:50%;width:46px;height:9px;transform:translateX(-50%);border-radius:6px;background:var(--field);box-shadow:inset 0 1px 3px #000c,0 1px 0 #ffffff22}
+.tag .lbl{font:700 1.15rem/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:#c9d1cc;margin-top:6px}
+.big{display:block;font:800 clamp(3rem,13vw,4.6rem)/1.05 var(--head);color:var(--go);margin:8px 0 2px;text-shadow:0 1px 0 #000a,0 0 22px #7fd39a33}
+.tag .yr{font-size:1.05rem}.tag .yr b{font-weight:600}
+.res{width:100%;border-collapse:collapse}
+.res td{padding:11px 4px;border-bottom:1px solid var(--line);vertical-align:top}
+.res td:first-child{color:var(--muted);width:42%}
+.res tr:last-child td{border-bottom:0}
+.res b{color:var(--text)}.res small{display:block;margin-top:2px}
+.fine{color:var(--muted);font-size:.9rem}
+.tdiu{border-left:4px solid var(--blue);background:#14202e;border-radius:4px;padding:12px 14px;margin-top:14px;font-size:.96rem}
+
+#bar{position:fixed;left:0;right:0;bottom:0;z-index:20;background:#0b110eeb;backdrop-filter:blur(8px);border-top:2px solid var(--brass);padding:8px 16px calc(8px + env(safe-area-inset-bottom,0px))}
+#bar .in{max-width:780px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+#bar .t{font:700 1rem/1.1 var(--head);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+#bar .v{font:800 1.9rem/1 var(--head);color:var(--go)}
+#bar a{font:700 1rem var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--field);background:var(--brass);padding:9px 14px;border-radius:5px;text-decoration:none;white-space:nowrap}
+footer{margin:26px 0 0;padding:18px;border:1px solid var(--line);border-radius:6px;background:#121b17;color:var(--muted);font-size:.95rem}
+footer b{color:var(--text)}
+@media(max-width:600px){header{gap:12px}.star{width:42px;height:42px}.pill{padding:9px 13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pct button:active{transform:none}}
+</style></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div data-site-header></div>
+<main id="main" class="w">
+<header>
+  <svg class="star" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M12 1.8l3 6.6 7.2.8-5.4 4.8 1.5 7.1L12 17.4 5.7 21.1l1.5-7.1L1.8 9.2 9 8.4z"/></svg>
+  <div>
+    <h1>What you're missing per month</h1>
+    <p class="lede">A free tool to <b>estimate</b> how much your monthly VA disability pay could change if a rating goes up or a new condition is added. Built for veterans.</p>
+  </div>
+</header>
+
+<div class="card disc"><h2>Please read first</h2><ul>
+<li><b>We are not the VA.</b> This tool is not made by, paid for, or connected to the U.S. Department of Veterans Affairs.</li>
+<li><b>Free help is out there.</b> VA-accredited Veterans Service Organizations (VSOs), claims agents, and attorneys can help you. Many VSOs help for free. Look one up: <a href="https://www.va.gov/ogc/apps/accreditation/index.asp" target="_blank" rel="noopener">VA accreditation search (va.gov/ogc)</a>.</li>
+<li><b>No promises.</b> Nobody can promise what rating the VA will give you. Only the VA decides.</li>
+<li><b>This is just a guess to help you learn.</b> It is not legal advice and not an official VA number.</li>
+<li><b>Your info stays on your device.</b> Nothing you tap here is sent or saved anywhere.</li></ul></div>
+
+<!-- STEP 1 -->
+<div class="card step"><div class="num">1</div><div>
+  <h2>Add your ratings</h2>
+  <small>Tap the list you're filling in, pick where the condition is, then tap its percentage. Tap any chip to remove it.</small>
+
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" data-tab="cur" aria-selected="true">My ratings now <span class="n" id="n-cur">0</span></button>
+    <button class="tab" role="tab" data-tab="pot" aria-selected="false">Ratings I hope to get <span class="n" id="n-pot">0</span></button>
+  </div>
+  <div class="how hide" id="potnote">Add new conditions or higher ratings here. <b>Tip:</b> if you want a rating to go up, leave it out of this list and add the higher one, so it isn't counted twice.
+    <div class="toggle"><button class="pill" id="copy" data-toggle="copy" aria-pressed="true">Include my current ratings</button></div></div>
+
+  <h3>Where is the condition?</h3>
+  <div class="pills" id="sides">
+    <button class="pill" data-side="" aria-pressed="true">Not an arm or leg</button>
+    <button class="pill" data-side="Left Arm" aria-pressed="false">Left Arm</button>
+    <button class="pill" data-side="Right Arm" aria-pressed="false">Right Arm</button>
+    <button class="pill" data-side="Left Leg" aria-pressed="false">Left Leg</button>
+    <button class="pill" data-side="Right Leg" aria-pressed="false">Right Leg</button>
+  </div>
+  <small style="margin-top:6px">Skip this for things like PTSD, hearing loss, sleep apnea, migraines. Use it for knees, shoulders, hands, feet, and similar.</small>
+
+  <h3>How much did the VA rate it, or how much do you hope for?</h3>
+  <div class="pct" id="pcts"></div>
+
+  <h3>Your selections</h3>
+  <div class="chips" id="chips" aria-live="polite"></div>
+  <div class="bar2"><small>Tap a chip to remove it.</small><button class="linkbtn" id="clear">Clear all in this list</button></div>
+</div></div>
+
+<!-- STEP 2 -->
+<div class="card step"><div class="num">2</div><div>
+  <h2>Your family</h2><small>Family only changes pay at 30% or higher.</small>
+
+  <div class="rowq"><span>Are you married?</span>
+    <div class="pills"><button class="pill" data-k="sp" data-v="0" aria-pressed="true">Single</button><button class="pill" data-k="sp" data-v="1" aria-pressed="false">Married</button></div></div>
+  <div class="rowq hide" id="aarow"><span>Does your spouse need Aid &amp; Attendance?</span>
+    <div class="pills"><button class="pill" data-k="aa" data-v="0" aria-pressed="true">No</button><button class="pill" data-k="aa" data-v="1" aria-pressed="false">Yes</button></div></div>
+  <div class="rowq"><span>Children under 18</span>
+    <div class="stepper"><button data-step="k18" data-d="-1" aria-label="One fewer child under 18">&minus;</button><output id="v-k18">0</output><button data-step="k18" data-d="1" aria-label="One more child under 18">+</button></div></div>
+  <div class="rowq"><span>Children 18–23 in a qualifying school program</span>
+    <div class="stepper"><button data-step="ksc" data-d="-1" aria-label="One fewer child in school">&minus;</button><output id="v-ksc">0</output><button data-step="ksc" data-d="1" aria-label="One more child in school">+</button></div></div>
+  <div class="rowq"><span>Parents who depend on you</span>
+    <div class="pills"><button class="pill" data-k="par" data-v="0" aria-pressed="true">None</button><button class="pill" data-k="par" data-v="1" aria-pressed="false">One</button><button class="pill" data-k="par" data-v="2" aria-pressed="false">Both</button></div></div>
+</div></div>
+
+<!-- STEP 3 -->
+<div class="card step"><div class="num">3</div><div>
+  <h2>Can you work?</h2><small>Optional. This only adds a note below. It doesn't change your estimate.</small>
+  <div class="rowq"><span>Do your service-connected conditions keep you from working full time?</span>
+    <div class="pills"><button class="pill" data-k="tdiu" data-v="0" aria-pressed="true">No</button><button class="pill" data-k="tdiu" data-v="1" aria-pressed="false">Yes</button></div></div>
+</div></div>
+
+<div class="card" id="results"><h2>Your estimate</h2><div id="tag"></div><table class="res" id="out"></table><div id="tdiunote"></div></div>
+<div class="card info"><h2>What now?</h2><p>A rating is a key. See <a href="../benefits/">what unlocks at each rating</a>, check <a href="../states/">your state's benefits</a>, or find out <a href="../start-here/quiz.html">which claim path fits you</a>.</p></div>
+<div data-waitlist-box data-title="Want a guided tool that does the next step with you?"></div>
+
+<div class="card"><h2>How the math works</h2><small>The VA does not add ratings together. It uses "whole person" math (38 CFR 4.25): start with the biggest rating, then each next rating only counts against the part of you that is still "able." The result is rounded to the nearest 10 (85 rounds up to 90; 84 rounds down to 80). If you have conditions on both arms or on both legs, the VA combines those first and adds 10% more (the "bilateral factor," 38 CFR 4.26). This tool applies that bonus only when you have entered both a left and a right side.<br><br>
+Pay amounts: official VA 2026 rates, <b>effective December 1, 2025</b>, from <a href="https://www.va.gov/disability/compensation-rates/veteran-rates/" target="_blank" rel="noopener">va.gov/disability/compensation-rates/veteran-rates/</a> (checked Oct 13, 2026). Special monthly compensation (SMC) and other extras are not included.</small></div>
+
+</main>
+<footer data-site-footer data-verified="2026-10-13" data-no-waitlist></footer>
+<script src="../assets/site.js"></script>
+
+<div id="bar" aria-live="polite"><div class="in"><div><div class="t">You may be missing</div><div class="v" id="barv">$0.00/mo</div></div><a href="#results">See details</a></div></div>
+
+<script>
+/* SOURCE: https://www.va.gov/disability/compensation-rates/veteran-rates/
+   "Effective December 1, 2025" (2026 rates), page last updated Dec 2, 2025; verified Oct 13, 2026.
+   Columns: [alone, spouse, spouse+1par, spouse+2par, 1par, 2par, child, child+spouse, child+sp+1par, child+sp+2par, child+1par, child+2par, addChildU18, addChildSchool, spouseAA] */
+var R10=180.42,R20=356.66,T={
+30:[552.47,617.47,669.47,721.47,604.47,656.47,596.47,666.47,718.47,770.47,648.47,700.47,32,105,61],
+40:[795.84,882.84,952.84,1022.84,865.84,935.84,853.84,947.84,1017.84,1087.84,923.84,993.84,43,140,81],
+50:[1132.90,1241.90,1329.90,1417.90,1220.90,1308.90,1205.90,1322.90,1410.90,1498.90,1293.90,1381.90,54,176,101],
+60:[1435.02,1566.02,1671.02,1776.02,1540.02,1645.02,1523.02,1663.02,1768.02,1873.02,1628.02,1733.02,65,211,121],
+70:[1808.45,1961.45,2084.45,2207.45,1931.45,2054.45,1910.45,2074.45,2197.45,2320.45,2033.45,2156.45,76,246,141],
+80:[2102.15,2277.15,2417.15,2557.15,2242.15,2382.15,2219.15,2406.15,2546.15,2686.15,2359.15,2499.15,87,281,161],
+90:[2362.30,2559.30,2717.30,2875.30,2520.30,2678.30,2494.30,2704.30,2862.30,3020.30,2652.30,2810.30,98,317,181],
+100:[3938.58,4158.17,4334.41,4510.65,4114.82,4291.06,4085.43,4318.99,4495.23,4671.47,4261.67,4437.91,109.11,352.45,201.41]};
+// Core math, shared by index.html (inlined) and test.js
+function combine(list){ // 38 CFR 4.25 Combined Ratings Table: sort high->low, round each step to whole number
+  var r=list.filter(function(x){return x>0}).sort(function(a,b){return b-a}),v=0;
+  r.forEach(function(x){v=Math.round(v+x*(100-v)/100)});return v;}
+function combineAll(items){ // items: [{pct,bilateral}]; 4.26 bilateral factor
+  var bi=items.filter(function(i){return i.bilateral}).map(function(i){return +i.pct});
+  var other=items.filter(function(i){return !i.bilateral}).map(function(i){return +i.pct});
+  var bf=0,biVal=0;
+  if(bi.length>=2){biVal=combine(bi);bf=Math.round(biVal*0.1*10)/10;other.push(Math.round(biVal+bf));}
+  else other=other.concat(bi);
+  var exact=combine(other),rounded=Math.min(100,Math.round(exact/10)*10);
+  return {exact:exact,rounded:rounded,bilateralValue:biVal,bilateralFactor:bf,toNext:rounded>=100?0:rounded+5-exact};
+}
+if(typeof module!=='undefined')module.exports={combine:combine,combineAll:combineAll};
+
+function pay(r,f){if(r<10)return 0;if(r==10)return R10;if(r==20)return R20;var t=T[r],k=f.k18+f.ksc,p=f.par,i;
+ if(k>0){i=f.sp?(7+p):(p?9+p:6);}else{i=f.sp?(1+p):(p?3+p:0);}
+ var v=t[i];if(k>0){var extra18=f.k18,extraS=f.ksc;if(extra18>0)extra18--;else extraS--;v+=extra18*t[12]+extraS*t[13];}
+ if(f.sp&&f.aa)v+=t[14];return v;}
+function $(id){return document.getElementById(id)}
+function m(x){return '$'+x.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function desc(r){return '<b>'+r.rounded+'%</b> <small>(exact math: '+r.exact+(r.bilateralFactor?', includes bilateral bonus of '+r.bilateralFactor:'')+(r.rounded<100?'; '+r.toNext+' more point'+(r.toNext==1?'':'s')+' to round up to '+(r.rounded+10)+'%':'')+')</small>'}
+
+/* ---------- state ---------- */
+var S={cur:[],pot:[],tab:'cur',side:'',copy:1,sp:0,aa:0,k18:0,ksc:0,par:0,tdiu:0};
+
+/* Turn chips into items for combineAll. The bilateral bonus applies only when
+   BOTH a left and a right entry exist for arms, or for legs. */
+function toItems(list){
+  var has={};list.forEach(function(x){if(x.side)has[x.side]=1});
+  var arms=has['Left Arm']&&has['Right Arm'],legs=has['Left Leg']&&has['Right Leg'];
+  return list.map(function(x){
+    var b=(/Arm/.test(x.side)&&arms)||(/Leg/.test(x.side)&&legs);
+    return{pct:x.pct,bilateral:!!b};});}
+
+function label(x){return (x.side?x.side+' ':'')+x.pct+'%'}
+
+function renderChips(){
+  var L=S[S.tab],h='';
+  if(!L.length)h='<span class="empty">Nothing added yet. Tap a percentage above to start.</span>';
+  L.forEach(function(x,i){h+='<button class="chip" data-rm="'+i+'" aria-label="Remove '+label(x)+'">'+label(x)+' <i aria-hidden="true">&times;</i></button>'});
+  $('chips').innerHTML=h;
+  $('n-cur').textContent=S.cur.length;$('n-pot').textContent=S.pot.length;
+}
+
+function sync(){
+  [].forEach.call(document.querySelectorAll('[data-k]'),function(b){b.setAttribute('aria-pressed',S[b.dataset.k]==+b.dataset.v)});
+  [].forEach.call(document.querySelectorAll('[data-side]'),function(b){b.setAttribute('aria-pressed',S.side===b.dataset.side)});
+  [].forEach.call(document.querySelectorAll('[data-tab]'),function(b){b.setAttribute('aria-selected',S.tab===b.dataset.tab)});
+  $('copy').setAttribute('aria-pressed',!!S.copy);
+  $('potnote').classList.toggle('hide',S.tab!=='pot');
+  $('aarow').classList.toggle('hide',!S.sp);
+  $('v-k18').textContent=S.k18;$('v-ksc').textContent=S.ksc;
+  renderChips();calc();
+}
+
+function calc(){
+  var f={sp:S.sp,aa:S.sp?S.aa:0,k18:S.k18,ksc:S.ksc,par:S.par};
+  var c=combineAll(toItems(S.cur));
+  var pl=S.copy?S.cur.concat(S.pot):S.pot.slice();
+  var p=combineAll(toItems(pl));
+  var a=pay(c.rounded,f),b=pay(p.rounded,f),d=b-a;
+  $('tag').innerHTML='<div class="tag"><div class="lbl">What you may be missing</div><span class="big">'+m(d)+'</span><div class="yr">per month &nbsp;&bull;&nbsp; <b>'+m(d*12)+'</b> per year</div></div>';
+  $('out').innerHTML='<tr><td>Your rating now</td><td>'+desc(c)+'</td></tr><tr><td>Possible new rating</td><td>'+desc(p)+'</td></tr><tr><td>Pay now (per month)</td><td>'+m(a)+'</td></tr><tr><td>Possible pay (per month)</td><td>'+m(b)+'</td></tr><tr><td colspan=2><span class="fine">Estimate only. Not a promise. The VA makes the final decision.</span></td></tr>';
+  $('barv').textContent=m(d)+'/mo';
+
+  /* Optional TDIU note (schedular threshold: one rating of 60%+, or 70%+ combined with one at 40%+) */
+  var t='';
+  if(S.tdiu){
+    var top=S.cur.reduce(function(mx,x){return Math.max(mx,x.pct)},0);
+    var met=top>=60||(c.rounded>=70&&top>=40);
+    var full=pay(100,f);
+    t='<div class="tdiu"><b>About unemployability (TDIU).</b> If the VA finds you unable to hold substantially gainful work because of service-connected conditions, it can pay at the 100% rate, which for your family setup is <b>'+m(full)+'</b>/month'+(a<full?' (about <b>'+m(full-a)+'</b> more than you get now)':'')+'. '+
+      (S.cur.length?(met?'Your current ratings appear to meet the usual rating threshold.':'Your current ratings may not meet the usual rating threshold (one rating of 60%, or 70% combined with one at 40%), though the VA can sometimes make exceptions.'):'Add your current ratings in step 1 to see whether the usual rating threshold looks met.')+
+      ' This is not included in the estimate above. A VSO or accredited representative can tell you if it fits your situation.</div>';
+  }
+  $('tdiunote').innerHTML=t;
+}
+
+/* ---------- events ---------- */
+(function(){
+  var g=$('pcts'),h='';for(var i=10;i<=100;i+=10)h+='<button data-pct="'+i+'" aria-label="'+i+' percent">'+i+'%</button>';g.innerHTML=h;
+  document.addEventListener('click',function(e){
+    var b=e.target.closest('button');if(!b)return;
+    if(b.dataset.pct){S[S.tab].push({side:S.side,pct:+b.dataset.pct});S.side='';}
+    else if(b.dataset.side!==undefined)S.side=b.dataset.side;
+    else if(b.dataset.tab){S.tab=b.dataset.tab;}
+    else if(b.dataset.rm!==undefined)S[S.tab].splice(+b.dataset.rm,1);
+    else if(b.id==='clear')S[S.tab]=[];
+    else if(b.dataset.toggle==='copy')S.copy=S.copy?0:1;
+    else if(b.dataset.step){S[b.dataset.step]=Math.max(0,Math.min(20,S[b.dataset.step]+ +b.dataset.d));}
+    else if(b.dataset.k){S[b.dataset.k]=+b.dataset.v;if(b.dataset.k==='sp'&&!S.sp)S.aa=0;}
+    else return;
+    sync();
+  });
+  var q=new URLSearchParams(location.search);
+  if(q.get('demo')){
+    S.cur=[{side:'',pct:50},{side:'Left Leg',pct:20},{side:'Right Leg',pct:10}];
+    S.pot=[{side:'',pct:50}];S.sp=1;S.k18=2;
+  }
+  sync();
+})();
+</script></body></html>

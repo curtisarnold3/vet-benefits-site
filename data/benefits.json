@@ -1,0 +1,66 @@
+{
+  "meta": {"last_verified": "2026-10-16", "rates_effective": "2025-12-01", "note": "Rating ladder. Each item names the lowest tier where it unlocks. Items repeat in higher tiers only when something changes."},
+  "tiers": [
+    {"id": "t0", "label": "0% (service-connected, non-compensable)", "short": "0%", "intro": "A 0% rating is still a win. It means VA agrees the condition is connected to service. No monthly pay, but doors open.",
+     "items": [
+       {"name": "VA health care enrollment", "detail": "Free care for the 0% condition itself. Priority group 5, 7, or 8 by income for other care (group 6 if the 0% is compensable).", "page": "health-care.html"},
+       {"name": "Commissary, exchange, and MWR access", "detail": "Any service-connected rating qualifies. Get a VHIC marked SERVICE CONNECTED.", "page": "commissary-travel.html"},
+       {"name": "10-point federal hiring preference (XP)", "detail": "Any present service-connected disability, even 0%. Attach SF-15 and your VA letter.", "page": "hiring-preference.html"},
+       {"name": "A primary for secondary claims", "detail": "A 0% condition can be the cause of a later, higher-rated secondary condition.", "page": "../start-here/#evidence"},
+       {"name": "Travel pay for service-connected care", "detail": "Mileage reimbursement for appointments treating the service-connected condition.", "page": "commissary-travel.html"},
+       {"name": "SMC-K possible", "detail": "Loss of use of a creative organ (for example erectile dysfunction) at 0% still earns the SMC-K add-on.", "page": "smc.html"},
+       {"name": "State benefits at 'any rating'", "detail": "Some states grant plates, park passes, or hiring points at any service-connected rating.", "page": "../states/"}
+     ]},
+    {"id": "t10", "label": "10% to 20%", "short": "10–20%", "intro": "Monthly pay begins, copays mostly end, and the funding fee waiver alone can be worth thousands.",
+     "items": [
+       {"name": "Monthly compensation", "detail": "$180.42 at 10%, $356.66 at 20% (effective Dec 1, 2025). Tax-free.", "page": "../calculator/"},
+       {"name": "No VA inpatient or outpatient copays", "detail": "Priority group 3. Medication copays still apply for non-service-connected conditions unless income is low.", "page": "health-care.html"},
+       {"name": "VA home loan funding fee waived", "detail": "Anyone receiving compensation is exempt. Often $5,000 to $15,000 saved.", "page": "home-loan.html"},
+       {"name": "10-point preference CP (10% to 29%)", "detail": "Compensable disability preference for federal jobs.", "page": "hiring-preference.html"},
+       {"name": "Chapter 31 VR&E at 10% with a serious employment handicap", "detail": "Training, degrees, tools, with a monthly allowance.", "page": "vre.html"},
+       {"name": "CRSC possible for retirees", "detail": "Combat-related conditions at 10%+ can qualify retirees for tax-free CRSC.", "page": "crdp-crsc.html"}
+     ]},
+    {"id": "t30", "label": "30% to 40%", "short": "30–40%", "intro": "Dependents start to count, travel pay opens for all VA appointments, and most veterans here should check for missing secondaries.",
+     "items": [
+       {"name": "Extra pay for spouse, children, parents", "detail": "File 21-686c (and 21-674 for school-age kids) within one year to get back pay.", "page": "dependents.html"},
+       {"name": "Travel pay for any VA appointment", "detail": "41.5 cents a mile, small deductible.", "page": "commissary-travel.html"},
+       {"name": "Priority group 2", "detail": "No care copays. Medication copays may still apply.", "page": "health-care.html"},
+       {"name": "10-point preference CPS and the 30% noncompetitive authority", "detail": "Agencies can hire you directly at any grade.", "page": "hiring-preference.html"},
+       {"name": "Chapter 31 VR&E at 20%+ with an employment handicap", "detail": "The usual VR&E door.", "page": "vre.html"},
+       {"name": "TDIU math starts here", "detail": "A 40% condition is one half of the 70/40 TDIU test.", "page": "tdiu.html"}
+     ]},
+    {"id": "t50", "label": "50% to 60%", "short": "50–60%", "intro": "All VA health care copays end at 50%. Retirees get CRDP. Many states open plates and passes at 50%.",
+     "items": [
+       {"name": "Priority group 1: no copays at all", "detail": "No care copays and no medication copays for anything.", "page": "health-care.html"},
+       {"name": "CRDP for 20-year retirees", "detail": "Retired pay restored at 50%+. Automatic.", "page": "crdp-crsc.html"},
+       {"name": "TDIU with a single 60%", "detail": "One condition at 60% meets the schedular threshold if you cannot work.", "page": "tdiu.html"},
+       {"name": "HISA home alteration grant at 50%", "detail": "$6,800 lifetime for needed home changes, even for non-service-connected needs, with a single 50%+ rating.", "page": "housing-auto-grants.html"},
+       {"name": "State benefits at 50%", "detail": "Colorado: free DV plates and ownership tax exemption, free lifetime fishing and small game license, free Independence state parks pass.", "page": "../states/colorado.html"}
+     ]},
+    {"id": "t70", "label": "70% to 90%", "short": "70–90%", "intro": "Caregiver stipends and TDIU become real options. At 80%+, small claims stop moving the needle; aim for 100% or TDIU the right way.",
+     "items": [
+       {"name": "PCAFC caregiver program at 70%", "detail": "Monthly stipend, CHAMPVA for the caregiver, respite, training.", "page": "caregivers.html"},
+       {"name": "TDIU with 70% combined and one 40%", "detail": "Paid at the 100% rate if you cannot hold substantially gainful work.", "page": "tdiu.html"},
+       {"name": "Many state property tax exemptions start here", "detail": "Varies by state. Check yours.", "page": "../states/"},
+       {"name": "Plan the path to 100%", "detail": "At 80%, a new 10% does almost nothing. A 30%+ condition in a new body system, or a 70% mental health rating, is the usual move.", "page": "../calculator/"}
+     ]},
+    {"id": "t100", "label": "100% (schedular or TDIU)", "short": "100%", "intro": "The full monthly rate, VA dental, and extra dependent pay. SMC is the only thing left to claim.",
+     "items": [
+       {"name": "Full rate: $3,938.58 a month, veteran alone", "detail": "Higher with dependents. Effective Dec 1, 2025.", "page": "../calculator/"},
+       {"name": "VA dental care, Class IV", "detail": "Any needed dental care at 100% schedular or TDIU. Temporary 100% does not count.", "page": "dental.html"},
+       {"name": "Special Monthly Compensation", "detail": "SMC-S if you also have a separate 60% or are housebound; aid and attendance if you need daily help.", "page": "smc.html"},
+       {"name": "Highest dependent add-ons", "detail": "Spouse +$219.59, each school-age child +$352.45.", "page": "dependents.html"},
+       {"name": "Commissary access already included", "detail": "100% and TDIU veterans had access before the 2020 expansion.", "page": "commissary-travel.html"},
+       {"name": "Ask about P&T", "detail": "If your conditions will not improve, request the permanent finding. It unlocks the next tier.", "page": "pt-status.html"}
+     ]},
+    {"id": "tpt", "label": "100% Permanent and Total (P&T)", "short": "P&T", "intro": "The family tier. Health coverage and school money for your spouse and kids, and the top tier of nearly every state benefit.",
+     "items": [
+       {"name": "CHAMPVA for spouse and children", "detail": "VA-paid health coverage. Form 10-10d.", "page": "champva.html"},
+       {"name": "Chapter 35 education for spouse and children", "detail": "$1,621 a month full time (Oct 1, 2026), 36 months each. Form 22-5490.", "page": "chapter-35.html"},
+       {"name": "State property tax exemptions at the top tier", "detail": "Colorado: 50% of the first $200,000 of home value, also for TDIU since 2025.", "page": "../states/"},
+       {"name": "No routine re-examinations", "detail": "VA does not schedule future exams on P&T ratings unless you file something.", "page": "pt-status.html"},
+       {"name": "Expedited Social Security disability processing", "detail": "Write 'Veteran 100% P&T' in remarks and attach your letter.", "page": "commissary-travel.html"},
+       {"name": "Survivor protections", "detail": "If you die of a service-connected condition, or after 10 years at P&T, survivors may qualify for DIC. Form 21P-534EZ.", "page": "../tools-forms.html"}
+     ]}
+  ]
+}

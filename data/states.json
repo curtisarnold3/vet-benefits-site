@@ -1,0 +1,938 @@
+{
+ "meta": {
+  "schema_version": 1,
+  "last_updated": "2026-10-16",
+  "categories": {
+   "property_tax": "Property tax",
+   "vehicle": "Vehicle, plates, and ID",
+   "recreation": "Hunting, fishing, and parks",
+   "education": "Education and tuition",
+   "income_tax": "State income tax",
+   "employment": "Employment and hiring",
+   "other": "Other"
+  },
+  "rating_order": [
+   "none",
+   "any service-connected",
+   "10%",
+   "30%",
+   "50%",
+   "60%",
+   "70%",
+   "100%",
+   "100% P&T or TDIU",
+   "100% P&T",
+   "varies"
+  ]
+ },
+ "states": [
+  {
+   "code": "AL",
+   "name": "Alabama",
+   "slug": "alabama",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "AK",
+   "name": "Alaska",
+   "slug": "alaska",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "AZ",
+   "name": "Arizona",
+   "slug": "arizona",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "AR",
+   "name": "Arkansas",
+   "slug": "arkansas",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "CA",
+   "name": "California",
+   "slug": "california",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "CO",
+   "name": "Colorado",
+   "slug": "colorado",
+   "agency": {
+    "name": "Colorado Division of Veterans Affairs",
+    "url": "https://vets.colorado.gov/"
+   },
+   "last_verified": "2026-10-16",
+   "status": "verified",
+   "notes": [
+    "Property tax: since Jan 1, 2024 you apply at your COUNTY ASSESSOR, not the Division of Veterans Affairs. The window is January 1 to July 1 each year (C.R.S. 39-3-205(1)(b)). Late applications are not held over; they are discarded.",
+    "Property tax: TDIU veterans became eligible starting with tax year 2025 (taxes paid in 2026) after voters passed Amendment G on Nov 5, 2024. A 100% rating that is NOT marked permanent does not qualify; the constitution says '100 percent permanent' or 'individual unemployability status.'",
+    "Property tax: the Division's FAQ says TDIU veterans must be 'rated at least 70%' and must have 'served on active duty for at least 24 months.' Neither statement appears in the constitution or statute. Needs verification; ask your assessor if it affects you.",
+    "Property tax, surviving spouses: a surviving spouse keeps the exemption on the same home if the veteran already had it (C.R.S. 39-3-203(1.5)(a.5)). Gold Star spouses (DIC recipients or line-of-duty death gratuity) qualify in their own right since tax year 2023 (Amendment E). The state page is inconsistent on whether remarriage disqualifies; the constitution is silent.",
+    "Property tax: you must own and occupy the home as your primary residence on January 1 of the application year. You cannot stack the senior and veteran exemptions on one home.",
+    "C.R.S. 28-5-104 (effective Jan 1, 2025) requires every Colorado state veterans benefit to treat a VA individual unemployability (TDIU) finding the same as a 100% permanent rating.",
+    "Vehicle: the 50% rule for DV plates and the ownership tax exemption reads '50% or more, service-connected, permanent disability' (C.R.S. 42-3-304(5)(a)) or loss of use of hands, feet, or vision. Only ONE vehicle per veteran is exempt, and sales tax is still owed. The plain DV plate does NOT allow accessible parking; you need the DV Handicap plate or a placard with a DR 2219 medical certification.",
+    "Recreation: the lifetime small game and fishing license threshold dropped from 60% to 50% for applications on or after Jan 1, 2025 (SB 24-161). Some older state pages still say 60%. You must have lived in Colorado six months, and the license is valid only while you remain a resident. The $14 Columbine Pass is NOT the veteran pass; the free Independence Pass (50%+) is.",
+    "Recreation: whether DV-plate vehicles are automatically exempt from the $29 Keep Colorado Wild Pass at registration is not addressed on CPW pages. Needs verification; you can decline the pass at registration either way.",
+    "Income tax: VA disability compensation is not in federal taxable income, and Colorado tax starts from federal taxable income (C.R.S. 39-22-104), so it is not taxed. No Colorado DOR page states this in so many words. Military retirement subtraction is capped at $15,000 for retirees under 55 through tax year 2028; at 55+ the general pension cap applies ($20,000 at 55 to 64, $24,000 at 65+). No 2026 change.",
+    "Education: Colorado has NO general tuition waiver for dependents of 100% P&T veterans. SB26-067 (2026) was postponed indefinitely. The free-tuition law (C.R.S. 23-3.3-205) covers only dependents of Colorado National Guard members killed or permanently disabled on duty, plus police, fire, and search-and-rescue.",
+    "Employment: 10 preference points require receiving VA compensation or disability retired pay for a line-of-duty disability (any rating); 5 points for wartime or campaign-badge service; 10 points maximum; no preference for promotions (Colo. Const. Art. XII Sec. 15).",
+    "NOT found on any official Colorado source, so not listed: a disabled-veteran business license fee waiver; a free driver's license for 100% veterans; veteran-specific big-game preference points."
+   ],
+   "benefits": [
+    {
+     "benefit": "Veteran with a Disability property tax exemption",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "Half of the first $200,000 of your home's actual value is exempt from property tax. You need an honorable discharge and a VA rating of 100% permanent and total, OR a VA individual unemployability (TDIU) finding (TDIU counts starting tax year 2025 under Amendment G). You must own and live in the home as your primary residence on January 1. File the state application (DOLA form 15-DPT-AR) with your VA Benefit Summary Letter at your COUNTY ASSESSOR between January 1 and July 1. Once approved you do not reapply unless you move or your VA status changes.",
+     "source_url": "https://vets.colorado.gov/property-tax-exemption",
+     "source_title": "Property Tax Exemption, Colorado Division of Veterans Affairs (Colo. Const. Art. X Sec. 3.5; C.R.S. 39-3-203, 39-3-205)",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Gold Star Spouse and surviving spouse property tax exemption",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "A surviving spouse can get the same 50%-of-the-first-$200,000 exemption on their primary home. Gold Star spouses qualify if the service member died in the line of duty (and the spouse received the DoD death gratuity) or the veteran died of a service-connected cause and the spouse receives VA DIC. A surviving spouse of a veteran who already had the disabled-veteran exemption keeps it on the same home. Apply at the county assessor between January 1 and July 1 with a VA letter or DD Form 1300.",
+     "source_url": "https://vets.colorado.gov/property-tax-exemption",
+     "source_title": "Property Tax Exemption, Colorado Division of Veterans Affairs (Colo. Const. Art. X Sec. 3.5(1)(d), (1.7); C.R.S. 39-3-203(1.5)(a.5))",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran (DV) license plate with registration fee and ownership tax exemption",
+     "category": "vehicle",
+     "min_rating": "50%",
+     "details": "With an honorable discharge and a VA letter showing a 50% or greater service-connected disability (or loss of use of a hand or foot, or blindness) you get one set of D.V. plates free. That one vehicle is also exempt from Colorado's annual specific ownership tax and registration fees. Sales tax still applies, and extra DV sets cost $50 plus normal taxes and fees. Apply with Form DR 2002, your DD 214, VA letter, and title or registration at your county motor vehicle office. The plain DV plate does not give accessible parking rights, but it does give free entry to state parks.",
+     "source_url": "https://dmv.colorado.gov/license-plates-military",
+     "source_title": "License Plates - Military, Colorado DMV (Form DR 2002 rev. 08/04/25; C.R.S. 42-3-213(5), 42-3-304(5))",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran Handicap plate or accessible parking placard",
+     "category": "vehicle",
+     "min_rating": "50%",
+     "details": "If you need accessible parking, get the Disabled Veteran Handicap plate (the same 50% VA letter plus Form DR 2219 signed by a licensed medical provider) or a standard placard. Three-year placards are for permanent impairments; temporary placards for short-term ones. Submit the DR 2219 to your county motor vehicle office or through myDMV. The regular DV plate alone does not allow parking in accessible spaces.",
+     "source_url": "https://dmv.colorado.gov/persons-disabilities",
+     "source_title": "Persons with Disabilities, Colorado DMV (Form DR 2219)",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Purple Heart license plate",
+     "category": "vehicle",
+     "min_rating": "none",
+     "details": "Any Purple Heart recipient can get Purple Heart plates. The first set is exempt from fees (C.R.S. 42-3-213(1)(b)(II)(D)) and Form DR 2002 lists it as exempt from ownership taxes and registration fees for one vehicle; additional sets cost $50 plus taxes and fees. Apply with Form DR 2002 and a DD 214 or orders showing the award. Purple Heart plates also give free entry to Colorado state parks.",
+     "source_url": "https://dmv.colorado.gov/license-plates-military",
+     "source_title": "License Plates - Military, Colorado DMV",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VETERAN indicator and military identifier on driver license or ID",
+     "category": "vehicle",
+     "min_rating": "none",
+     "details": "You can have the word VETERAN and/or your branch's military identifier printed on your Colorado driver license or ID card. Bring an original Member 4 copy of your DD-214 or a valid military ID to a driver license office appointment. Once added you do not show the documents again at renewal, and there is no added fee when done at renewal. The indicator is accepted as proof of veteran status for the free August state parks pass.",
+     "source_url": "https://dmv.colorado.gov/active-duty-military-and-veterans",
+     "source_title": "Active Duty Military and Veterans, Colorado DMV",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free lifetime small game hunting and fishing combination license",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "Colorado resident veterans with a VA combined service-connected rating of 50% or more (lowered from 60% for applications on or after January 1, 2025), and Purple Heart recipients, get a free lifetime resident small game and fishing combo license. You must have lived in Colorado at least six months, hold a Colorado DL or ID, and have hunter education if you want to hunt. Holders skip the annual Habitat Stamp, and the license counts as a qualifying license for big game draws. Apply with CPW's Veteran License application by email, through your cpwshop.com account, or by mail; allow 15 business days.",
+     "source_url": "https://cpw.state.co.us/hunting/hunters-disabilities",
+     "source_title": "Hunters with Disabilities, Colorado Parks and Wildlife (C.R.S. 33-4-104(3) as amended by SB 24-161)",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Independence Pass: free annual state parks pass for disabled veterans",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "The Independence Pass gives free vehicle entry to all Colorado state parks for 12 months at no cost. Colorado residents qualify with a VA letter showing a discharge other than dishonorable and compensation for a 50% or greater disability (combined ratings count), or loss of use of hands or feet or blindness; Purple Heart recipients also qualify. Apply with CPW's Veteran's License and Pass Application by email, mail, or in person at CPW headquarters in Denver; allow 15 business days. Residents with DV or Purple Heart plates can enter free without any pass when the veteran is in the vehicle.",
+     "source_url": "https://cpw.state.co.us/park-specialty-passes",
+     "source_title": "Park Specialty Passes, Colorado Parks and Wildlife",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free state park entry in August (Military Parks Pass)",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "Every August, active-duty military, veterans, and National Guard members get a free pass for entry to any Colorado state park. Pick it up at any state park or CPW office with a DD214, military ID, a Colorado license or ID with VETERAN on it, or a VA medical card. The pass covers only the service member, is not valid at State Wildlife Areas, and camping and other fees still apply.",
+     "source_url": "https://cpw.state.co.us/news/07312025/cpw-offers-free-entry-colorado-state-parks-august-active-duty-military-veterans-and",
+     "source_title": "CPW offers free entry into Colorado state parks in August (July 31, 2025)",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "In-state tuition for honorably discharged veterans",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Every Colorado public college and university must charge in-state tuition to an honorably discharged veteran who lives in Colorado, no matter how recently they moved here (no one-year wait). Schools may extend this to the veteran's dependents, but that part is optional. Students classified this way also get the College Opportunity Fund stipend. Apply through your school's registrar or veterans office with your DD-214.",
+     "source_url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-23.pdf",
+     "source_title": "C.R.S. 23-7.4-203 Tuition classification of armed forces veterans (Colorado Revised Statutes 2024, Title 23)",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Colorado National Guard tuition waiver (current Guard members)",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Current drilling members of the Colorado Army or Air National Guard can have up to 100% of in-state tuition waived at approved Colorado public colleges after other aid is applied (HB26-1386 took effect July 1, 2026). It does not cover fees or books and is capped by credit hours (65 associate, 130 bachelor's, 145 combined). You must complete the FAFSA or CASFA and apply through DMVA's portal every semester during short windows: June 1 to 20 (fall), November 1 to 20 (spring), April 1 to 20 (summer). This is for serving Guard members, not separated veterans.",
+     "source_url": "https://dmva.colorado.gov/tuition-waiver",
+     "source_title": "Tuition Waiver Program, Colorado DMVA",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free tuition and room and board for dependents of Guard members killed or permanently disabled on duty",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "A dependent of a Colorado National Guard member who died or was permanently disabled on state active duty, federal active duty, or authorized training can attend a Colorado state college free of tuition and room and board for a first bachelor's degree or certificate. The student must keep a 2.5 GPA and the benefit ends six years after enrollment. This is NOT a general benefit for children of 100% disabled veterans; a 2026 bill to create one (SB26-067) failed. Apply through the school's financial aid office.",
+     "source_url": "https://content.leg.colorado.gov/sites/default/files/images/olls/crs2024-title-23.pdf",
+     "source_title": "C.R.S. 23-3.3-205 (Colorado Revised Statutes 2024, Title 23)",
+     "date_verified": "2026-10-16",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement pay income tax subtraction",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Military retirees under age 55 at year end can subtract up to $15,000 of military retirement pay from Colorado taxable income each year from 2022 through 2028. Retirees 55 and older use the general pension and annuity subtraction instead: up to $20,000 (ages 55 to 64) or $24,000 (65+). Claim it on the Subtractions from Income Schedule (DR 0104AD). VA disability compensation is not part of federal taxable income, so Colorado does not tax it either. No cap changes took effect for 2026.",
+     "source_url": "https://tax.colorado.gov/retired-servicemembers",
+     "source_title": "Retired Servicemembers, Colorado Department of Revenue (Income Tax Topics: Military Servicemembers, rev. Feb 2025)",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans' preference in state and local government hiring",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "When the State of Colorado (or a county, city, or district with a comparable merit system) scores job applicants, 10 points are added for a veteran receiving VA disability compensation or disability retired pay for a line-of-duty disability, and 5 points for an honorably separated wartime or campaign-badge veteran. Surviving spouses get 5 points; the maximum is 10, and no preference applies to promotions. Veterans also get retention preference in layoffs. Attach your DD-214 (Member 4) and, for the 10 points, a VA letter showing a service-connected disability.",
+     "source_url": "https://careers.colorado.gov/veterans-preference",
+     "source_title": "Veterans' Preference, State of Colorado Careers (Colo. Const. Art. XII Sec. 15)",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Colorado Veterans Community Living Centers (state veterans homes)",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Colorado runs five state veterans homes (Aurora/Fitzsimons, Florence, Homelake near Monte Vista, Rifle, and Walsenburg) offering long-term skilled nursing, short-term rehab, memory care, respite, and hospice. Honorably discharged veterans, their spouses or widows, and Gold Star parents are eligible if they meet medical criteria; no VA rating is required. Veterans pay a lower daily rate because VA pays part of the cost. The homes accept Medicaid, Medicare (short-term rehab), and private pay. Contact the admissions office of the center you want.",
+     "source_url": "https://cdhs.colorado.gov/VCLCs",
+     "source_title": "Veterans Community Living Centers, Colorado Department of Human Services",
+     "date_verified": "2026-10-16",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
+  },
+  {
+   "code": "CT",
+   "name": "Connecticut",
+   "slug": "connecticut",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "DE",
+   "name": "Delaware",
+   "slug": "delaware",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "DC",
+   "name": "District of Columbia",
+   "slug": "district-of-columbia",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "FL",
+   "name": "Florida",
+   "slug": "florida",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "GA",
+   "name": "Georgia",
+   "slug": "georgia",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "HI",
+   "name": "Hawaii",
+   "slug": "hawaii",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "ID",
+   "name": "Idaho",
+   "slug": "idaho",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "IL",
+   "name": "Illinois",
+   "slug": "illinois",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "IN",
+   "name": "Indiana",
+   "slug": "indiana",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "IA",
+   "name": "Iowa",
+   "slug": "iowa",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "KS",
+   "name": "Kansas",
+   "slug": "kansas",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "KY",
+   "name": "Kentucky",
+   "slug": "kentucky",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "LA",
+   "name": "Louisiana",
+   "slug": "louisiana",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "ME",
+   "name": "Maine",
+   "slug": "maine",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "MD",
+   "name": "Maryland",
+   "slug": "maryland",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "MA",
+   "name": "Massachusetts",
+   "slug": "massachusetts",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "MI",
+   "name": "Michigan",
+   "slug": "michigan",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "MN",
+   "name": "Minnesota",
+   "slug": "minnesota",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "MS",
+   "name": "Mississippi",
+   "slug": "mississippi",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "MO",
+   "name": "Missouri",
+   "slug": "missouri",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "MT",
+   "name": "Montana",
+   "slug": "montana",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "NE",
+   "name": "Nebraska",
+   "slug": "nebraska",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "NV",
+   "name": "Nevada",
+   "slug": "nevada",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "NH",
+   "name": "New Hampshire",
+   "slug": "new-hampshire",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "NJ",
+   "name": "New Jersey",
+   "slug": "new-jersey",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "NM",
+   "name": "New Mexico",
+   "slug": "new-mexico",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "NY",
+   "name": "New York",
+   "slug": "new-york",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "NC",
+   "name": "North Carolina",
+   "slug": "north-carolina",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "ND",
+   "name": "North Dakota",
+   "slug": "north-dakota",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "OH",
+   "name": "Ohio",
+   "slug": "ohio",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "OK",
+   "name": "Oklahoma",
+   "slug": "oklahoma",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "OR",
+   "name": "Oregon",
+   "slug": "oregon",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "PA",
+   "name": "Pennsylvania",
+   "slug": "pennsylvania",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "RI",
+   "name": "Rhode Island",
+   "slug": "rhode-island",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "SC",
+   "name": "South Carolina",
+   "slug": "south-carolina",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "SD",
+   "name": "South Dakota",
+   "slug": "south-dakota",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "TN",
+   "name": "Tennessee",
+   "slug": "tennessee",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "TX",
+   "name": "Texas",
+   "slug": "texas",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "UT",
+   "name": "Utah",
+   "slug": "utah",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "VT",
+   "name": "Vermont",
+   "slug": "vermont",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "VA",
+   "name": "Virginia",
+   "slug": "virginia",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "WA",
+   "name": "Washington",
+   "slug": "washington",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "WV",
+   "name": "West Virginia",
+   "slug": "west-virginia",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "WI",
+   "name": "Wisconsin",
+   "slug": "wisconsin",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "WY",
+   "name": "Wyoming",
+   "slug": "wyoming",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "AS",
+   "name": "American Samoa",
+   "slug": "american-samoa",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "GU",
+   "name": "Guam",
+   "slug": "guam",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "MP",
+   "name": "Northern Mariana Islands",
+   "slug": "northern-mariana-islands",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "PR",
+   "name": "Puerto Rico",
+   "slug": "puerto-rico",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  },
+  {
+   "code": "VI",
+   "name": "U.S. Virgin Islands",
+   "slug": "us-virgin-islands",
+   "agency": {
+    "name": "",
+    "url": ""
+   },
+   "last_verified": null,
+   "status": "pending",
+   "notes": [],
+   "benefits": []
+  }
+ ]
+}

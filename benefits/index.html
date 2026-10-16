@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark"><meta name="theme-color" content="#0f1613">
+<title>The rating ladder: what you get at 0%, 10%, 30%, 50%, 70%, 100%, and P&T – Vet Benefits Guide</title>
+<meta name="description" content="Every VA and federal benefit that unlocks at each disability rating, from 0% to 100% permanent and total: health care, dependents, TDIU, SMC, CHAMPVA, Chapter 35, hiring preference, and more.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../data/config.js"></script>
+<style>.rung{border-left:5px solid var(--brass)}.rung h2{color:var(--brass)}.rung ul{list-style:none;padding:0;margin:8px 0 0}.rung li{padding:8px 0;border-top:1px solid var(--line)}.rung li b{display:block}.rung li span{color:var(--muted);font-size:.97rem}.jump{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 4px}.jump a{text-decoration:none}</style>
+</head><body>
+<a class="skip" href="#main">Skip to content</a>
+<div data-site-header></div>
+<main id="main" class="w">
+<p class="crumb"><a href="../">Home</a> › Rating ladder</p>
+<h1>You have a rating. Now what?</h1>
+<p class="lede">Every rung unlocks something. Find your combined rating below. <b>Most veterans are leaving two or three of these on the table.</b> Then check <a href="../states/">your state</a>.</p>
+<div class="jump" id="jump" aria-label="Jump to a tier"></div>
+<div id="ladder"><noscript><div class="card warn">The ladder loads from <a href="../data/benefits.json">data/benefits.json</a>. Turn on JavaScript or open the individual pages below.</div></noscript></div>
+
+<h2 style="margin-top:30px">All benefit guides</h2>
+<div class="grid">
+<a class="tile" href="health-care.html"><h3>VA health care</h3><p>Priority groups and 2026 copays by rating.</p></a>
+<a class="tile" href="dependents.html"><h3>Dependents</h3><p>Spouse, kids, parents added at 30%+.</p></a>
+<a class="tile" href="tdiu.html"><h3>TDIU</h3><p>Paid at 100% when you cannot work.</p></a>
+<a class="tile" href="smc.html"><h3>Special Monthly Compensation</h3><p>SMC-K, housebound, aid and attendance.</p></a>
+<a class="tile" href="pt-status.html"><h3>What P&amp;T means</h3><p>How to tell if you have it and what it unlocks.</p></a>
+<a class="tile" href="champva.html"><h3>CHAMPVA</h3><p>Family health coverage at P&amp;T.</p></a>
+<a class="tile" href="chapter-35.html"><h3>Chapter 35 (DEA)</h3><p>School money for spouse and kids at P&amp;T.</p></a>
+<a class="tile" href="gi-bill.html"><h3>Post-9/11 GI Bill</h3><p>Based on service, not rating. Vs. Chapter 35.</p></a>
+<a class="tile" href="vre.html"><h3>Chapter 31 VR&amp;E</h3><p>Training and degrees at 10% or 20%.</p></a>
+<a class="tile" href="crdp-crsc.html"><h3>CRDP and CRSC</h3><p>For military retirees.</p></a>
+<a class="tile" href="dental.html"><h3>VA dental</h3><p>Who gets it; Class IV at 100%.</p></a>
+<a class="tile" href="caregivers.html"><h3>Caregiver programs</h3><p>PCAFC at 70%; PGCSS for all.</p></a>
+<a class="tile" href="housing-auto-grants.html"><h3>Housing and auto grants</h3><p>SAH, SHA, HISA, automobile allowance.</p></a>
+<a class="tile" href="home-loan.html"><h3>Home loan and property tax</h3><p>Funding fee waiver; state exemptions.</p></a>
+<a class="tile" href="hiring-preference.html"><h3>Federal hiring preference</h3><p>10-point, CPS, the 30% authority.</p></a>
+<a class="tile" href="commissary-travel.html"><h3>Commissary, travel pay, passes</h3><p>Plus faster Social Security at P&amp;T.</p></a>
+</div>
+<p class="verified">Ladder data last verified 2026-10-16. Dollar figures are VA rates effective December 1, 2025 and change every December 1.</p>
+</main>
+<footer data-site-footer data-verified="2026-10-16"></footer>
+<script src="../assets/site.js"></script>
+<script>
+(function(){
+  fetch('../data/benefits.json').then(function(r){return r.json()}).then(function(d){
+    var j=document.getElementById('jump'),l=document.getElementById('ladder');
+    function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+    d.tiers.forEach(function(t){
+      j.insertAdjacentHTML('beforeend','<a class="pill" href="#'+t.id+'">'+esc(t.short)+'</a>');
+      l.insertAdjacentHTML('beforeend','<section class="card rung" id="'+t.id+'"><h2>'+esc(t.label)+'</h2><p class="muted">'+esc(t.intro)+'</p><ul>'+
+        t.items.map(function(i){return '<li><b>'+esc(i.name)+'</b><span>'+esc(i.detail)+'</span> <a href="'+i.page+'">Details</a></li>'}).join('')+'</ul></section>');
+    });
+    if(location.hash){var el=document.querySelector(location.hash);if(el)el.scrollIntoView()}
+  }).catch(function(){document.getElementById('ladder').innerHTML='<div class="card warn">Could not load the ladder data. Use the guides below.</div>'});
+})();
+</script>
+</body></html>
