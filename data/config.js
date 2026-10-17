@@ -11,7 +11,7 @@ window.SITE_CONFIG = {
   /* Waitlist form handler. Mode "formspree" posts straight to Formspree from the browser (works on
      Vercel AND GitHub Pages). Mode "vercel" posts to /api/waitlist (Vercel only; see README). */
   waitlistMode: "formspree",
-  formspreeEndpoint: "https://formspree.io/f/YOUR_FORM_ID",   // <- paste your Formspree endpoint here
+  formspreeEndpoint: "https://formspree.io/f/xaeqvkrr",   // <- paste your Formspree endpoint here
   vercelEndpoint: "/api/waitlist",
 
   /* Privacy-friendly analytics. Leave empty to load nothing. Set to your domain to enable Plausible. */
