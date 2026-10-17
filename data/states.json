@@ -3982,130 +3982,1753 @@
    "name": "Massachusetts",
    "slug": "massachusetts",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Massachusetts Executive Office of Veterans Services (EOVS)",
+    "url": "https://www.mass.gov/orgs/executive-office-of-veterans-services"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "Massachusetts property tax exemptions for veterans are local-option. A city or town must have voted to accept each clause, and you apply to your local board of assessors, not to the state. Call your assessors to confirm which clauses your town accepted and its current dollar amount.",
+    "The base amounts are small: $400 for a 10% or higher service-connected rating, $1,000 for a 100% rating. Clause 22J (HERO Act 2024) lets a town add up to 100% more, and Clause 22I ties amounts to inflation, but each town must vote to adopt them. The state does not reimburse these two options. A veteran in a town that has not adopted them gets the base figure.",
+    "You must own and live in the home as your domicile on July 1 of the tax year. If you do not meet every requirement on July 1 you get none of the exemption that year. You must also be a legal resident and have lived in Massachusetts six months before entering service, or five consecutive years before filing.",
+    "File with the assessors by April 1 of the tax year or within 3 months after the actual tax bill was sent, whichever is later (G.L. c. 59, s. 59). You must re-apply every fiscal year, although after the first grant you generally do not need a new VA certification unless your disability status changes.",
+    "You cannot stack the property tax clauses on one home. The statute says a person who gets an exemption under Clause 22 through 22F cannot also receive another listed exemption on the same property, so you receive the single highest tier you qualify for.",
+    "The state rating test for the 100% property tax tier (Clause 22E) is written as a disability rating of 100 per cent determined by the VA. We found no official page saying that a TDIU-only rating (paid at the 100% rate but rated below 100% schedular) or a P&T designation counts. Ask your assessor in writing before relying on it. By contrast the RMV fee and excise waivers state in plain words that a 100% rating or a VA finding of unemployability due to service-connected disability qualifies.",
+    "Since the 2024 HERO Act, the RMV waives the registration fee on any/all vehicles (no longer just one) and the driver license transaction fee for veterans with a 100% rating or VA unemployability finding. The veteran must be listed as an owner. Excise tax is still waived on only one passenger vehicle or pickup truck, applied for through your local assessors, and special plate fees, title fees and sales tax fees are not waived by the registration exemption.",
+    "Disabled Veteran (DV) plates have a different test than the 100% waivers: at least 60% service-connected, a qualifying permanent disabled parking privilege, and 60% worth of conditions that affect walking. A veteran at 100% for a non-ambulation condition may get the fee waivers but not DV plates, and the one-vehicle sales tax exemption requires DV plates (or, since the HERO Act, Purple Heart plates for a qualifying Purple Heart recipient with a 60% rating).",
+    "Massachusetts has a state income tax, but military retirement pay is excluded from state gross income and VA disability compensation cannot be taxed by the state. These are not claimed on a form; they are simply not included in Massachusetts income.",
+    "The disabled veteran annuity is paid at $2,500 a year (once a year in August since 2025) to veterans with a 100% service-connected rating or VA compensation at 100%. New applications or updates must be received and approved by June 30 to be paid in August so apply as soon as you qualify. Since July 1, 2025 a surviving spouse keeps the annuity after remarrying.",
+    "Bills for a statewide disabled veteran homestead exemption (H.3836, tiers starting at 30%) and for free hunting and fishing licenses for disabled veterans have been filed in the 2025-2026 session. H.3836 was sent to a study order on 5/11/2026. Neither is law, so do not count on them.",
+    "Chapter 115 is a means-tested cash and medical aid program, not tied to a VA rating. Because it counts income, a veteran with a 100% rating may still qualify if household income is low. The 2024 HERO Act added outpatient behavioral health coverage and a protection so a COLA increase does not cut off benefits mid-year."
+   ],
+   "benefits": [
+    {
+     "benefit": "Property tax exemption: Clause 22 (10% or higher)",
+     "category": "property_tax",
+     "min_rating": "10%",
+     "details": "Veterans with a service-connected disability of 10% or more, Purple Heart recipients, Gold Star parents, and certain surviving spouses may get a $400 exemption (or the abatement of tax on $2,000 of valuation, whichever is greater) on the home they live in, if their town has accepted the clause. You must own and occupy the home as domicile on July 1 and file with the local board of assessors each year by April 1 or within 3 months after the tax bill is sent, whichever is later. Local towns may raise the amount under Clauses 22I and 22J.",
+     "source_url": "https://www.mass.gov/info-details/local-property-tax-exemptions-for-veterans",
+     "source_title": "Local Property Tax Exemptions for Veterans (EOVS); G.L. c. 59, s. 5, Clause Twenty-second",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Property tax exemption: Clauses 22A, 22B, 22C and 22F (loss of limb, paraplegia, specially adapted housing)",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "These are condition-based tiers, not rating-based: $750 for loss of use of one foot or hand, loss of one eye, a Medal of Honor, DSC, Navy Cross or Air Force Cross, or former prisoner of war (22A); $1,250 for loss of both feet, hands or eyes (22B); $1,500 for permanent and total disability with VA specially adapted housing assistance (22C). Clause 22F covers veterans who are paraplegic or 100% disabled for service-connected blindness, and the statute text lists no dollar amount for it. Apply to the local assessors; the exemption continues for an unremarried surviving spouse who stays an owner and occupant of the home.",
+     "source_url": "https://www.mass.gov/info-details/local-property-tax-exemptions-for-veterans",
+     "source_title": "Local Property Tax Exemptions for Veterans (EOVS); G.L. c. 59, s. 5, Clauses 22A-22F",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Property tax exemption: Clause 22E (100% service-connected)",
+     "category": "property_tax",
+     "min_rating": "100%",
+     "details": "Veterans with a 100% service-connected disability rating determined by the VA may get a $1,000 exemption (or the abatement on $6,000 of valuation, whichever is greater) on their domicile. It continues for an unremarried surviving spouse who remains owner and occupant. Whether a TDIU-only or P&T designation qualifies is not stated on any official page we found, so confirm with your assessors. Apply to the local assessors by April 1 or within 3 months after the bill is sent.",
+     "source_url": "https://malegislature.gov/Laws/GeneralLaws/PartI/TitleIX/Chapter59/Section5",
+     "source_title": "G.L. c. 59, s. 5, Clause Twenty-second E; EOVS Local Property Tax Exemptions for Veterans",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Optional local increases (Clauses 22I, 22J) and Clause 22D surviving spouse",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "A city or town may vote to adopt Clause 22I (annual cost of living increase) and Clause 22J (an extra exemption of up to 100% of your regular amount; for example a 22E exemption could go from $1,000 to $2,000). Both are local options, so the amount depends on your town, and the taxable value cannot fall below 10% of full value. Clause 22D gives surviving spouses of those who died from a service-related injury or illness, or are missing in action, a full exemption on the home.",
+     "source_url": "https://www.mass.gov/info-details/ask-dls-hero-act",
+     "source_title": "Ask DLS: HERO Act; G.L. c. 59, s. 5, Clauses 22D, 22I, 22J",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Vehicle registration and driver license fee waiver",
+     "category": "vehicle",
+     "min_rating": "100% P&T or TDIU",
+     "details": "Under the HERO Act the RMV waives registration fees on any or all vehicles and driver license transaction fees for veterans whom the VA rates 100% or deems unemployable due to service-connected disability. The veteran must be listed as an owner. Special plate fees, reinstatement fees, title and sales tax fees, permit and road test fees, and Mass ID fees are still charged. Ask the RMV how to show your VA letter.",
+     "source_url": "https://www.mass.gov/info-details/disabled-veteran-fee-and-tax-exemptions",
+     "source_title": "Disabled veteran fee and tax exemptions (Massachusetts RMV)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Motor vehicle excise tax exemption (one vehicle)",
+     "category": "vehicle",
+     "min_rating": "100% P&T or TDIU",
+     "details": "Disabled veterans do not pay excise tax on one passenger vehicle or pickup truck that they own and use for non-commercial purposes. Eligibility is now based on a VA finding of a 100% rating or unemployability due to service-connected disability, not the RMV Medical Advisory Board. Apply to your local board of assessors with VA certification within 3 years of the excise due date or 1 year of payment, whichever is later, per the DLS guidance (which predates the HERO Act change).",
+     "source_url": "https://www.mass.gov/info-details/ask-dls-hero-act",
+     "source_title": "Ask DLS: HERO Act; Ask DLS: Motor Vehicle Excise Exemptions for Veterans; RMV Disabled veteran fee and tax exemptions",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Disabled Veteran plates and one-vehicle sales tax exemption",
+     "category": "vehicle",
+     "min_rating": "60%",
+     "details": "DV plates are for Massachusetts resident veterans who are primary owner of a registered passenger vehicle, have permanent disabled parking privileges, and have at least a 60% service-connected rating, with conditions totaling 60% that affect walking. Veterans with DV plates (or a qualifying Purple Heart plate) do not pay sales tax on one passenger vehicle or pickup truck bought for non-commercial use. Apply through the RMV with your VA disability breakdown letter.",
+     "source_url": "https://www.mass.gov/info-details/disabled-veteran-fee-and-tax-exemptions",
+     "source_title": "Disabled veteran fee and tax exemptions (Massachusetts RMV)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State park parking: daily fee waiver for DV plates",
+     "category": "recreation",
+     "min_rating": "60%",
+     "details": "Daily parking fees are waived at all DCR facilities for vehicles with disabled veteran license plates, Purple Heart plates, or disability plates or placards. Veterans with other RMV veteran plates can use designated veterans-only spaces at several DCR sites, first come first served. No separate application is listed; you need the plates.",
+     "source_url": "https://www.mass.gov/guides/parking-at-massachusetts-state-parks",
+     "source_title": "Parking at Massachusetts State Parks (DCR)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Hunting and fishing licenses (no veteran-specific waiver found)",
+     "category": "recreation",
+     "min_rating": "varies",
+     "details": "The 2026 MassWildlife fee schedule lists free licenses only for residents who are paraplegic, blind, intellectually disabled (fishing), or paraplegic (hunting and sporting), plus age-based discounts; no waiver for disabled veterans as such is listed. A paraplegic veteran qualifies under the paraplegic category with pre-approval from MassWildlife. Bills to give disabled veterans free licenses have been filed but we found no enacted law.",
+     "source_url": "https://www.mass.gov/info-details/license-types-and-fees",
+     "source_title": "License types and fees (MassWildlife)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State college and university tuition waiver for veterans",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Massachusetts veterans (as defined in G.L. c. 4, s. 7, clause 43) who are legal residents and not in default on federal loans may receive a full or partial tuition waiver for state-supported undergraduate degree or certificate courses at public colleges and universities, on a space-available basis. No disability rating is required. Campus fees are not included. Contact the school's veterans representative or financial aid office. Dependents of living disabled veterans have no state waiver we could find; the Public Service Scholarship covers children of veterans killed in action or who died from service.",
+     "source_url": "https://www.mass.gov/info-details/veteran-educational-benefits",
+     "source_title": "Veteran Educational Benefits (EOVS); Categorical Tuition Waiver (Dept. of Higher Education); G.L. c. 15A, s. 19",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State income tax: military retirement and VA compensation",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Massachusetts has an income tax, but U.S. military retirement pay is excluded from state gross income under G.L. c. 62, s. 2(a)(2)(E). VA disability compensation, pensions and GI benefits are exempt from state taxation under 38 U.S.C. 5301. Nothing to apply for; leave these amounts out of Massachusetts income.",
+     "source_url": "https://budget.digital.mass.gov/govbudget/fy26/tax-expenditure-budget/personal-income-tax/exclusions-from-gross-income/1-029/",
+     "source_title": "Tax Expenditure Budget items 1.029 and 1.025 (FY26)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Civil service veterans preference",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "Under G.L. c. 31, s. 26 disabled veterans are placed first on civil service eligible lists, ahead of other veterans, and a disabled veteran is retained in employment ahead of all other persons including veterans. Veterans also get two points added to promotional exam scores. The statute does not set a minimum rating; the Civil Service Commission defines disabled veteran, so confirm your status when you apply. Apply through the state Civil Service examination and application process.",
+     "source_url": "https://www.mass.gov/info-details/civil-service-overview-for-veterans",
+     "source_title": "Civil Service overview for veterans; G.L. c. 31, s. 26",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veteran annuity ($2,500 a year)",
+     "category": "other",
+     "min_rating": "100%",
+     "details": "Veterans with a 100% service-connected disability, or compensated at 100% by the VA, who are Massachusetts residents and not dishonorably discharged may receive a $2,500 annuity once a year in August. Apply to EOVS with the application, direct deposit and W-9 forms, DD-214 and VA rating decision; applications and updates must be approved by June 30. Surviving spouses may continue after remarriage effective July 1, 2025.",
+     "source_url": "https://www.mass.gov/how-to/how-to-apply-for-veteran-annuity-benefits",
+     "source_title": "How to Apply For Veteran Annuity Benefits (EOVS)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Chapter 115 needs-based benefits",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Chapter 115 is a means-tested program of financial, medical and dental help for food, shelter, clothing, fuel and medical care for eligible veterans and dependents, run by EOVS. It depends on income and family size, not on a VA rating. HERO Act 2024 added outpatient behavioral health coverage. Apply through your local Veteran Service Officer; use the EOVS benefit estimator for a starting point.",
+     "source_url": "https://www.mass.gov/info-details/massvets-veteran-financial-benefits",
+     "source_title": "MASSVETS Veteran Financial Benefits (EOVS)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Massachusetts Veterans Homes (Chelsea and Holyoke)",
+     "category": "other",
+     "min_rating": "none",
+     "details": "State-run long-term care homes in Chelsea and Holyoke accept veterans who are Massachusetts residents when applying, meet the state veteran definition (including 90 days active duty with a non-dishonorable discharge, or a service-connected disability award), and are medically and behaviorally suitable for nursing-level care. Bring your DD-214 to admissions: Chelsea (617) 887-7146, Holyoke (413) 552-4764.",
+     "source_url": "https://www.mass.gov/info-details/eligibility-requirements-for-veterans-homes-0",
+     "source_title": "Eligibility Requirements for Veterans Homes",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "MI",
    "name": "Michigan",
    "slug": "michigan",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Michigan Veterans Affairs Agency (MVAA)",
+    "url": "https://www.michigan.gov/mvaa"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "The Michigan disabled veterans property tax exemption (MCL 211.7b) was NOT replaced by a credit. It still exists and exempts the homestead entirely; the older assumption that it was phased out in 2025 is wrong. What changed (2023 PA 150) is that for taxes levied on or after Jan 1, 2025 the exemption continues without re-filing until you rescind it or the assessor denies it.",
+    "Qualifying tests for the property tax exemption are (1) VA permanent and total at the 100% rate, (2) a VA specially adapted housing certificate, or (3) VA individually unemployable (TDIU). A 100% rating that is not permanent and total, and ratings below 100% without TDIU, do not qualify. Attach a letter from the VA, not from a county veterans office.",
+    "The statute says 'homestead,' and the State Tax Commission FAQ says homestead and principal residence are not interchangeable terms, while the Treasury web page says 'principal residence.' Ask your assessor if you own several properties. Title must be held by you alone or jointly with your spouse.",
+    "File Form 5107 with the local city or township assessor, not the county. The statute window is after Jan 1 and before Dec 31 of the year claimed, but the MVAA advises filing in January or February. A newly bought home is prorated by days owned and occupied unless closing documents are provided.",
+    "Veterans below the exemption threshold may still claim the MI-1040CR-2 homestead property tax credit with their income tax return (maximum $1,900 for 2025, household resources under $71,500). It is a refundable-style credit, so file even if you owe no income tax.",
+    "Disabled veteran plate tiers: 100% (or TDIU) gets a non-expiring plate with no registration fees; 50% to 90% gets the plate but pays regular fees. A disabled veteran plate is not a parking permit. To get disability parking on the plate, also file the MV-110.",
+    "The Recreation Passport exemption for state parks follows the license plate, not the person. If your car has the Disabled veteran plate you are exempt; a veteran without that plate on the vehicle is not.",
+    "Free hunting and fishing licenses require a 100% permanent and total rating (not blindness-based) or TDIU, and cover only licenses that do not need a separate application (not drawings). A summary page from the MVAA says 'veterans with a disability'; the DNR rule controls.",
+    "Children of Veterans Tuition Grant is for the child, not the veteran, requires total and permanent disability, ends at age 26, and is capped at $2,800 per year and $11,200 total.",
+    "Pending bills (not law as of this check): Senate Bill 821 (2026) would create disabled veteran lifetime hunting and fishing licenses starting July 1, 2027, and House Bill 5885 (2026) would clarify when assessors deny the disabled veteran exemption. Check legislature.mi.gov before relying on either.",
+    "Michigan has a state income tax. Military retirement pay is exempt, but a veteran should confirm treatment of VA disability compensation on their own return; Michigan income tax starts from federal AGI, and VA compensation is not included in federal AGI."
+   ],
+   "benefits": [
+    {
+     "benefit": "Disabled Veterans Homestead Property Tax Exemption",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "Real property used and owned as a homestead by a disabled veteran is fully exempt from property tax collection. A disabled veteran must be a Michigan resident, honorably discharged, and meet one of three tests: VA determination of permanent and total disability at the 100% rate, a VA certificate of pecuniary assistance for specially adapted housing, or a VA rating of individually unemployable (TDIU). File State Tax Commission Form 5107 with the local assessor (city or township) with a VA letter; for taxes levied on or after Jan 1, 2025 the exemption stays in effect without re-filing until you rescind it or the assessor denies it. There is no income or asset test.",
+     "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7b",
+     "source_title": "MCL 211.7b (General Property Tax Act, Sec. 7b)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Surviving spouse continuation of homestead exemption",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "An unremarried surviving spouse of a disabled veteran who was eligible for the exemption immediately before death keeps the exemption on any homestead the spouse owns and uses, including a home acquired after the death. It ends if the spouse remarries. The spouse files Form 5107 with the local assessor and must be a Michigan resident; title must be held solely by the spouse.",
+     "source_url": "https://www.legislature.mi.gov/Laws/MCL?objectName=mcl-211-7b",
+     "source_title": "MCL 211.7b(1)(b) and (4)(b)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Homestead Property Tax Credit for Veterans (MI-1040CR-2)",
+     "category": "property_tax",
+     "min_rating": "any service-connected",
+     "details": "A veteran with a service-connected disability (or a surviving spouse of a veteran deceased in service) can claim an income tax credit for property tax on the homestead using Form MI-1040CR-2, even if no income tax is owed (it is paid as a refund). The 2025 form caps the credit at $1,900, bars homes with taxable value over $165,400, and bars household resources over $71,500. The credit size depends on your disability percentage; the percent-to-allowance table is in the Treasury instructions. Treasury advises also computing the regular MI-1040CR and filing whichever is larger.",
+     "source_url": "https://www.michigan.gov/taxes/-/media/Project/Websites/taxes/Forms/IIT/TY2025/MI-1040CR2.pdf",
+     "source_title": "2025 MI-1040CR-2 Homestead Property Tax Credit Claim for Veterans and Blind People",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Permanent Disabled Veteran license plate (no registration fee)",
+     "category": "vehicle",
+     "min_rating": "100% P&T or TDIU",
+     "details": "A veteran with an honorable discharge and a VA 100% combined rating, or a lower rating with a 100% unemployable rating, can get a Permanent Disabled Veteran plate with non-expiring registration and no registration fees. Only one disabled veteran plate per applicant; the vehicle must be a non-commercial passenger vehicle, pickup or van titled to the applicant. Apply at any Secretary of State office or by mail with discharge papers and a VA Rating Decision or Summary of Benefits letter. The MVAA page also mentions a one-time $5 administrative fee; confirm with the Secretary of State.",
+     "source_url": "https://www.michigan.gov/sos/-/media/Project/Websites/sos/Vehicle/License-Plates/Application-for-Veteran-License-plate-BDVR-87.pdf",
+     "source_title": "Application for Veteran License Plate (BDVR-87)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Standard Disabled Veteran license plate (50% to 90%)",
+     "category": "vehicle",
+     "min_rating": "50%",
+     "details": "Veterans with a VA rating of 50 to 90% (with an honorable discharge) can get a Standard Disabled Veteran plate. Regular registration fees apply and registration expires on the applicant's birthday. A disabled veteran plate is not automatically a disability (parking) plate; to get one that is also a disability plate you must add the MV-110 Disability License Plate Application.",
+     "source_url": "https://www.michigan.gov/sos/-/media/Project/Websites/sos/Vehicle/License-Plates/Application-for-Veteran-License-plate-BDVR-87.pdf",
+     "source_title": "Application for Veteran License Plate (BDVR-87)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free Recreation Passport (state parks) with disabled veteran plate",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "A Recreation Passport is not required for a vehicle registered with a Michigan Disabled veteran plate (or Ex-POW or Medal of Honor plate). The DNR says the exemption is tied to the plate and registration, not to the person, so you need the plate on the vehicle you drive into the park. Because both permanent and standard disabled veteran plates exist, the 50% starting point follows the plate rules; confirm park entry with the DNR.",
+     "source_url": "https://www.michigan.gov/dnr/faqs/recreation-passport/rp",
+     "source_title": "Recreation Passport FAQs (Michigan DNR)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free hunting and fishing licenses",
+     "category": "recreation",
+     "min_rating": "100% P&T or TDIU",
+     "details": "Michigan resident veterans with a disability get any hunting or fishing license that does not require a separate application free of charge if the VA has determined them permanently and totally disabled at the 100% rate (for disabilities other than blindness) or rated individually unemployable. Carry the VA documentation when buying the license and while afield. Licenses obtained through a drawing or separate application are not covered.",
+     "source_url": "https://www.michigan.gov/dnr/things-to-do/fishing/license-info",
+     "source_title": "Fishing and hunting license information (Michigan DNR)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Children of Veterans Tuition Grant",
+     "category": "education",
+     "min_rating": "100% P&T",
+     "details": "Undergraduate tuition grant for the natural or adopted child (age 16 up to 26) of a qualified Michigan veteran who died, is missing in action, or became totally and permanently disabled from a service-connected illness or injury per the VA. Maximum $2,800 per academic year ($1,400 per semester full-time), up to 8 semesters or $11,200 lifetime. Apply once through the MiSSG Student Portal and file the FAFSA every year; the 2026-27 application deadline is June 30, 2027. Student needs at least a 2.25 GPA and half-time enrollment.",
+     "source_url": "https://www.michigan.gov/mistudentaid/programs/children-of-veterans-tuition-grant",
+     "source_title": "Children of Veterans Tuition Grant (Michigan Student Aid)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "In-state tuition for veterans",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Per the Michigan Veterans Affairs Agency, veterans and active-duty members receive in-state tuition regardless of their state of residency or duty status. This applies to veterans generally, not only disabled veterans. Ask the school's veterans certifying official how it is applied. Michigan has no statewide tuition waiver for disabled veterans themselves.",
+     "source_url": "https://www.michigan.gov/mvaa/quality-of-life/quality-of-life/state-of-michigan-veteran-benefits",
+     "source_title": "State of Michigan Veteran Benefits (MVAA)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement pay exempt from state income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Military retirement benefits paid to retirees of the U.S. armed forces for their service are exempt from Michigan individual income tax; deduct them on Schedule 1 to the extent included in AGI, and still report them on Schedule W. The MVAA page says military disability retirement pay received as a pension or similar allowance for injury or sickness from active service is not included in taxable income. Michigan has an income tax; civilian pay from the military does not qualify as military pay.",
+     "source_url": "https://www.michigan.gov/taxes/questions/iit/accordion/military/are-military-retirement-benefits-exempt-from-michigan-individual-income-tax",
+     "source_title": "Are military retirement benefits exempt from Michigan individual income tax? (Treasury)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State hiring veterans' preference",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "Under Civil Service Rule 3-8, a veteran (90 or more days of active duty, honorable discharge) gets 5 points added to a final passing exam score, and a disabled veteran (found eligible for VA or military disability compensation for a service-connected disability) gets 10 points. Where an agency screens by score instead, the add-on is 5 percent or 10 percent of the highest screening score. A spouse of a disabled veteran with a service-connected rating over 50 percent also gets 10. Preference is not a guarantee of a job, and you must register with Civil Service to receive it.",
+     "source_url": "https://www.michigan.gov/-/media/Project/Websites/mdcs/SPDOC/2009/CSCRule3_8VetsPrefSPDOC_0904a.pdf?rev=8955ee5962b047bbb0a82a7876328f1a",
+     "source_title": "Civil Service Commission Rule 3-8: Veterans' Preference",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Michigan Veterans Trust Fund emergency grants",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Discretionary emergency grants for veterans facing an unforeseen, short-term financial hardship that a grant can resolve. Applicants are Michigan residents, honorably discharged, generally with 180 days of wartime service (a separate program covers peacetime veterans age 65 and older). Apply through your county MVTF committee or call 1-800-MICH-VET; denials can be appealed to the MVTF Board of Trustees. Not tied to a disability rating.",
+     "source_url": "https://www.michigan.gov/mvaa/quality-of-life/emergency-assistance/panel-content",
+     "source_title": "Michigan Veterans Trust Fund (MVAA)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Michigan Veteran Homes (state nursing care)",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Three state veteran homes (Grand Rapids, Marquette, Chesterfield Township) provide skilled nursing care. Eligibility includes honorably discharged veterans eligible for VA health care or VA long-term nursing care financial assistance, and certain dependents; Michigan residency is not required. Apply by contacting a home directly or a Veteran Service Officer.",
+     "source_url": "https://www.michigan.gov/mvh/eligibility",
+     "source_title": "Michigan Veteran Homes - Eligibility",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "MN",
    "name": "Minnesota",
    "slug": "minnesota",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Minnesota Department of Veterans Affairs",
+    "url": "https://www.mn.gov/mdva/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "The homestead market value exclusion (Minn. Stat. 273.13, subd. 34) needs a service-connected rating of 70 percent or more and an honorable discharge. At 70 to 99 percent, $150,000 of the home's market value is excluded. A 'total (100 percent) and permanent disability' excludes $300,000. The statute and the Revenue page do not mention TDIU, so a TDIU rating by itself is not clearly enough for the $300,000 tier; ask your county assessor.",
+    "This is a reduction in taxable value, not a full tax exemption. The home must be classified as your homestead and you must own and occupy it on December 31. The exclusion does not stack with the regular homestead market value exclusion.",
+    "Apply to your county assessor by December 31 of the first assessment year you want the exclusion (taxes payable the next year). Some county forms list earlier dates (for example December 15), so call the county before the end of November. Bring your DD-214 and VA rating documentation; a County Veterans Service Officer can help.",
+    "On a farm homestead, only the house, garage, and one surrounding acre count toward the exclusion.",
+    "If a veteran with the $300,000 exclusion dies, it carries over to the surviving spouse while the spouse holds title and lives in the home; it ends on remarriage or if the property is disposed of. A spouse receiving Dependency and Indemnity Compensation (DIC) can also qualify under the Revenue page. A VA-approved primary family caregiver can claim it if the veteran owns no Minnesota homestead.",
+    "The vehicle registration exemption (Minn. Stat. 168.012, subd. 13) uses the definition of a veteran with a 'total service-connected disability': a 100 percent total and permanent rating shown by a VA (or military retirement board) document. It covers passenger automobiles, one-ton pickups, motorcycles, and recreational vehicles, up to two vehicles at a time. Personalized-plate fees and required special-plate donations are not waived.",
+    "Free hunting and fishing licenses require a 100 percent service-connected disability. The DNR page says 'proof of a 100% service-related disability'. It does not say whether a TDIU rating counts. A federal duck stamp is still required for waterfowl. The free permanent angling license is issued only at the DNR License Center in St. Paul.",
+    "The free state park vehicle permit is different: any level of service-connected disability qualifies (Minn. Stat. 85.053, subd. 10). Show a VA determination letter or other official validation each year.",
+    "VA disability compensation is not part of federal adjusted gross income, and Minnesota starts from federal AGI, so it is not taxed. No Minnesota page found says this in so many words. Military retirement pay is a full subtraction, but you cannot also claim the Credit for Past Military Service in the same year.",
+    "Minnesota state-job preference uses points on open exams: 10 points for a veteran and 15 for a disabled veteran (compensable service-connected disability). A disabled veteran gets the points only after passing the exam without them. Hiring under the newer applicant-pool system lists disabled veterans ahead of other applicants instead of using points.",
+    "The Minnesota GI Bill pays up to $5,000 per state fiscal year and $15,000 in a lifetime, and must be applied for through the state program. The Survivors and Dependents Education Program in Minn. Stat. 197.75 is for dependents of veterans who died from service; the 2026 amendments (Laws 2026 ch. 49) could not be read, so check the current text.",
+    "Minnesota Veterans Homes require an honorable discharge, Minnesota residency, and, under the statute, applicants must be 'without adequate means of support' unless the discretionary payment path in Minn. Stat. 198.03 applies."
+   ],
+   "benefits": [
+    {
+     "benefit": "Homestead market value exclusion, $150,000 (70 percent or more)",
+     "category": "property_tax",
+     "min_rating": "70%",
+     "details": "If you were honorably discharged and have a service-connected disability rating of 70 percent or more, $150,000 of your homestead's market value is excluded from taxation. You must own and occupy the home as your homestead on December 31. Apply to the county assessor by December 31 of the first assessment year you want it; the exclusion cannot be combined with the regular homestead market value exclusion. A 100 percent rating that is not clearly permanent and total falls into this tier.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/273.13",
+     "source_title": "Minn. Stat. 273.13, subd. 34 (Homestead of veteran with a disability); Minnesota Department of Revenue, Market Value Exclusion for Veterans with a Disability (updated Sept. 9, 2026)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Homestead market value exclusion, $300,000 (100 percent total and permanent)",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "Veterans with a 'total (100 percent) and permanent disability' get $300,000 of market value excluded from their homestead. You need an honorable discharge and must own and occupy the homestead on December 31. Apply to the county assessor by December 31. The statute does not mention TDIU, so a TDIU-only rating is not clearly covered; ask your assessor before assuming it counts.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/273.13",
+     "source_title": "Minn. Stat. 273.13, subd. 34(b); Minnesota Department of Revenue, Market Value Exclusion for Veterans with a Disability",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Homestead exclusion for surviving spouses and primary family caregivers",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "If a veteran who qualified for the $300,000 exclusion dies, it carries over to the surviving spouse, who must hold title and live in the home; it ends on remarriage or when the property is disposed of. The Revenue page also lists a surviving spouse who receives DIC, and says the veteran's disability status is not a factor in that case. A primary family caregiver approved by the VA may qualify if the veteran owns no Minnesota homestead. Apply to the county assessor by December 31. The amount for a DIC spouse and the caregiver tiers should be confirmed with the assessor.",
+     "source_url": "https://www.revenue.state.mn.us/market-value-exclusion-veterans-disability",
+     "source_title": "Minnesota Department of Revenue, Market Value Exclusion for Veterans with a Disability; Minn. Stat. 273.13, subd. 34(c)-(e)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Registration tax, plate and filing fee exemption for veterans with a total service-connected disability",
+     "category": "vehicle",
+     "min_rating": "100% P&T",
+     "details": "A veteran with a 100 percent total and permanent service-connected disability rating shown by VA documentation is exempt from registration tax, administrative fees, filing fees and surcharges, and plate and validation sticker fees on a passenger automobile, one-ton pickup, motorcycle, or recreational vehicle. The exemption applies to no more than two vehicles at a time, and to vehicles jointly registered with a spouse or domestic partner. Personalized-plate fees and required special-plate donations are not waived. The Driver and Vehicle Services application procedure and disabled-veteran parking privileges could not be confirmed.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/168.012",
+     "source_title": "Minn. Stat. 168.012, subd. 13 (Disabled veterans); Minn. Stat. 171.01, subd. 51 (definition)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free small game, deer, and permanent angling licenses (100 percent disabled)",
+     "category": "recreation",
+     "min_rating": "100%",
+     "details": "Resident veterans with a 100 percent service-connected disability can get a free small game license, one free deer license a year (firearms, archery, or muzzleloader), and a free permanent angling license with no trout stamp. A permanent card lets you get the small game and deer licenses free each year. The permanent angling license is issued only by the DNR License Center in St. Paul. Federal duck stamps are still required. The DNR does not state whether TDIU counts.",
+     "source_url": "https://www.dnr.state.mn.us/licenses/military/print.html",
+     "source_title": "Minnesota DNR, Military benefits (Resident Veterans); Minn. Stat. 97A.441, subds. 5, 6, 6a",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free annual state park vehicle permit (any service-connected disability)",
+     "category": "recreation",
+     "min_rating": "any service-connected",
+     "details": "The DNR issues an annual state park vehicle permit at no charge to any veteran with any level of service-connected disability (Minn. Stat. 85.053, subd. 10). Show a veteran award letter, VA healthcare ID card, DOD privilege card, or a Disabled Vet license plate to park staff. The statute says you must present a yearly federal determination letter or other official validation. Purple Heart recipients and active military also get free permits under subd. 8.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/85.053",
+     "source_title": "Minn. Stat. 85.053, subds. 8 and 10; Minnesota DNR, Military benefits",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Minnesota GI Bill (education and training grant)",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Veterans who served honorably in any branch at any time, and non-veterans with 5 or more cumulative years of honorable Minnesota National Guard or reserve service (some on or after Sept. 11, 2001), can receive up to $5,000 per state fiscal year and $15,000 in a lifetime for college, on-the-job training or apprenticeship, or licensing and certification. You must be a Minnesota resident, enrolled, making satisfactory progress, and have filed the FAFSA. Surviving spouses and children of a service member who died from service, and spouses and children of a service member with a total and permanent service-connected disability, are also covered if eligible for federal chapter 33 or 35 benefits. Apply through the state MN GI Bill program run by MDVA.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/197.791",
+     "source_title": "Minn. Stat. 197.791 (Minnesota GI Bill); MDVA MN GI Bill page (not readable by our tools)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Survivors and Dependents Education Program (tuition waiver and stipend)",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "Children and surviving spouses of a deceased veteran who meet the statute's definitions are admitted free of tuition to Minnesota public institutions until a bachelor's degree, and an educational stipend of $750 a year is paid to each eligible child and spouse. The statute was amended in 2025 and 2026 (Laws 2026 ch. 49), and the current definition of the veteran's death or disability that qualifies could not be read. Confirm eligibility with MDVA before relying on this.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/197.75",
+     "source_title": "Minn. Stat. 197.75 (Survivors and dependents education)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement pay subtraction from state income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Minnesota taxes income, but federally taxable pension or retirement pay from the federal government for military service is a subtraction, with no dollar cap in the statute (Minn. Stat. 290.0132, subd. 21). The subtraction applies to people who do not claim the Credit for Past Military Service. Claim it on Schedule M1M. VA disability compensation is not in federal adjusted gross income, so it is not taxed; no Minnesota page found states this directly.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/290.0132",
+     "source_title": "Minn. Stat. 290.0132, subd. 21 (Military service pension; retirement pay)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Credit for Past Military Service (state income tax credit)",
+     "category": "income_tax",
+     "min_rating": "100%",
+     "details": "A person who has served at least 20 years, has a 100 percent service-connected disability rating, or is eligible for certain military retirement pay, and who separated before the end of the tax year, can claim a credit of $750, reduced by 10 percent of federal adjusted gross income above $30,000. You cannot take this credit and the military retirement subtraction together. Claim it on the Minnesota income tax return.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/290.0677",
+     "source_title": "Minn. Stat. 290.0677, subds. 1a and 2 (Credit for past military service)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State job veterans preference (points and applicant-pool ranking)",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "On open civil service exams, a veteran who passes gets 10 points, and a disabled veteran with a compensable service-connected disability gets 15 points; on promotional exams a disabled veteran with a permanent rating of 50 percent or more gets 5 points for a first promotion (Minn. Stat. 197.455). In the state's applicant-pool system (Minn. Stat. 43A.11), disabled veterans are listed ahead of all other applicants, then other veterans, and the top five recently separated veterans must get an interview. A surviving spouse, or the spouse of a disabled veteran who cannot qualify, may use the preference. Claim it when you apply.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/197.455",
+     "source_title": "Minn. Stat. 197.455 (Veterans preference in civil service); Minn. Stat. 43A.11",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Minnesota Veterans Homes",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Minnesota runs state veterans homes for honorably discharged veterans who are Minnesota residents (statute: served in a Minnesota regiment or credited to Minnesota). Spouses and surviving spouses must be at least 55. Applicants must be without adequate means of support unless the discretionary payment path in Minn. Stat. 198.03 applies, and each home has its own application and waiting list. MDVA says residents must need skilled nursing care at some homes; confirm with the specific home.",
+     "source_url": "https://www.revisor.mn.gov/statutes/cite/198.022",
+     "source_title": "Minn. Stat. 198.022 (Eligibility for admission); MDVA Veterans Homes admissions (page not readable by our tools)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "MS",
    "name": "Mississippi",
    "slug": "mississippi",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Mississippi Veterans Affairs (MSVA)",
+    "url": "https://www.msva.ms.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "The Mississippi homestead exemption for veterans is for an honorably discharged veteran with a 'service-connected, total disability.' The statute (Miss. Code 27-33-67(2)(a)) does not say 'permanent,' and it does not list TDIU. The Department of Revenue rule asks for proof such as the Veteran's Consent of Release (Form 72-042). Whether a TDIU-only rating (100% pay level, not a 100% schedular rating) is accepted should be confirmed with your county Tax Assessor before you rely on it.",
+    "Apply for the homestead exemption in person at the county Tax Assessor's office, only between January 1 and April 1. You must own the home and live in it as your primary residence on January 1. Ownership must be on record before January 1, and the deed filed with the Chancery Clerk before January 7. Missing the April 1 date means no exemption for that year.",
+    "You can lose the homestead exemption, retroactively, if you or your spouse did not file or pay Mississippi income tax on time, filed as a nonresident, or did not properly register your vehicles. The Department of Revenue says you may have to repay the exemption. Change of VA benefit status, marriage, divorce, death, or a deed change can force you to re-apply.",
+    "A surviving spouse keeps the total homestead exemption only while unremarried. Department of Revenue rule 3.03 says that from January 1, 2026, the unremarried surviving spouse of a person who qualifies for the total-disability exemption also qualifies. Bills in 2025 and 2026 to widen surviving-spouse rules (HB 714, SB 2808, SB 3120) died in committee.",
+    "The state's $1 disabled veteran plate has TWO routes: a rating of 100% permanent, or at least 70% NONPERMANENT service-connected disability (Miss. Code 27-19-53, as amended effective July 1, 2025). A 70% nonpermanent holder must show an updated VA benefits letter at each renewal. Older MSVA pages that say only '100% permanent or TDIU permanent' are out of date.",
+    "The plate is $1 each for up to 2 passenger vehicles or pickup trucks plus 1 motorcycle, and those vehicles are exempt from ad valorem and privilege taxes. A third vehicle pays regular fees and taxes. Proof of ownership of each vehicle is required. The privilege exemption does not cover commercial vehicles; the statute says it applies only to passenger vehicles, pickups and motorcycles.",
+    "The hunting and fishing exemption needs a VA letter stating 100% service-connected disability. You are not required to buy a license, but you must carry proof of age, residency and disability status while hunting or fishing. MDWFP also sells an optional 'Disabled Exempt' card (fee listed as $5.79 on the form revised 7/2024) if you want a card instead of carrying papers.",
+    "Mississippi has NO tuition waiver for veterans with a service-connected disability or for their spouses and children. Bills to create one (HB 1226, SB 2058, SB 2444 in 2025) died in committee. The only veteran tuition rule is that nonresident veterans and GI Bill-eligible people pay in-state tuition (Miss. Code 37-103-25). The only dependent scholarship is for children of POW/MIA service members (37-108-1).",
+    "State employment preference is a list-order system. The State Personnel Board defines a 'disabled veteran' as a veteran certified by the VA within the last 90 days as having a service-connected rating of at least 30%, or a Purple Heart recipient. You must submit current VA proof for disabled veteran status. The sources I found show points (4 for veterans, 8 for disabled veterans) only in the reduction-in-force retention formula.",
+    "Mississippi has a state income tax (4.4% on taxable income over $10,000 per the Department of Revenue FAQ; the 2025 return instructions show scheduled reductions through 2030). But VA payments are not taxed, and retirement income from federal, state and private systems, which includes military retirement, is exempt in total per the 2025 return instructions. Separation pay and early plan distributions are not exempt.",
+    "State park and state lake discounts do not need a disability rating: the 15% park camping and lodging discount covers all veterans, and state lake 'exempt' permits are for ages 62+, 100% disabled, active service members or military veterans. Park proof of 100% disability is a VA letter stating '100% Service Connected Disability.'",
+    "A 2026 bill (HB 420, signed March 20, 2026, effective July 1, 2026) adds a total homestead exemption for honorably discharged veterans age 85 or older, starting with exemptions claimed in 2027, and extends it to unremarried surviving spouses. This is separate from the service-connected disability exemption."
+   ],
+   "benefits": [
+    {
+     "benefit": "Homestead exemption - total (service-connected total disability)",
+     "category": "property_tax",
+     "min_rating": "100%",
+     "details": "Honorably discharged veterans with a service-connected, total disability, and their unremarried surviving spouses, are exempt from all ad valorem (property) tax on their homestead (Tier 3 of the state homestead system). You must own and occupy the home as your primary residence on January 1, and apply in person at the county Tax Assessor's office between January 1 and April 1; once allowed, you generally do not re-file each year unless something changes. Proof is Department of Revenue-approved VA documentation, for example the Veteran's Consent of Release (Form 72-042). Special assessments and fees that are not ad valorem tax may still be due; confirm with your Tax Assessor.",
+     "source_url": "https://www.dor.ms.gov/county-services/homestead-exemption",
+     "source_title": "Homestead Exemption - Mississippi Department of Revenue",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Homestead exemption - TDIU or non-100% schedular rating (unclear)",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "The statute and rule say 'service-connected, total disability' and do not name TDIU or 'permanent and total.' A 2025 Attorney General opinion summary says civilian employability is irrelevant and only documentation of a service-connected total disability and honorable discharge is needed, but I could only find that opinion through a non-official summary. Ask your county Tax Assessor, in writing, whether a TDIU rating is accepted before relying on it.",
+     "source_url": "https://www.sos.ms.gov/adminsearch/ACCode/00000161c.pdf",
+     "source_title": "35 Miss. Admin. Code Part VI, Rule 3.03 (homestead applicants, total disability proof) - Secretary of State",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Homestead exemption - veteran age 90+ (85+ from 2027)",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "An honorably discharged veteran who is at least 90 on January 1 gets a full ad valorem exemption on the homestead, and so does the unremarried surviving spouse. HB 420 (2026, effective July 1, 2026) lowers the age to 85 for exemptions claimed in 2027 and later. Documents are a birth certificate or state ID and the DD-214; apply at the county Tax Assessor between January 1 and April 1.",
+     "source_url": "https://billstatus.ls.state.ms.us/documents/2026/html/HB/0400-0499/HB0420SG.htm",
+     "source_title": "HB 420 (As Sent to Governor), 2026 Regular Session, amending Miss. Code 27-33-75",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled American Veteran license plates - $1 each",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "A Mississippi resident rated 100% permanent, OR at least 70% nonpermanent, service-connected can buy up to 2 passenger vehicle or pickup plates and 1 motorcycle plate per year for $1 each (Miss. Code 27-19-53). A 100% permanent rating may have the plate labeled '100% Disabled Veteran' or 'Disabled Veteran'; a 70% nonpermanent holder must show an updated VA benefits letter every renewal. Apply at the county Tax Collector with VA verification and proof of ownership; the unremarried surviving spouse can keep the plates.",
+     "source_url": "https://billstatus.ls.state.ms.us/documents/2025/html/SB/2001-2099/SB2052SG.htm",
+     "source_title": "SB 2052 (As Sent to Governor), 2025 Regular Session, amending Miss. Code 27-19-53",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Vehicle ad valorem and privilege tax exemption (2 vehicles + 1 motorcycle)",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "Vehicles and the motorcycle that carry the $1 disabled veteran plates are exempt from all ad valorem and privilege taxes. The Department of Revenue says a qualified veteran may register up to 2 vehicles and 1 motorcycle this way; more vehicles pay regular fees and taxes. Same threshold as the plates: 100% permanent or at least 70% nonpermanent.",
+     "source_url": "https://www.dor.ms.gov/motor-vehicle/motor-vehicle-frequently-asked-questions",
+     "source_title": "Motor Vehicle Frequently Asked Questions - Mississippi Department of Revenue",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Hunting and fishing license exemption",
+     "category": "recreation",
+     "min_rating": "100%",
+     "details": "Residents with a total service-connected disability from the VA do not have to buy a hunting or fishing license (Miss. Code 49-7-5 and 49-7-9). You must carry proof of age, residency and disability status (a VA letter stating 100% service connected) while hunting or fishing. MDWFP also issues an optional Disabled Exempt card for a small fee; WMA user permits are waived for exempt users.",
+     "source_url": "https://www.mdwfp.com/licenses-permits/fishing-license-requirements",
+     "source_title": "Fishing License Requirements (Exemptions) - Mississippi Department of Wildlife, Fisheries, and Parks",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Optional MDWFP Disabled Exempt hunting/fishing card",
+     "category": "recreation",
+     "min_rating": "100%",
+     "details": "Instead of carrying papers, a 100% service-connected veteran can apply for a Disabled Exempt hunting/fishing license by mailing the MDWFP application, a current VA letter stating 100% service connected, and proof of Mississippi residency. The form revised 7/2024 lists the fee as $5.79. Veterans rated below 100% do not qualify for this exemption.",
+     "source_url": "https://www.mdwfp.com/sites/default/files/2024-07/Exempt%20License%20Application.pdf",
+     "source_title": "Application for Resident Exempt Hunting / Fishing License (Revised 7/2024)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State park 15% camping and lodging discount",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "Mississippi State Parks give a 15% discount off the camping and lodging rate to ages 62+, disabled, veterans and active service members (excluding holidays, special events and Buccaneer State Park Gulf View sites). Proof of status is required at check-in; for disability, a VA letter stating '100% Service Connected Disability.' This is a discount, not a free pass.",
+     "source_url": "https://www.mdwfp.com/parks-destinations/state-park-fees",
+     "source_title": "State Park Fees - Mississippi Department of Wildlife, Fisheries, and Parks",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State fishing lake 'exempt' permit rates",
+     "category": "recreation",
+     "min_rating": "100%",
+     "details": "State fishing lakes run by MDWFP charge reduced 'exempt' prices (for example annual boat launch/fishing $100 vs $125, annual fishing permit $35 vs $55, one-day camping $22 vs $25) for persons 62+, 100% disabled, active service members or military veterans. Veterans can show military veteran status; 100% disabled users use a VA letter stating 100% service connected.",
+     "source_url": "https://www.mdwfp.com/fishing-boating/state-fishing-lake-permit-fees",
+     "source_title": "State Fishing Lake Permit Fees - Mississippi Department of Wildlife, Fisheries, and Parks",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "In-state tuition for nonresident veterans and GI Bill users",
+     "category": "education",
+     "min_rating": "none",
+     "details": "A veteran as defined in Title 38, or a person entitled to Title 38 education benefits, is authorized in-state tuition at Mississippi public colleges (Miss. Code 37-103-25). There is no state tuition waiver for service-connected disabled veterans or their dependents; the only dependent scholarship is for children of POW/MIA service members. Contact the school's veterans office and the Mississippi VA State Approving Agency at (601) 576-4867.",
+     "source_url": "https://www.msva.ms.gov/state-benefits",
+     "source_title": "State Benefits for Veterans - Mississippi VA",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State income tax: VA disability pay and military retirement",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Mississippi has a state income tax, but it does not tax VA payments, and retirement income from federal, state and private retirement systems is exempt in total per the Department of Revenue's 2025 return instructions. Separation pay and early distributions are not exempt. National Guard and Reserve pay: the first $15,000 is excluded; combat-zone pay is exempt.",
+     "source_url": "https://www.dor.ms.gov/individual/individual-income-tax-frequently-asked-questions",
+     "source_title": "Individual Income Tax Frequently Asked Questions - Mississippi Department of Revenue",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State employment preference (disabled veteran listing and RIF points)",
+     "category": "employment",
+     "min_rating": "30%",
+     "details": "When state agencies get a list of eligible applicants, disabled veterans are listed before veterans at the top of the list. A disabled veteran is one certified by the VA within the last 90 days at 30% or more service connected, or a Purple Heart recipient (Miss. Code 25-9-301). In state layoffs, veterans get 4 points and disabled veterans 8 points toward the retention score. Submit VA proof when you apply on the State Personnel Board site.",
+     "source_url": "https://www.mspb.ms.gov/information-veterans",
+     "source_title": "Information for Veterans - Mississippi State Personnel Board",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Concealed carry permit fee exemption",
+     "category": "other",
+     "min_rating": "any service-connected",
+     "details": "Veterans with any service-connected disability are exempt from concealed weapon permit fees and renewal fees, if resident of Mississippi for 12 months immediately before applying (waivers for certain out-of-state permit holders, stationed military and retired law enforcement). Miss. Code 45-9-101. Details of the application are handled by the Department of Public Safety; this row cites the MSVA summary.",
+     "source_url": "https://www.msva.ms.gov/state-benefits",
+     "source_title": "State Benefits for Veterans - Mississippi VA",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans' Home Purchase Board home loan",
+     "category": "other",
+     "min_rating": "none",
+     "details": "The Veterans' Home Purchase Board makes below-market fixed-rate home loans to eligible veterans (listed rates effective March 1, 2026: 4.50% for 0-15 years and 5.00% for 16-30 years, maximum loan $500,000). You need a VA Certificate of Eligibility, a discharge other than dishonorable, and Mississippi residency before service or for 2 consecutive years before applying. Disability rating is not an eligibility requirement. A surviving spouse may qualify if the veteran died from service-connected causes.",
+     "source_url": "https://www.vhpb.ms.gov/veteran-eligibility",
+     "source_title": "VHPB Program Eligibility - Veterans' Home Purchase Board of Mississippi",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "MO",
    "name": "Missouri",
    "slug": "missouri",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Missouri Veterans Commission",
+    "url": "https://mvc.dps.mo.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "The Property Tax Credit is a refund claimed on your state income tax return (MO-PTS) or on Form MO-PTC, not a lower local tax bill. It is capped at $1,550 of tax paid for tax year 2026 (up from $1,100) and is phased out by income, so a high-income household may get little or nothing.",
+    "The credit statute reads 'one hundred percent disabled as a result of such service.' It does not mention TDIU or P&T, and DOR forms ask for a VA letter that the disability is 100% from military service. Ask DOR whether a TDIU-only rating counts.",
+    "For a veteran who is 100% service-connected, VA payments are not counted as income for the credit. A veteran who is 100% disabled but not from service must count VA payments as income. Attach the VA letter.",
+    "Missouri has no general disabled veteran property tax exemption. Only a former POW with a total service-connected disability gets a full homestead exemption (constitution). Several 2026 bills (such as SB 1535, HB 2362, SJR 77 and SJR 94) would expand relief, but none was found enacted, so do not count on them.",
+    "The 'free' Disabled Veteran plates have a threshold that is unclear: DOR's page asks for a VA letter of service-connected disability, but the statute refers to total service-connected compensation or a VA automobile grant. Registration is free for one set only, and the plates do not give disabled parking unless the wheelchair symbol is added.",
+    "The no-permit hunting and fishing exemption starts at 60%. It does not cover deer, turkey, bear, elk, trapping, trout, or migratory birds, and you must carry a VA statement of eligibility.",
+    "The Returning Heroes tuition cap is for combat veterans (proof of combat service), has time limits (10 years undergraduate, 20 years graduate) and a 2.5 GPA. It is not tied to a disability rating, and it covers the veteran, not dependents.",
+    "Dependent tuition help (Wartime Veteran's Survivor Grant) is narrow: post-9/11, combat-related death or 80% combat disability, limited to 25 new grants a year.",
+    "Military retirement is fully subtractable for tax years 2021 and later; the older 2016 phase-in does not apply. Survivor Benefit Plan annuities are not treated the same way.",
+    "The state job points table is on an application form dated 08-17, while the statute was rewritten in 2018. Treat the 5/10 point figures as unconfirmed.",
+    "Free disabled parking placards depend on a permanent disability, not a VA percentage; the 'VETERAN' marking on a driver license costs nothing extra but normal license fees apply."
+   ],
+   "benefits": [
+    {
+     "benefit": "Property Tax Credit (circuit breaker)",
+     "category": "property_tax",
+     "min_rating": "100%",
+     "details": "A refundable state income tax credit (not a bill reduction) for a veteran who 'became one hundred percent disabled as a result of such service.' For tax year 2026 and later the credit can be based on up to $1,550 of property tax paid on an owned home ($1,055 of rent-equivalent for renters); the 2025 caps were $1,100 and $750. Income must be at or below $42,200 (single, owned and occupied all year) or $48,000 (married, owned and occupied all year) for 2026, and VA benefits do not count as income for a veteran who is 100% service-connected (attach a VA letter). File Form MO-PTS with your MO-1040, or Form MO-PTC if you do not file an income tax return, with the Department of Revenue; the 2025 claim was due April 15, 2026 and can be filed up to 3 years late. The law does not mention TDIU or P&T status, so confirm with DOR whether a TDIU-only veteran qualifies.",
+     "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=135.010",
+     "source_title": "RSMo 135.010 and 135.025/135.030 (Property Tax Credit); DOR Form MO-PTC instructions",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Former POW homestead property tax exemption",
+     "category": "property_tax",
+     "min_rating": "100%",
+     "details": "The Missouri Constitution exempts from all property tax the homestead of a Missouri citizen who is a former prisoner of war and has a total service-connected disability. You must own and live in the home as your primary residence, and give your county assessor a VA letter showing total service-connected disability and a DD-214 or other proof of POW status. It is not run by the Department of Revenue; apply at the county assessor's office. This does not help non-POW veterans.",
+     "source_url": "https://revisor.mo.gov/main/OneSection.aspx?constit=y&section=X++6",
+     "source_title": "Missouri Constitution Art. X, Sec. 6; State Tax Commission FAQ: Are Veterans or Former POWs Exempt from Property Tax",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Disabled Veteran license plates (first set free)",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "Missouri residents honorably discharged with a service-connected disability can get one free set of Disabled Veteran plates, with no plate, transfer, processing or replacement fees (additional sets pay normal fees). Apply with Form 4601 and a VA letter (under 1 year old, from the VA itself, not a clinic) showing the disability is service-connected. DOR's page does not state a minimum percentage, but the statute (RSMo 301.071) refers to total service-connected compensation or eligibility for a VA automobile grant, so confirm your rating qualifies before applying. These plates do not allow disabled parking unless the wheelchair symbol is added with a physician statement (DOR-1776).",
+     "source_url": "https://dor.mo.gov/motor-vehicle/plates/disabled-veteran.html",
+     "source_title": "Disabled Veteran (DV) License Plates (DOR); RSMo 301.071, 301.072",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Permanent disabled parking placard (free, VA letter accepted)",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "A permanent disabled parking placard is free, and a veteran can submit a VA letter verifying a permanent disability instead of a physician statement at first application. Disabled veterans do not need to submit another statement to renew. This turns on a permanent disability that limits mobility, not a VA percentage. Apply through the Department of Revenue.",
+     "source_url": "https://dor.mo.gov/motor-vehicle/disabled-plates-placards/permanent.html",
+     "source_title": "Permanent Disabled Placard (Missouri DOR)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military Award Placard (free parking at meters and public colleges)",
+     "category": "vehicle",
+     "min_rating": "none",
+     "details": "Veterans awarded certain medals (including Purple Heart, Bronze Star, Silver Star, Distinguished Service Cross, Medal of Honor, and former POW) can get a removable placard for free parking in metered spaces (if local authorities approve) and in public college and university lots (except special events), for vehicles up to 6,000 pounds. Apply with Form 4601 plus the specialty plate or proof of the medal (DD-214 or similar). No disability rating is required.",
+     "source_url": "https://dor.mo.gov/forms/Military%20Reference%20Guide.pdf",
+     "source_title": "Military Reference Guide (DOR, revised January 2025)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Hunting and fishing permit exemption (60% or POW)",
+     "category": "recreation",
+     "min_rating": "60%",
+     "details": "An honorably discharged veteran with a service-related disability of 60% or more (or a former POW) may fish and hunt without a permit, except for deer, turkey, bear and elk, and may not trap. Trout permits or trout park tags, migratory bird permits and the federal duck stamp are still required. Carry a certified statement of eligibility from the VA. Nonresident veterans who meet the same test can buy resident-priced permits where a permit is required. A 2026 bill (HB 2202) to make permits free for 100% veterans was not shown as passed.",
+     "source_url": "https://mdc.mo.gov/permits/permit-exemptions",
+     "source_title": "Permit Exemptions (Missouri Department of Conservation); Veteran Benefits (MDC)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State park camping discount",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "Missouri State Parks gives veterans, retired and active military, and people with disabilities a $2 per night camping discount, year-round. Ask for it at payment and show military ID (DD-214, DD-1173, CAC) or, for the disability discount, a state disabled placard or plate, an America the Beautiful Access Pass, or a VA or SSA letter. No percentage-based discount for disabled veterans was found.",
+     "source_url": "https://mostateparks.com/activity/camping/camping-fees",
+     "source_title": "Camping Rates (Missouri State Parks); Military Benefits and Services",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Missouri Returning Heroes' Education Act (tuition cap)",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Combat veterans honorably discharged and eligible to vote in Missouri (or Missouri residents) pay no more than $50 per credit hour at public colleges that receive state funds, for certificate, associate or bachelor's programs, if they keep a 2.5 GPA. Graduate programs (not professional degrees like law or medicine) are limited to 30% of tuition and fees. The eligibility window is 10 years from last discharge for undergraduate and 20 years for graduate. No disability rating is needed, but you must show combat service (combat theater, combat medal, or imminent-danger pay). Ask the school's veterans office.",
+     "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=173.900",
+     "source_title": "RSMo 173.900 Missouri Returning Heroes' Education Act; DHEWD",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Wartime Veteran's Survivor Grant (dependents)",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "For spouses and children (under 25) of post-9/11 service members who died or were injured in combat, or who became 80% disabled from combat injuries, and who were Missouri residents when entering service. The grant covers up to Mizzou-level tuition, up to $2,000 per semester room and board, and up to $500 per semester for books, for a first bachelor's degree, with a 2.5 GPA. Only up to 25 new grants are awarded per year within appropriations, and the Missouri Veterans Commission must certify the survivor.",
+     "source_url": "https://revisor.mo.gov/main/OneSection.aspx?section=173.234",
+     "source_title": "RSMo 173.234 (Veteran's Survivors Grant)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement pay exempt from state income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Missouri has an income tax, but 100% of military retirement benefits reported on federal Form 1040 line 5b can be subtracted from federal AGI (Form MO-A, Part 1, Line 10), for tax years 2021 and later. A survivor annuity (SBP) does not qualify for this subtraction but may qualify for the public pension exemption. No disability rating is needed.",
+     "source_url": "https://dor.mo.gov/faq/taxation/individual/pension.html",
+     "source_title": "Pension FAQs (Missouri DOR); Military Reference Guide",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VA disability compensation and state income tax",
+     "category": "income_tax",
+     "min_rating": "any service-connected",
+     "details": "Missouri starts from federal adjusted gross income, and VA disability compensation is not included in federal AGI, so it is not taxed by the state. I did not find a DOR page that states this in one sentence; the DOR guide only addresses VA payments for the property tax credit. Confirm with DOR before relying on it.",
+     "source_url": "https://dor.mo.gov/forms/Military%20Reference%20Guide.pdf",
+     "source_title": "Military Reference Guide (DOR, January 2025)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State employment veterans' preference",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "The State of Missouri application lists veterans' preference of 5 or 10 points (not cumulative) for open competitive recruitment only: 5 points for qualifying active duty or reserve service, and 10 points for a veteran who receives compensation for a service-related disability (attach a VA statement). RSMo 36.220 (amended 2018) says only that veterans, disabled veterans and spouses get preference and win ties when other factors are equal. The point table is on a form dated 08-17, so the current rule needs to be confirmed with the Office of Administration, Division of Personnel.",
+     "source_url": "https://oa.mo.gov/sites/default/files/PaperApplication.pdf",
+     "source_title": "State of Missouri Application for Employment (veterans' preference section); RSMo 36.220",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Missouri Veterans Homes",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Seven state veterans homes offer 24-hour skilled nursing care. Applicants must meet VA veteran status, have lived in Missouri for 180 consecutive days before applying, have a physician document the need for 24-hour skilled nursing, and not be on a sex offender registry or have certain felony convictions. The 2026 monthly rate is $2,773. One waitlist application covers all homes; apply through the Missouri Veterans Commission.",
+     "source_url": "https://mvc.dps.mo.gov/homes/admissions/",
+     "source_title": "Veterans Homes Program Admissions (Missouri Veterans Commission)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "MT",
    "name": "Montana",
    "slug": "montana",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Montana Veterans Affairs Division (Department of Military Affairs)",
+    "url": "https://veterans.mt.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "Property tax: Montana's disabled veteran program (MDV) is a reduced property tax RATE (100%, 80%, 70% or 50% reduction by income), not a flat exemption. Income limits apply every year, and the benefit is lost if your income passes the top tier.",
+    "Property tax: you apply to a local Department of Revenue field office (not the county assessor) by April 15. A late application is considered for the following year, so file anyway. Include your current VA 100% letter.",
+    "Property tax: the rating must be 100% disabled or 'paid at the 100% disabled rate' (15-6-311). A veteran paid at the 100% rate through TDIU appears to fit that wording, but no Revenue page says so in plain words. Ask DOR before relying on it.",
+    "Property tax: the income test uses federal adjusted gross income, and your spouse's income counts even if the spouse is not on the deed. The home must be your primary residence, lived in at least seven months of the year. On farm or timber land only the one-acre home site qualifies.",
+    "Property tax, surviving spouses: only an UNMARRIED surviving spouse qualifies, with a lower income table (2027 top limit $56,276), and needs a VA letter showing the veteran was rated or paid at 100% at death, died on active duty, or died of a service-connected disability.",
+    "Vehicles: the registration fee waiver (61-3-460) covers TWO non-commercial vehicles for a veteran currently rated 100% or paid at the 100% rate, and it also waives the fee for two sets of special veteran plates. It is a fee waiver; no source found grants parking privileges with a veteran plate. Parking needs a separate disability parking permit.",
+    "Vehicles: a veteran rated 50% or more who received the Purple Heart also gets the registration fee waiver, but must still pay the veterans' cemetery fee on plates.",
+    "Hunting and fishing: Montana has NO general free hunting or fishing license for 100% disabled veterans. The only veteran-specific item on the FWP page is half-price deer and antelope licenses for 'certain combat-connected injuries' (up to 50 per year). Many blogs claim free licenses; the official page does not.",
+    "State parks: there is no free entry for disabled veterans found. Resident veterans get 50% off overnight camping fees (not electrical fees). Residents already pay a parks fee with vehicle registration.",
+    "Education: the Montana University System has no tuition waiver based on disability rating. The Honorably Discharged Veteran Waiver is a last-dollar award, and only after your federal education benefits are used up or expired. Dependents of a disabled veteran have no waiver; the war orphans waiver is only for children of a parent killed or who died of a combat-related injury.",
+    "Income tax: Montana taxes military retirement pay like other income, but a partial exemption (the lesser of 50% of retirement pay or Montana wage/business income) applies for up to 5 consecutive years. The 2033 sunset was removed in 2025 (SB 93).",
+    "State jobs: disabled veterans get 10 percentage points on scored hiring, veterans get 5, and you cannot stack them. It applies to initial hiring only, and you must claim it and document it when you apply."
+   ],
+   "benefits": [
+    {
+     "benefit": "Montana Disabled Veteran (MDV) property tax reduction",
+     "category": "property_tax",
+     "min_rating": "100%",
+     "details": "Reduces the property tax rate on your primary residence by 100%, 80%, 70% or 50%, depending on income. For tax year 2027 a single applicant needs 2025 FAGI of $64,551 or less (100% reduction up to $49,654); married or head of household needs $74,482 or less (100% up to $59,584). You must be rated or paid at 100% for a service-connected disability, own the home, and live in it at least seven months a year. Apply with a VA 100% letter to your local Department of Revenue field office by April 15.",
+     "source_url": "https://revenue.mt.gov/property/property-tax-help/mdv",
+     "source_title": "Montana Disabled Veteran Assistance Program (MDV), Dept. of Revenue; 15-6-311, MCA",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "MDV: unmarried surviving spouse",
+     "category": "property_tax",
+     "min_rating": "100%",
+     "details": "An unmarried surviving spouse of a veteran who was rated or paid at 100%, died on active duty, or died of a service-connected disability can get the same reduction on a primary residence, with a lower income table (2027: 100% up to $41,379, 50% tier up to $56,276). A VA letter is required. Apply to the Department of Revenue by April 15.",
+     "source_url": "https://revenue.mt.gov/files/Forms/Montana_Disabled_Veteran_Property_Tax_Relief_Application_Form_MDV.pdf",
+     "source_title": "Montana Disabled Veteran Property Tax Relief Application (Form MDV), Part III and V",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "MDV: TDIU and non-permanent ratings",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "The statute and form say 100% disabled or 'paid at the 100% disabled rate'; the form says a temporary rating means DOR will periodically ask for an updated VA letter, so permanence is not required. Whether TDIU pay counts is not stated in plain words by DOR. Ask a Revenue field office at (406) 444-6900 before relying on it.",
+     "source_url": "https://revenue.mt.gov/property/property-tax-help/mdv",
+     "source_title": "Montana Disabled Veteran Assistance Program (MDV); Form MDV Part III",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Motor vehicle registration fee waiver",
+     "category": "vehicle",
+     "min_rating": "100%",
+     "details": "A veteran currently rated 100% disabled or paid at the 100% rate by the VA is exempt from all motor vehicle registration fees under chapter 3 for two motor vehicles not used commercially. A veteran rated 50% or more who has the Purple Heart also qualifies. Unremarried surviving spouses of eligible veterans qualify. VA documentation is required; the statute does not name the office, so ask your county MVD office.",
+     "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0030/part_0040/section_0600/0610-0030-0040-0600.html",
+     "source_title": "61-3-460, MCA (Waiver of fees for veterans)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Special veteran license plates, fee waived",
+     "category": "vehicle",
+     "min_rating": "100%",
+     "details": "The same statute waives the veterans' cemetery fee on two sets of special veteran plates for 100% disabled veterans (Purple Heart recipients at 50%+ still pay it). An eligible veteran can apply the waiver to other special plates under 61-3-458(4) if they meet that plate's own rules. No source found gives parking privileges with the plate; disability parking needs a separate permit.",
+     "source_url": "https://mca.legmt.gov/bills/mca/title_0610/chapter_0030/part_0040/section_0600/0610-0030-0040-0600.html",
+     "source_title": "61-3-460, MCA; 61-3-332, MCA",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Half-price deer and antelope licenses (combat disabled)",
+     "category": "recreation",
+     "min_rating": "varies",
+     "details": "Veterans with 'certain combat-connected injuries' may get half-priced deer and antelope licenses; up to 50 licenses are issued each year. The FWP page does not state the rating or injury threshold, so call FWP Licensing at 406-444-2950 to confirm eligibility and application steps.",
+     "source_url": "https://fwp.mt.gov/buyandapply/hunting-licenses/disabled-licenses",
+     "source_title": "Disabled Hunting and Fishing Licenses, Montana FWP",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Resident disability conservation license ($8)",
+     "category": "recreation",
+     "min_rating": "varies",
+     "details": "Residents with a qualifying disability can buy general deer, general elk, fishing and upland game bird licenses at half cost with the $8 conservation license. The FWP page does not state a VA rating threshold or the certification needed, so a service-connected rating may not by itself qualify. Confirm with FWP Licensing.",
+     "source_url": "https://fwp.mt.gov/buyandapply/hunting-licenses/disabled-licenses",
+     "source_title": "Disabled Hunting and Fishing Licenses, Montana FWP",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State park camping discount for veterans",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "Montana resident veterans get 50% off overnight camping fees at state parks (electrical fees excluded). Proof is a DD 214, VA ID, or a driver's license showing veteran status. There is no found free day-use entry for disabled veterans. A 2026 FWP fee proposal may change rates, so check current fees.",
+     "source_url": "https://fwp.mt.gov/stateparks/fees-and-general-information",
+     "source_title": "State Parks: Fees and General Information, Montana FWP",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Honorably Discharged Veteran tuition waiver (MUS)",
+     "category": "education",
+     "min_rating": "none",
+     "details": "A last-dollar waiver up to in-state tuition at Montana University System campuses for resident undergraduate or graduate students with an honorable discharge (not General) who have used up or let expire their Title 38 or Title 10 education benefits. Apply by the third week of the first semester through the Office of the Commissioner of Higher Education portal. There is no disability-rating based waiver.",
+     "source_url": "https://www.mus.edu/Prepare/Pay/Waivers/index.html",
+     "source_title": "MUS Tuition Waivers; 20-25-421, MCA",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Dependent tuition waiver (war orphans only)",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "The War Orphans Waiver covers undergraduate tuition (not fees) for children age 25 or younger of a Montana resident who was killed in action or died of a combat-related injury or disease. It does not cover children or spouses of living disabled veterans, including 100% P&T. Commissioner approval is required.",
+     "source_url": "https://www.mus.edu/Prepare/Pay/Waivers/index.html",
+     "source_title": "MUS Tuition Waivers (War Orphans Waiver)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement income partial exemption",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Montana has an income tax. Military retirement pay is taxable, but retirees who were residents or became residents on or after June 30, 2023 can exempt the lesser of Montana wage-type income or 50% of retirement pay, for up to 5 consecutive years starting tax year 2024. The sunset was removed by SB 93 (2025). Claim it with Form WMRE.",
+     "source_url": "https://revenue.mt.gov/taxes/military",
+     "source_title": "Montana Income Tax Guide for Military Members; 15-30-2120, MCA",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VA disability compensation and state income tax",
+     "category": "income_tax",
+     "min_rating": "any service-connected",
+     "details": "Montana starts from federal adjusted gross income, and VA compensation is generally not in federal income. No Montana Revenue page found says this directly, so treat it as unconfirmed and ask the Department of Revenue.",
+     "source_url": "https://revenue.mt.gov/taxes/military",
+     "source_title": "Montana Income Tax Guide for Military Members and Their Families",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State employment preference points",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "When a public employer scores applicants for an initial hire, a disabled veteran gets 10 percentage points added (veterans get 5, no stacking). Unscored hiring gives preference in order: disabled veteran first. Applicant must be a U.S. citizen meeting minimum qualifications and must claim preference when applying. Covers state, county and city hiring.",
+     "source_url": "https://mca.legmt.gov/bills/mca/title_0390/chapter_0290/part_0010/section_0020/0390-0290-0010-0020.html",
+     "source_title": "39-29-102, MCA; 39-29-101, MCA",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Montana Veterans' Homes",
+     "category": "other",
+     "min_rating": "none",
+     "details": "The state runs veterans homes in Columbia Falls, Butte and Glendive for skilled and intermediate nursing care. Admission eligibility and cost were not confirmed on the pages found; Columbia Falls is (406) 892-3256.",
+     "source_url": "https://dphhs.mt.gov/healthcarefacilities/mvh/",
+     "source_title": "Montana Veterans' Home, Columbia Falls (DPHHS)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "NE",
    "name": "Nebraska",
    "slug": "nebraska",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Nebraska Department of Veterans' Affairs",
+    "url": "https://veterans.nebraska.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "The big property tax break (Neb. Rev. Stat. 77-3506) is for a veteran with an honorable or general discharge who draws VA compensation for a 100% service-connected permanent disability, OR a total disability rating under 38 CFR 4.16 (TDIU). A veteran with a temporary 100% rating also qualifies, but must reapply every year with a VA certification. A 50% to 99% rating gets nothing from this exemption.",
+    "The exemption covers the full taxable value of the home. By statute the 'exempt amount' for this category is 'the taxable value of the homestead' (77-3501.01(3)), and the home-value reduction in 77-3506.03 does not apply to it. The income tables in 77-3507 and 77-3508 apply only to the other homestead categories, not to 77-3506.",
+    "You must own the home and live in it as a natural person from January 1 through August 15 of the year. The land is limited to one acre. File with the county assessor after February 1 and on or before June 30 (the county board may extend to July 20). Missing the deadline waives that year's exemption, with limited late-filing exceptions in 77-3514.01.",
+    "Permanent 100% and TDIU filers apply once; the exemption continues in later years with no new application. The temporary-100% category must reapply every year with VA certification.",
+    "A veteran who qualifies for the separate full exemption in 77-3526 to 77-3528 (paraplegic or multiple amputee whose home was substantially contributed to by VA) is carved out of the 77-3506 category. If that is you, ask the assessor which one applies.",
+    "A surviving spouse keeps the exemption while unmarried, or if remarried after reaching age 57. A spouse who remarries before age 57 loses it and must tell the county assessor within 30 days. Spouses of veterans who died of a service-connected disability, or who died on active duty, also qualify.",
+    "The Nebraska motor vehicle tax and fee exemption (new January 1, 2026) covers ONE vehicle and is open to any veteran with an honorable discharge who has a service-connected disability, even 0%. You must first be in the NDVA Military and Veterans' Registry and ask the county treasurer within 30 days after buying the vehicle, or before the last day of the renewal month. Plate fees, sales tax and wheel tax are still owed.",
+    "Disabled Veteran license plates need only 10% service-connected and no limit on number of vehicles, but they do NOT allow parking in handicapped spaces. For parking you need Disabled Veteran Handicap plates (medical provider certification) or a handicapped parking permit.",
+    "The free lifetime Game and Parks hunt/fish/fur permit and park entry permit require 50% or more service-connected (or 100% non-service-connected with a VA pension) and Nebraska residency. Rated 10% to 40% does not qualify for these two permits.",
+    "Waiver of Tuition is for DEPENDENTS (spouse or child), not the veteran. The veteran must be rated 100% permanently and totally disabled. A temporary total rating does not count; a TDIU rating counts only if permanent (80-411). It covers one community college credential and one bachelor's degree only, and no graduate school.",
+    "Nebraska excludes 100% of military retirement pay from state income tax starting tax year 2022, with no form needed. Nebraska starts from federal adjusted gross income, so VA disability compensation (not in federal AGI) should not be taxed, but no Nebraska page says so directly.",
+    "State job preference is a percentage added to a passing score: 5% for any qualifying veteran and 5% more for any service-connected disability, any percentage. Submit your DD-214 and a VA Summary of Benefits letter with each application."
+   ],
+   "benefits": [
+    {
+     "benefit": "Homestead exemption: 100% disabled veteran (full home value)",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "Exempts 100% of the taxable value of your home from property tax, with no income limit. You qualify with an honorable or general discharge and VA compensation for 100% service-connected permanent disability or a total rating under 38 CFR 4.16 (TDIU); a temporary 100% rating also qualifies but must be renewed yearly with VA certification. Apply with the county assessor after February 1 and by June 30 (Form 458); permanent and TDIU filers do not reapply.",
+     "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506",
+     "source_title": "Neb. Rev. Stat. 77-3506 (Certain veterans; exemption; certain surviving spouses; application)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Homestead exemption: surviving spouse of qualifying veteran",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "An unremarried surviving spouse of a veteran who held the 100% permanent or TDIU status, or of any honorably or generally discharged veteran who died of a service-connected disability or on active duty, gets the same full exemption. A spouse who remarries after age 57 keeps it; one who remarries before 57 loses it and must notify the county assessor within 30 days. File with the county assessor after February 1 and by June 30.",
+     "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3506",
+     "source_title": "Neb. Rev. Stat. 77-3506(2)(b),(d)-(f), (4)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Homestead exemption: veteran totally disabled, non-service-connected (income-based)",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "A veteran with honorable or general discharge who is totally disabled by a non-service-connected accident or illness may get a partial exemption that depends on household income and home value. Needs VA certification of total non-service-connected disability on the application. File with the county assessor after February 1 and by June 30.",
+     "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=77-3508",
+     "source_title": "Neb. Rev. Stat. 77-3508 (Homesteads; exemptions; based on disability and income)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Motor vehicle tax and fee exemption (one vehicle)",
+     "category": "vehicle",
+     "min_rating": "any service-connected",
+     "details": "Starting January 1, 2026, a disabled or blind veteran with an honorable discharge is exempt from the Nebraska motor vehicle tax and motor vehicle fee on ONE vehicle used for personal transportation. 'Disabled veteran' follows 5 U.S.C. 2108, so any service-connected disability counts (NDVA says even 0%), or receiving VA compensation or pension. Enroll in the NDVA Military and Veterans' Registry, then claim at the county treasurer within 30 days of purchase or before the last day of the registration expiration month; it renews automatically.",
+     "source_url": "https://veterans.nebraska.gov/disabledblind-veteran-motor-vehicle-tax-fee-exemption",
+     "source_title": "NDVA: Disabled/Blind Veteran Motor Vehicle Tax and Fee Exemption (Neb. Rev. Stat. 60-3,185)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran license plates",
+     "category": "vehicle",
+     "min_rating": "10%",
+     "details": "Available to a veteran with honorable or general discharge who is at least 10% service-connected. Must be enrolled in the Nebraska Veterans' Registry and title the vehicle in your name. Standard alphanumeric plate has no fee beyond normal registration fees and taxes, there is no limit on the number of vehicles, and a message plate costs $40 a year. Order online or by mail to the DMV.",
+     "source_url": "https://dmv.nebraska.gov/dvr/dav-plate",
+     "source_title": "Nebraska DMV: Disabled Veteran Plates",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran Handicap plates and parking",
+     "category": "vehicle",
+     "min_rating": "10%",
+     "details": "Standard Disabled Veteran plates do not allow parking in handicapped spaces. For that you need Disabled Veteran Handicap plates, which require Registry enrollment and a medical provider's certification on the Application for Military Handicapped License Plates, or a handicapped parking permit. Apply to the DMV (message plates are not available on these).",
+     "source_url": "https://dmv.nebraska.gov/dvr/dav-plate",
+     "source_title": "Nebraska DMV: Disabled Veteran Plates",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free lifetime hunt/fish/fur permit",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "Nebraska resident disabled veterans rated 50% or more service-connected (or 100% non-service-connected receiving a VA pension) get a Disabled Veteran's Lifetime Annual Small Game Hunt/Fish/Fur Harvest Permit at no fee, and it includes all state stamps. Apply through Nebraska Game and Parks; NDVA's guide describes it as requiring a veterans service officer's involvement. Confirm current paperwork with Game and Parks.",
+     "source_url": "https://veterans.nebraska.gov/sites/default/files/NDVA%20Guide%20to%20Veterans%20Benefits.pdf",
+     "source_title": "NDVA Guide to Veterans' Benefits, April 2026 edition (p. 26)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free lifetime state park entry permit",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "Nebraska resident disabled veterans rated 50% or more service-connected (or 100% non-service-connected with a VA pension) can get one perpetual Disabled Veteran's Lifetime Annual Park Entry Permit at no fee. An application form with a veterans service officer's signature is required; Game and Parks service centers can print the form. It covers park entry only, not camping or other fees.",
+     "source_url": "https://veterans.nebraska.gov/sites/default/files/NDVA%20Guide%20to%20Veterans%20Benefits.pdf",
+     "source_title": "NDVA Guide to Veterans' Benefits, April 2026 edition (p. 26)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Waiver of Tuition for spouse and children",
+     "category": "education",
+     "min_rating": "100% P&T",
+     "details": "The University of Nebraska, state colleges and community colleges waive all tuition and remaining fees (after federal grants and state scholarships) for a Nebraska-resident spouse, child or stepchild of a veteran rated permanently and totally disabled from service (a TDIU rating counts only if permanent), or who died of a service-connected disability. Children must be under 26 (extendable to 31 for post-18 active duty). Limited to one community college credential and one bachelor's degree; apply to NDVA before the term with the veteran's DD-214 and proof of relationship.",
+     "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=80-411",
+     "source_title": "Neb. Rev. Stat. 80-411 (Waiver of tuition and fees); NDVA Waiver of Tuition program page",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement pay excluded from state income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "For tax years beginning on or after January 1, 2022, all military retirees can exclude 100% of military retirement benefits from Nebraska taxable income, to the extent included in federal AGI. No election or form is needed. This applies to retirement pay, not to VA compensation.",
+     "source_url": "https://revenue.nebraska.gov/about/frequently-asked-questions/military-retirement-benefits-exclusion",
+     "source_title": "Nebraska Department of Revenue: Military Retirement Benefits Exclusion (Neb. Rev. Stat. 77-2716)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VA disability compensation and state income tax",
+     "category": "income_tax",
+     "min_rating": "any service-connected",
+     "details": "Nebraska individual income tax starts from federal adjusted gross income, and VA disability compensation is not included in federal AGI, so it should not be taxed by Nebraska. I could not find an official Nebraska page stating this in plain words, so confirm with the Department of Revenue before relying on it.",
+     "source_url": "https://revenue.nebraska.gov/about/frequently-asked-questions/military-retirement-benefits-exclusion",
+     "source_title": "Nebraska Department of Revenue: Military Retirement Benefits Exclusion",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State and local government hiring preference",
+     "category": "employment",
+     "min_rating": "none",
+     "details": "Veterans with an honorable or general discharge get 5% added to a passing exam or numerical score for State of Nebraska and local government jobs, and a disabled veteran (any service-connected disability, any percentage per State Personnel) gets an additional 5%. Where no scoring is used, preference breaks ties among equally qualified candidates. Submit a DD-214 and, for the extra 5%, a VA Summary of Benefits letter with the application. Spouses of 100% permanent veterans qualify for 5%.",
+     "source_url": "https://nebraskalegislature.gov/laws/statutes.php?statute=48-227",
+     "source_title": "Neb. Rev. Stat. 48-225 to 48-227 (Veterans preference); State Personnel Veterans Preference guide rev. 8/21/2025",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Nebraska Veterans' Homes (Bellevue, Kearney, Norfolk, Scottsbluff)",
+     "category": "other",
+     "min_rating": "varies",
+     "details": "Veterans with active-duty service and an honorable or general discharge can apply for admission to the state veterans' homes. Cost is on a sliding scale based on income and assets, and NDVA says veterans rated 70% to 100% service-connected may receive care at no cost once the rating is verified and their care level meets VA criteria. Apply through the home or NDVA.",
+     "source_url": "https://veterans.nebraska.gov/homes",
+     "source_title": "NDVA: Veterans' Homes",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "NV",
    "name": "Nevada",
    "slug": "nevada",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Nevada Department of Veterans Services",
+    "url": "https://veterans.nv.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "Nevada's property tax relief is a deduction from assessed value, not a full exemption. Even at 100 percent it is the first $20,000 of assessed value (CPI-indexed, about $36,400 for 2026-27 per county assessor pages), worth roughly $1,300 a year in property tax. Real savings depend on your local tax rate.",
+    "The statute requires a 'permanent' service-connected disability (NRS 361.091 and 371.104). The assessor wants a VA letter or rating document showing the permanent percentage, plus an honorable discharge or DD-214. A rating that is not permanent may be turned down; ask the county assessor what document they accept.",
+    "Tier is set by your total combined percentage, capped at 100: 60-79, 80-99, or 100 percent. Below 60 percent there is no disabled veteran exemption, but you may still qualify for the smaller general veteran exemption if you served in a listed wartime or campaign period.",
+    "You cannot take both the disabled veteran and general veteran exemptions, and the exemption can be claimed in only one county. You can split it between your home's property tax and your vehicle governmental services tax, or donate part of it to the Veterans Home gift accounts.",
+    "The file-by date for real property is June 15 (July 5 if you bought the property between June 15 and June 30). Late or denied claims can go to the county board of equalization by January 15 of that fiscal year. File early, with the assessor of the county where you live.",
+    "Vehicle exemption: get an exemption number from the county assessor first and give it to the DMV at registration. It cannot be applied after the DMV transaction is finished, and the DMV exemption uses the same dollar amount as your property exemption.",
+    "Surviving spouses must have been married to and living with the veteran for the 5 years before death, must not have remarried, and the veteran must have been eligible. The statute lets you claim it as the spouse; line-of-duty death spouses are not given a separate property tax rule in the statute I read.",
+    "Disabled Veteran license plates require a 100 percent rating (or combined ratings reaching 100, or a permanent disability that qualifies for a disabled parking plate). A 60-99 percent veteran gets the tax exemption but not these plates. I found no statute waiving registration fees.",
+    "The reduced-fee $15 hunting and fishing license is for 50 percent or more service-connected only, plus honorable discharge. You must send a VA percentage letter; tags are not covered.",
+    "The state parks Disabled Veteran permit says 'permanent' service-connected disability, not a percentage. An older State Parks overview and some secondary sources describe different rules, so confirm with State Parks.",
+    "Nevada has no general disabled veteran tuition waiver. The statutory waiver is for Purple Heart recipients and their children, plus a discretionary graduate degree waiver. Nevada has no state income tax.",
+    "TDIU: the statutes do not mention TDIU. The exemption tier is based on the total percentage of permanent service-connected disability, so a veteran paid at the 100 percent rate through TDIU but rated, say, 70 percent schedular may be placed in the 60-79 tier by the assessor. Confirm with the county."
+   ],
+   "benefits": [
+    {
+     "benefit": "Disabled veteran property tax exemption",
+     "category": "property_tax",
+     "min_rating": "60%",
+     "details": "Nevada exempts part of the assessed value of property owned by a resident honorably discharged veteran with a permanent service-connected disability: the first $10,000 of assessed value at 60-79 percent, $15,000 at 80-99 percent, and $20,000 at 100 percent, with the dollar amounts raised each fiscal year by a CPI formula. County assessor pages for 2026-27 show roughly $18,200, $27,300 and $36,400 of assessed value. File an affidavit and proof with the county assessor where you live by June 15 (July 5 for property bought June 15 to June 30). Combined ratings count, up to 100 percent.",
+     "source_url": "https://www.leg.state.nv.us/nrs/nrs-361.html#NRS361Sec091",
+     "source_title": "NRS 361.091 Exemption for veteran who has incurred service-connected disability and surviving spouse of such a veteran",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Surviving spouse of disabled veteran: property tax exemption",
+     "category": "property_tax",
+     "min_rating": "60%",
+     "details": "The unremarried surviving spouse of a veteran with a permanent service-connected disability can claim the same tiered exemption. The spouse must file an affidavit that they were married to and living with the veteran for the 5 years before the veteran's death, that the veteran was eligible (or would have been if a Nevada resident), that they have not remarried, and that they are a Nevada resident. Apply with the county assessor by June 15. A surviving spouse who is also a veteran may also claim the general veteran exemption.",
+     "source_url": "https://www.leg.state.nv.us/nrs/nrs-361.html#NRS361Sec091",
+     "source_title": "NRS 361.091, subsections 6 and 8",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "General veteran property tax exemption",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "Resident veterans with at least 90 continuous days of active duty during a listed wartime or campaign period, and an honorable discharge or certificate of satisfactory service, get the first $2,000 of assessed value exempt, CPI-indexed (about $3,640 for 2026-27 per the Douglas County assessor). A veteran who gets the disabled veteran exemption cannot also take this one. Apply with the county assessor by June 15; the exemption can be used in only one county.",
+     "source_url": "https://www.leg.state.nv.us/nrs/nrs-361.html#NRS361Sec090",
+     "source_title": "NRS 361.090 Veterans exemptions",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled veteran vehicle governmental services tax exemption",
+     "category": "vehicle",
+     "min_rating": "60%",
+     "details": "The same permanent-disability tiers can be applied to the Governmental Services Tax (the main part of the vehicle registration cost): first $10,000 of determined valuation at 60-79 percent, $15,000 at 80-99 percent, and $20,000 at 100 percent. Get an exemption number from the county assessor (bring your DD-214 or discharge papers and VA proof of disability) and give it to the DMV at registration or renewal; it cannot be applied after the transaction is finalized. The same exemption amount cannot be used twice, so you split it between property tax and vehicles. A veteran may transfer it to a current spouse. A surviving spouse also qualifies.",
+     "source_url": "https://www.leg.state.nv.us/nrs/nrs-371.html#NRS371Sec104",
+     "source_title": "NRS 371.104 Exemptions for veteran with a disability and surviving spouse",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran license plates (up to two sets)",
+     "category": "vehicle",
+     "min_rating": "100%",
+     "details": "A veteran who receives VA compensation for a qualifying service-connected disability can get DISABLED VETERAN plates with the access symbol, for up to two vehicles (private passenger vehicle, noncommercial truck or motor home). A qualifying disability is a 100 percent rating, combined ratings of at least 100 percent, or any rating that includes a permanent disability qualifying for a disabled parking plate under NRS 482.384. Apply in person at the DMV with VA or DoD proof. Normal registration fees and governmental services tax still apply; I found no statute waiving registration fees.",
+     "source_url": "https://www.leg.state.nv.us/nrs/nrs-482.html#NRS482Sec377",
+     "source_title": "NRS 482.377 Disabled Veteran license plates; NRS 482.0962 Qualifying service-connected disability defined",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free parking for vehicles with Disabled Veteran plates",
+     "category": "vehicle",
+     "min_rating": "100%",
+     "details": "A vehicle displaying Disabled Veteran plates is exempt from any parking fees, including parking meters, charged by the State or any political subdivision or public body in Nevada (federal parking excluded). Eligibility follows the plate rules: a qualifying service-connected disability (100 percent or combined to 100, or a permanent disability that qualifies for a disabled parking plate).",
+     "source_url": "https://www.leg.state.nv.us/nrs/nrs-482.html#NRS482Sec377",
+     "source_title": "NRS 482.377, subsection 5",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Reduced-fee resident hunting and fishing license",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "A Nevada resident veteran with a VA service-connected rating of 50 percent or more and an honorable discharge or certificate of satisfactory service can get the annual specialty combination hunting and fishing license for $15 (plus nominal processing fee). Mail or submit the NDOW application with the VA Benefit Summary percentage letter, a Nevada ID, and a hunter education certificate if born after January 1, 1960. The license runs one year from purchase; tags and permits are separate.",
+     "source_url": "https://www.ndow.org/wp-content/uploads/2025/03/Veteran-Disability-License-Application-ADA-revised-March-2025.pdf",
+     "source_title": "NDOW Resident Disabled Veteran Specialty Combination Hunting and Fishing License application (March 2025); NRS 502.072 and 502.240",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran annual State Parks permit",
+     "category": "recreation",
+     "min_rating": "any service-connected",
+     "details": "A Nevada resident honorably discharged veteran with a permanent service-connected disability can get an annual permit for unlimited entrance, camping and boat launch use at all Nevada state parks for 12 months, for only a $30 administrative fee. It is a placard for one vehicle. Apply through Nevada State Parks (forms at reservenevada.com; by mail, email or online). Renewals are not offered, so you file a new application each year. State Parks' page does not state a minimum percentage, only permanent service-connected disability.",
+     "source_url": "https://parks.nv.gov/fees/annual-permits",
+     "source_title": "Nevada State Parks Annual Permits; NRS 407.065",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Purple Heart veteran fee waiver at NSHE schools",
+     "category": "education",
+     "min_rating": "none",
+     "details": "The Board of Regents must waive registration, laboratory and other mandatory fees each semester for a veteran who was awarded the Purple Heart, down to the balance left after federal education benefits are credited. The student is treated as a Nevada resident for tuition. It covers any program at a Nevada System of Higher Education school. Submit the NSHE Purple Heart Fee Waiver form to your campus office. Disabled veterans without a Purple Heart do not get an automatic statutory waiver.",
+     "source_url": "https://www.leg.state.nv.us/nrs/nrs-396.html#NRS396Sec5443",
+     "source_title": "NRS 396.5443; NSHE Student Veterans page",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Purple Heart veteran's child fee waiver at NSHE schools",
+     "category": "education",
+     "min_rating": "none",
+     "details": "A child of a Purple Heart veteran gets the same registration, laboratory and mandatory fee waiver if the veteran is (or was at death) a Nevada resident and the child graduated from a Nevada high school. It can be used until 10 years after the child turns 18 (or 10 years after enrolling, if enrolled before 18). The amount is reduced by any federal education benefits received. Apply through the campus using the NSHE Purple Heart Fee Waiver form.",
+     "source_url": "https://www.leg.state.nv.us/nrs/nrs-396.html#NRS396Sec5443",
+     "source_title": "NRS 396.5443, subsections 1(b) and 6",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "No state income tax on military retirement or VA compensation",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Nevada does not impose a state income tax on individuals, so military retirement pay, VA disability compensation and other income are not taxed by the state, and there is no state return to file for wage or retirement income. The Department of Taxation page does not list military pay by name; it states the general rule only.",
+     "source_url": "https://tax.nv.gov/about-nevada-department-of-taxation/income-tax-in-nevada/",
+     "source_title": "Nevada Department of Taxation, Income Tax in Nevada",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State employment veterans preference and guaranteed interview",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "For classified state jobs, appointing authorities must give a preference to veterans, and must interview each qualified veteran with a service-connected disability (any rating, including 0 percent). At least 22 percent of those interviewed must be qualified veterans without a disability. Declare the preference at application and attach a DD-214 and a VA rating letter. Older statute text and secondary sites say 10 points; the current statute text I read gives a preference without stating points, so confirm the exact points.",
+     "source_url": "https://www.leg.state.nv.us/nrs/nrs-284.html#NRS284Sec260",
+     "source_title": "NRS 284.260 and 284.265; NAC 284.325; State of Nevada Veteran Hiring Preference guide",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Nevada State Veterans Homes",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Nevada operates State Veterans Homes, including a 180-bed skilled nursing home in Boulder City serving eligible veterans, spouses and Gold Star parents, with Alzheimer's and dementia care. Eligibility is set by the home (not by a rating threshold here); contact the home for admission rules and cost. Veterans can also direct their property or vehicle tax exemption amount to the Veterans Home gift accounts.",
+     "source_url": "https://veterans.nv.gov/state-veterans-homes",
+     "source_title": "Nevada Department of Veterans Services, State Veterans Homes",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "NH",
    "name": "New Hampshire",
    "slug": "new-hampshire",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "New Hampshire Department of Military Affairs and Veterans Services (Division of Veterans Services)",
+    "url": "https://www.nhveterans.nh.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "New Hampshire property tax relief is a tax CREDIT that each city or town sets. The state sets a floor and a ceiling, but the town votes on the amount (RSA 72:27-a). Two veterans with the same rating can get different credits depending on the town. Ask your town assessor or selectmen what your town adopted.",
+    "Apply with your town assessor or selectmen on the state form (PA-29) by April 15 before the tax rate is set (RSA 72:33). It is a permanent application, so you file once and keep the credit each year as long as you stay in the same home. If you move, file a new one by December 1 after the move. A late filing is allowed only for 'accident, mistake, or misfortune' and only before the town's tax rate is approved.",
+    "The service-connected total disability credit (RSA 72:35) needs a VA certification that you are 'rated totally and permanently disabled from service connection.' The statute does not mention TDIU by name. The specially adapted housing exemption (RSA 72:36-a) does name 'total and permanent total ratings and unemployability.' If you have TDIU, ask your town whether it accepts your VA letter.",
+    "The optional service-connected credit under RSA 72:35 can be set by the town anywhere from $701 up to $5,000 (raised from $4,000 in 2025). The statute says it 'shall replace' the regular veterans' credits and is not added on top. The state veterans page still says $2,000, so it is out of date.",
+    "The regular veterans' credit (RSA 72:28) is only $50 unless the town votes more, and the town maximum rises from $750 to $1,000 on April 1, 2027 (2026 law, chapter 96). The standard credit also requires service in a listed wartime period or armed conflict, and the veteran must have lived in New Hampshire at least one year before April 1. Many post-1975 veterans qualify only if their town adopted the 'all veterans' credit (RSA 72:28-b).",
+    "The credits apply only to your principal home (your 'residential real estate'), plus attached land and buildings and manufactured housing used as your home. A surviving spouse keeps the credit only while unmarried (a spouse who later divorces regains status). Ownership in a revocable trust counts.",
+    "The free perpetual Fish and Game license is for veterans who are 'totally and permanently disabled' from a service-connected condition and live in New Hampshire (RSA 214:13). It costs a one-time $10. Veterans rated at least 80% but not 100% can buy a lifetime license at half price. A 10% to 70% rating gets no license discount.",
+    "State park day-use admission is free for any New Hampshire disabled veteran with any service-connected rating, shown by a disabled veteran plate or a VA letter (RSA 216-A:3-g, IV). You still pay for camping, ski lifts, tram rides, food, and other 'enterprise' activities. Metered parking is also not waived for these veterans unless your vehicle has the special plate described in paragraph VI.",
+    "The free disabled veteran plate, free registration, and free license fee all hinge on the VA rating of 'permanently and totally disabled' from service-connected disability. Only one vehicle gets the plate set. Plates with the accessibility symbol get free parking (RSA 265:73 as described by the state veterans page). A veteran who picks the standard veterans' plate instead gives up the free parking.",
+    "Free tuition for a child is at the University System of New Hampshire only, and only if the parent is rated 100% total and permanent, was living in New Hampshire when entering service or when rated, and is still a New Hampshire resident. The child must also file the FAFSA. The waiver runs through the semester the child turns 27 (RSA 187-A:20). There is no tuition waiver for the veteran under these laws; New Hampshire's other tuition waivers go to National Guard members and children of killed or missing service members.",
+    "New Hampshire has no tax on wages. The Interest and Dividends Tax ended for tax periods starting January 1, 2025. The state veterans page says the state does not tax military retirement pay, VA disability compensation, or DIC. No state income tax return is needed for these.",
+    "Senate Bill 448 (2026 chapter 252, effective August 31, 2026) changed many statutes to use the RSA 21:50 definition of 'veteran,' which now covers a general discharge under honorable conditions. Veterans who were previously turned away for a general discharge should ask again. A lifetime hunting and fishing license for veterans that appeared in early versions of the bill is not in the final text I read."
+   ],
+   "benefits": [
+    {
+     "benefit": "Service-connected total disability property tax credit",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "Veterans (or an unremarried surviving spouse) with a total and permanent service-connected disability, or a double amputee or paraplegic from service, get a $700 yearly credit on the home they live in. Towns may vote to raise it to as much as $5,000. File a permanent application with your town assessor or selectmen by April 15 with a VA certification that you are rated totally and permanently disabled. The statute does not name TDIU, so confirm with your town if you have TDIU.",
+     "source_url": "https://gc.nh.gov/rsa/html/V/72/72-35.htm",
+     "source_title": "RSA 72:35 Tax Credit for Service-Connected Total Disability",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Specially adapted housing full property tax exemption",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "A veteran who owns a home adapted with a VA Specially Adapted Housing or Special Home Adaptation grant (or bought with proceeds from selling one) is 'exempt from all taxation on said homestead.' The veteran must be 100% permanently and totally disabled per 38 C.F.R. 3.340 (the statute names 'unemployability'), a double amputee or paraplegic, or blind in both eyes at 5/200 or worse, from service. A surviving spouse is also covered. Apply with the town assessor by April 15 with proof of the service-connected disability.",
+     "source_url": "https://gc.nh.gov/rsa/html/V/72/72-36-a.htm",
+     "source_title": "RSA 72:36-a Certain Disabled Veterans",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Standard and optional veterans' tax credit",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "A resident veteran with at least 90 days of active service in a listed war or armed conflict (or a spouse or surviving spouse) gets a $50 yearly credit on the home. Towns may vote to raise it from $51 up to $750, rising to $1,000 on April 1, 2027. A veteran discharged because of a service-connected disability also qualifies, and so does the surviving spouse of a service-connected death. This is not tied to a disability rating. Apply with the town by April 15.",
+     "source_url": "https://gc.nh.gov/rsa/html/V/72/72-28.htm",
+     "source_title": "RSA 72:28 Standard and Optional Veterans' Tax Credit",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "All veterans' tax credit (town option)",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "If the town has adopted it, a resident veteran with at least 90 days of active service gets the same dollar credit as the town's regular veterans' credit, with no wartime-period requirement. You cannot receive it if you are eligible for or get the RSA 72:28 or 72:35 credit. Apply with the town assessor by April 15. Whether it exists depends on your town.",
+     "source_url": "https://gc.nh.gov/rsa/html/V/72/72-28-b.htm",
+     "source_title": "RSA 72:28-b All Veterans' Tax Credit",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Combat service tax credit (town option)",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "Towns may adopt a credit of $50 up to $500 (up to $750 from April 1, 2027) for a New Hampshire National Guard or reserve member called to active duty in a combat area. It replaces, not adds to, the regular veterans' credit and requires military orders with the application. It is for current service members, not a disability benefit.",
+     "source_url": "https://gc.nh.gov/rsa/html/V/72/72-28-c.htm",
+     "source_title": "RSA 72:28-c Optional Tax Credit for Combat Service",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Disabled veteran plate, free registration, and parking",
+     "category": "vehicle",
+     "min_rating": "100% P&T",
+     "details": "A veteran evaluated by the VA as 'permanently and totally disabled' from a service-connected disability (or an amputee or paraplegic who received a vehicle from the government) gets one set of special plates with the accessibility symbol free, and pays no registration fee for the vehicle. Plates with the accessibility symbol receive free parking time in cities and towns. Apply through the town clerk and the DMV. Veterans rated below 100% P&T do not qualify for the free plate or registration.",
+     "source_url": "https://gc.nh.gov/rsa/html/XXI/261/261-86.htm",
+     "source_title": "RSA 261:86 Special Number Plates for Certain Veterans; RSA 261:141, VIII",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Driver license fee waiver",
+     "category": "vehicle",
+     "min_rating": "100% P&T",
+     "details": "No fee is charged for a driver's license for a veteran evaluated by the VA as permanently and totally disabled from a service-connected disability, or for an amputee or paraplegic veteran who received a vehicle from the government. Present VA proof of the rating at the DMV.",
+     "source_url": "https://gc.nh.gov/rsa/html/XXI/263/263-42.htm",
+     "source_title": "RSA 263:42 Driver's License Fees, paragraph III",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free perpetual hunting and fishing license",
+     "category": "recreation",
+     "min_rating": "100% P&T",
+     "details": "A New Hampshire resident veteran with a discharge other than dishonorable who is 'totally and permanently disabled' from a service-connected disability gets a perpetual fishing, hunting, or bow-and-arrow license for a one-time $10 administrative fee. Apply to the Fish and Game Department with your VA award letter showing the permanent 100% rating. Veterans at least 80% but under 100% can get a lifetime license at 50% of the regular lifetime price.",
+     "source_url": "https://gc.nh.gov/rsa/html/XVIII/214/214-13.htm",
+     "source_title": "RSA 214:13 Licenses for Disabled Veterans",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free state park day-use admission",
+     "category": "recreation",
+     "min_rating": "any service-connected",
+     "details": "A disabled veteran of New Hampshire with a service-connected disability of any rating pays no day-use admission fee at state parks. Proof is a disabled veteran plate or a VA letter certifying a service-connected disability. Camping, ski lifts, tram rides, food service, and other enterprise activities still cost money.",
+     "source_url": "https://gc.nh.gov/rsa/html/XIX/216-A/216-A-3-g.htm",
+     "source_title": "RSA 216-A:3-g Fees for Park System, paragraph IV",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Tuition waiver for children of 100% P&T veterans",
+     "category": "education",
+     "min_rating": "100% P&T",
+     "details": "A child (biological, adopted, or stepchild) of a veteran who is totally and permanently disabled from service attends any University System of New Hampshire institution without tuition. The parent must have lived in New Hampshire at service entry or at the VA disability determination and must still live there. Apply to the university system trustees with the VA letter showing 100% total, permanent, service-connected. Eligibility lasts through the semester the child turns 27, and the child must file the FAFSA.",
+     "source_url": "https://gc.nh.gov/rsa/html/XV/187-A/187-A-20.htm",
+     "source_title": "RSA 187-A:20 Tuition Waived",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Tuition for children of killed or missing service members",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "The state veterans page says children of military members who die in wartime service, and children of certain wartime veterans who die of a service-connected disability, may get free tuition at New Hampshire public colleges. A need-based scholarship of up to $2,500 per year for up to 4 years may also be furnished (RSA 193:19 to 193:21). Children of service members missing or captured after February 28, 1961 get free community college tuition under RSA 188-F:15. I read this on the agency page and did not read the RSA 193 text.",
+     "source_url": "https://www.nhveterans.nh.gov/veterans-services/nh-state-benefits-veterans",
+     "source_title": "NH State Benefits for Veterans (Education Benefits)",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State income tax on military pay, VA compensation, and other income",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "New Hampshire taxes no wages and has no general income tax. The Interest and Dividends Tax was repealed for tax periods starting January 1, 2025, so there is no state tax on that income either. The state veterans page says military retired pay, VA disability compensation, and DIC are not taxed and no state return is needed.",
+     "source_url": "https://www.revenue.nh.gov/news-and-media/repeal-nh-interest-and-dividends-tax-now-effect",
+     "source_title": "NH Department of Revenue Administration: Repeal of NH Interest and Dividends Tax Now in Effect",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State employment hiring preference",
+     "category": "employment",
+     "min_rating": "none",
+     "details": "When the state is the employer, preference in hiring goes to a veteran (as defined in RSA 21:50) who is one of multiple otherwise equally qualified candidates. Towns, cities, and counties give preference to state-citizen veterans with at least 90 days of wartime service. There is no points system and no disability tier in this statute. Spouses of totally disabled wartime veterans and unremarried surviving spouses get the preference under RSA 283:5, per the agency page.",
+     "source_url": "https://gc.nh.gov/rsa/html/XXIII/283/283-4.htm",
+     "source_title": "RSA 283:4 Employment of Veterans",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "New Hampshire Veterans' Home (Tilton)",
+     "category": "other",
+     "min_rating": "none",
+     "details": "The Veterans' Home in Tilton is a 250-bed intermediate, long-term care facility, with 100 beds for residents with dementia. Contact the home at (603) 527-4400 to learn who is eligible and the costs. I did not read the eligibility statute (RSA 119) because the page would not load, so check with the home.",
+     "source_url": "https://www.nhveterans.nh.gov/veterans-services/nh-state-benefits-veterans",
+     "source_title": "NH State Benefits for Veterans (Miscellaneous Benefits); RSA 119:9",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "NJ",
    "name": "New Jersey",
    "slug": "new-jersey",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "New Jersey Department of Veterans Affairs",
+    "url": "https://veterans.nj.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-17",
+   "status": "verified",
+   "notes": [
+    "The full property tax exemption is for a veteran who has 'active duty service' and is honorably discharged, and whose VA certification says the disability is 100% permanent and total. The state claim form (D.V.S.S.E., rev. March 2025) has a box for a 'Service-connected disability rated unemployable with payment of 100% and stated to be totally and permanently disabling,' so a TDIU rating counts only if it is paid at 100% and the VA states it is permanent and total. A 100% rating that is not marked permanent does not qualify, and the exemption cannot start before all of these are met.",
+    "The Treasury page says the veteran must be 100% permanently and totally disabled 'during active duty service.' The statute also says the disability must be 'sustained through enemy action, or accident, or resulting from disease contracted while in such active service.' A disability that comes only from National Guard or Reserve training, with no active duty, is a risk; ask the assessor before assuming it counts.",
+    "You must own the home (all or part) and live in it as your principal residence, and be domiciled in New Jersey. The exemption covers the house and the 'lot or curtilage' it sits on, not extra land or rental units. For a multi-unit building, only the part you occupy is exempt. An absence from the state of 12 months is treated as evidence you gave up your New Jersey domicile.",
+    "You file the claim (Form D.V.S.S.E.) with your municipal tax assessor, not the state. You can file any time during the tax year, and a prorated exemption is allowed from the date you acquire the home. Refunds of past tax are up to each town's governing body (N.J.S.A. 54:4-3.32) and cannot go back before January 16, 2018 unless you had qualifying wartime service. If the assessor denies you, appeal to your County Board of Taxation on Form A-1 by April 1 (January 15 in Burlington, Gloucester and Monmouth counties).",
+    "A surviving spouse keeps the exemption only while unmarried and only while owning and living in the home; if the spouse remarries or forms a new civil union, it ends. A surviving spouse of a service member who died on active duty also qualifies, and the surviving spouse of a veteran who is declared disabled after death can qualify. Claimants must tell the assessor about any change that affects eligibility.",
+    "The separate $250 deduction does not need any disability, but you must have 'active duty' service (Reserve and Guard members only if called to active duty; 'Active duty for training is ineligible') and an honorable discharge, and own the property on October 1 of the year before the tax year. The wartime-service rule for both the $250 deduction and the disabled veteran exemption ended December 4, 2020. Note that a Department of Veterans Affairs Gold Star page still says the $250 deduction needs wartime service; the Division of Taxation page (updated 8/12/25) controls.",
+    "New Jersey has no ordinary vehicle registration fee waiver for a 100% rated veteran. Free registration is limited to veterans blind from war service, or veterans with another service-connected disability who qualified for a free automobile from the VA and whose vehicle has special equipment. A disabled veteran who buys a car with VA or NJDVA money pays no sales tax only on the part of the price those agencies fund. Wheelchair symbol plates and parking placards for disability follow separate medical-certification rules.",
+    "The disabled veteran parking placard (N.J.S.A. 39:4-207.10) only exempts the vehicle from municipal parking meter fees for up to 24 hours. It does not allow parking in wheelchair-labeled spaces. It works only when you own the vehicle and are the driver or a passenger, and it must be renewed every 3 years.",
+    "The free hunting and fishing license program covers a veteran with a service-connected disability 'of any degree,' but you must be certified by mail first (not online or at a license agent) and have lived in New Jersey at least six months. The certification is invalid if you move out of New Jersey. You still need to complete hunter education and any other hunting requirements, and certified veterans do not get lottery preference.",
+    "New Jersey does not tax U.S. military pension or survivor benefit payments at any age, but federal civil service pensions are taxable even if they count military time. VA disability compensation is not part of New Jersey taxable income, but no page I could read directly says that in so many words, so confirm it with the Division of Taxation if it matters for your return.",
+    "The state civil service preference needs an honorable discharge and service in a listed war era; Reserve and Guard training time (basic training, advanced training, OCS, weekend drills, annual training) does not count toward the active duty requirement. Disabled veteran preference also requires at least 10% VA disability compensation. Many recent veterans have the 'wartime' dates problem, so check the era list before assuming you qualify.",
+    "Three older tuition programs are narrow: the Veterans Tuition Credit Program is only for Dec. 31, 1960 to May 7, 1975 service ($400 a year), War Orphan aid is for children of those who died in service or from service-connected disability ($500 a year), and POW-MIA free tuition is for children of POW or MIA parents. In-state tuition (NJTEAM Act) depends on qualifying for the federal All-Volunteer Force or Post-9/11 GI Bill programs, not on a disability rating."
+   ],
+   "benefits": [
+    {
+     "benefit": "100% disabled veteran property tax exemption (N.J.S.A. 54:4-3.30)",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "Your home and its lot are fully exempt from property tax if you served on active duty, were honorably discharged, and the VA certifies that you are 100% permanently and totally disabled from your service. The state claim form also accepts a service-connected disability 'rated unemployable with payment of 100% and stated to be totally and permanently disabling.' You must own all or part of the home, live in it as your principal residence, and be a New Jersey resident. File Form D.V.S.S.E. with your municipal tax assessor at any time during the tax year, with your DD-214 and the VA certification of disability; there is no income limit and no fixed deadline, and the exemption is prorated from the date you acquire the home.",
+     "source_url": "https://www.nj.gov/treasury/taxation/lpt/lpt-disabledvet.shtml",
+     "source_title": "NJ Division of Taxation - 100% Disabled Veteran Property Tax Exemption (updated 8/12/25); Claim Form D.V.S.S.E. (rev. March 2025); N.J.S.A. 54:4-3.30 as amended by P.L.2019, c.413",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Property tax exemption for the surviving spouse of a 100% disabled veteran or of a service member who died on active duty",
+     "category": "property_tax",
+     "min_rating": "100% P&T or TDIU",
+     "details": "An unremarried surviving spouse, civil union partner, or domestic partner gets the same full exemption on the home if the deceased veteran was a New Jersey resident, had active duty service, and was honorably discharged and VA-certified 100% permanently and totally disabled (or died on active duty). The surviving spouse can also qualify if the VA declares the veteran disabled after death. You must own and live in the home as your principal residence and live in New Jersey, and the exemption ends if you remarry or form a new civil union. File Form D.V.S.S.E. with the municipal assessor with the death certificate, marriage record, DD-214 (or Military Notification of Death) and the VA certification.",
+     "source_url": "https://www.nj.gov/treasury/taxation/lpt/lpt-disabledvet.shtml",
+     "source_title": "NJ Division of Taxation - 100% Disabled Veteran Property Tax Exemption (surviving spouse requirements); N.J.S.A. 54:4-3.30(b)-(c)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "$250 Veterans Property Tax Deduction",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "Any honorably discharged veteran with active duty service can take $250 off the tax bill each year; Reserve and Guard members must have been called to active duty, and active duty for training does not count. As of October 1 of the year before the tax year, you must be a New Jersey legal resident and own the property. The unremarried surviving spouse of an eligible veteran or of a service member who died on active duty also qualifies. File Form V.S.S. with your local assessor or tax collector with your DD-214 and proof of ownership and residency; if denied, appeal to the County Board of Taxation (Form A-1, by April 1).",
+     "source_url": "https://www.nj.gov/treasury/taxation/lpt/lpt-veterans.shtml",
+     "source_title": "NJ Division of Taxation - $250 Veterans Property Tax Deduction (updated 8/12/25); Form V.S.S.",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free registration for blind or service-disabled veterans (and sales tax exemption on a VA-funded vehicle)",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "The Motor Vehicle Commission offers free registration only to a veteran without sight from war service who is eligible for state compensation under N.J.S.A. 38:18-1, or a veteran with another service-connected disability who has qualified for a free automobile from the VA. The vehicle must be equipped with special attachments needed to operate it, be insured in New Jersey, and you need a New Jersey driver license. Call 609-292-6500 ext. 5076 for the application and mail it with the VA seal or stamp to the MVC Government Unit, P.O. Box 016, Trenton, NJ 08666-0016. Separately, a disabled veteran pays no Sales Tax on the part of a car's price paid with VA or NJDVA funds; any out-of-pocket amount is taxed.",
+     "source_url": "https://www.nj.gov/mvc/drivertopics/veterans.htm",
+     "source_title": "NJ Motor Vehicle Commission - Active Duty Military Personnel and Veterans (free registration); NJ Division of Taxation Consumer Automotive Tax Guide, Q49",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran (DV) license plates and parking-meter placard",
+     "category": "vehicle",
+     "min_rating": "any service-connected",
+     "details": "A Disabled Veteran plate series (DV1000-DV9999) is listed at $15, and the MVC form says you need a copy of your DD-214 or DD-215 and the VA 'Award of Disability percentage letter,' with the application approved by a liaison who certifies membership; the MVC pages do not state a minimum rating. Separately, a Disabled Veteran placard (Form SP-47, DD-214 plus VA Award of Disability letter) exempts a vehicle you own from municipal parking meter fees for up to 24 hours, requires you to be the driver or a passenger, must be renewed every 3 years, and cannot be used in wheelchair-labeled spaces. Apply at any MVC agency or by mail to the NJMVC Special Plates Unit, P.O. Box 015, Trenton, NJ 08666-015.",
+     "source_url": "https://www.nj.gov/mvc/vehicletopics/disvet.htm",
+     "source_title": "NJ Motor Vehicle Commission - Disabled Veteran, Purple Heart Recipient Placards (N.J.S.A. 39:4-207.10); Military Personnel plates page; Form SP-23",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free hunting and fishing licenses, stamps and permits for disabled veterans",
+     "category": "recreation",
+     "min_rating": "any service-connected",
+     "details": "Honorably discharged New Jersey resident veterans whom the VA has declared to have a 'service-connected disability of any degree' get free hunting and fishing licenses, stamps and permits. You must be certified by mail first: send the Disabled Veterans application with your VA disability letter or VA card, your DD-214, and proof of at least six months of New Jersey residency to Disabled Veteran Licensing, Division of Fish and Wildlife, PO Box 420, Trenton, NJ 08625-0420. Certified veterans get unlimited antlerless deer permits, but the state does not give them lottery preference, and hunter education is still required to hunt.",
+     "source_url": "https://dep.nj.gov/njfw/licenses-and-permits/disabled-veteran-license-information/",
+     "source_title": "NJ DEP Division of Fish and Wildlife - Disabled Veteran License Information; Instructions for Free NJ Disabled Veterans License",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State park disability pass and free Island Beach State Park disabled veteran vehicle permit",
+     "category": "recreation",
+     "min_rating": "any service-connected",
+     "details": "New Jersey has no general free state park pass for disabled veterans. The state park Senior Citizen and Disability Pass gives free entrance and discounted camping to New Jersey residents with a disability, with no veteran requirement, and the department said it was being updated (disability passes only from the Trenton office, 1-800-843-6420). Island Beach State Park has a free disabled veteran vehicle permit for designated fishing areas; it needs a DD-214 showing honorable discharge and proof of a service-connected disability. I could not read the DEP park pages directly, so confirm both with the State Park Service.",
+     "source_url": "https://dep.nj.gov/parksandforests/get-outside/state-park-pass/",
+     "source_title": "NJ DEP State Parks, Forests and Historic Sites - State Park Pass; Island Beach State Park permits",
+     "date_verified": "2026-10-17",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "In-state tuition at New Jersey public colleges (NJTEAM Act)",
+     "category": "education",
+     "min_rating": "none",
+     "details": "A veteran or covered family member 'living in New Jersey and attending a public institution of higher education in New Jersey' is treated as a state resident for tuition, whatever their home state. The veteran must have served on active duty, been discharged or released, and qualify for federal All-Volunteer Force or Post-9/11 GI Bill education benefits. Covered individuals are family members entitled to Post-9/11 benefits through a veteran (transferred benefits) and, for terms beginning after March 1, 2019, people entitled to VA Vocational Rehabilitation and Employment benefits. Show your VA education benefit eligibility to the college's registrar or veterans office.",
+     "source_url": "https://pub.njleg.gov/bills/2018/PL19/264_.HTM",
+     "source_title": "New Jersey Legislature - P.L.2015, c.32 (NJTEAM Act) as amended by P.L.2019, c.264 (N.J.S.A. 18A:62-4.1a, 4.1b)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State veteran tuition aid: Veterans Tuition Credit Program, War Orphan Tuition Assistance, POW-MIA Tuition Benefit",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "The Veterans Tuition Credit Program pays $400 a year ($200 per semester full-time; $100 per semester part-time) to veterans eligible for federal education benefits who served on active duty from Dec. 31, 1960 to May 7, 1975 and lived in New Jersey at induction or for a year before applying. War Orphan Tuition Assistance pays $500 a year for four years to children of service members who died in service or from service-connected disability, or who are MIA. The POW-MIA Tuition Benefit gives free undergraduate tuition to a child of a New Jersey POW or MIA declared after January 1, 1960. Contact the Veterans Benefits Bureau at 888-865-8387 or VBB@dva.nj.gov.",
+     "source_url": "https://www.nj.gov/dva/assets/documents/NJ%20Veterans%20Benefits%20Guide.pdf",
+     "source_title": "NJ Department of Veterans Affairs - NJ Veterans Benefits Guide (PDF created April 2026), Education section",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military pension and survivor benefit exemption from state income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "The Division of Taxation says 'U.S. military pension and survivor's benefit payments are not taxable' for New Jersey residents, at any age and without a disability test. Regular military pay is taxable, but combat zone pay is not taxable for tax year 2021 and later. Federal civil service pensions are still taxable even if they credit military service. New Jersey has an income tax, so other income is taxed normally. VA disability compensation is not part of New Jersey taxable income as far as I can tell, but I could not find a page I could read that says so directly; confirm with the Division of Taxation.",
+     "source_url": "https://www.nj.gov/treasury/taxation/military/taxinformation.shtml",
+     "source_title": "NJ Division of Taxation - Military Personnel and Veterans (updated 4/30/25)",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "$6,000 Veteran Income Tax Exemption",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "If you were honorably discharged or released under honorable circumstances from active duty on or before the last day of the tax year, you can claim a $6,000 exemption on your New Jersey income tax return, in addition to your other exemptions. Your spouse can claim a second $6,000 on a joint return if they are also a veteran. Check the veteran exemption oval (resident return) or box (nonresident return); the first time you claim it you must provide official documentation such as a DD-214, or pre-certify it with the Veteran Income Tax Exemption Submission Form. It does not pass to a surviving spouse except for the year of death on a joint return.",
+     "source_url": "https://www.nj.gov/treasury/taxation/military/vetexemption.shtml",
+     "source_title": "NJ Division of Taxation - Income Tax Exemption for Veterans",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Civil service Veterans and Disabled Veterans preference",
+     "category": "employment",
+     "min_rating": "10%",
+     "details": "Eligible veterans who pass an open competitive civil service exam are placed at the top of the list ahead of non-veterans, and eligible disabled veterans are placed above both. You need an honorable discharge from active duty with service in a qualifying war era (some eras require 90 days; later eras need 14 days or a service-incurred injury, and the right geographic area), and for the disabled veteran level 'at least a 10% disability compensation' from the VA. Spouses and surviving spouses of disabled veterans can qualify in some cases. Submit the Civil Service Veterans Preference Claim Form, DD-214 and VA award letter through the NJ Department of Veterans Affairs (888-865-8387, VBB@dva.nj.gov), up to 8 days before a list is issued.",
+     "source_url": "https://www.nj.gov/dva/veterans/services/civil-service-preference/",
+     "source_title": "NJ Department of Veterans Affairs - Civil Service Preference for Veterans (updated 10/02/2026); P.L.2007, c.115",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "New Jersey Catastrophic Entitlement ($150 a month)",
+     "category": "other",
+     "min_rating": "100% P&T",
+     "details": "A New Jersey resident wartime veteran with a 100% permanent service-connected rating from the VA for one of seven catastrophic disabilities gets a monthly payment of $150. The listed disabilities are loss of sight; amputation of both hands, both feet, or one hand and one foot; hemiplegia with permanent paralysis of one leg and one arm on the same side; paraplegia; osteochondritis with permanent loss of use of both legs; multiple sclerosis with loss of use of both feet or legs; and quadriplegia. A widow or widower who was in receipt of the entitlement, or would have been entitled to apply, can qualify. Contact the Veterans Benefits Bureau at 888-865-8387 or VBB@dva.nj.gov and use the Catastrophic Entitlement Application.",
+     "source_url": "https://www.nj.gov/dva/veterans/benefits-resources/",
+     "source_title": "NJ Department of Veterans Affairs - Benefits & Resources (updated 10/06/2026); Gold Star Families page; Veterans Benefits Guide",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "New Jersey Veterans Memorial Homes and state veterans cemetery",
+     "category": "other",
+     "min_rating": "none",
+     "details": "The three state long-term care homes (Paramus, Menlo Park, Vineland) are open to veterans honorably discharged from war or peacetime service, their spouses, and spouses and parents of members killed in action in wartime; preference goes to applicants who were state residents for at least two years, and residents pay according to ability based on income. The Brigadier General William C. Doyle Veterans Memorial Cemetery in Wrightstown offers free interment and perpetual care to veterans, their spouses, and dependent children, and pre-registration is encouraged. Contact each home through the NJDVA Memorial Homes page, and the cemetery at 609-738-2400.",
+     "source_url": "https://www.nj.gov/dva/veterans/memorial-homes/",
+     "source_title": "NJ Department of Veterans Affairs - Veterans Memorial Homes (updated 10/13/2026); Doyle Veterans Memorial Cemetery page; Veterans Benefits Guide",
+     "date_verified": "2026-10-17",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "NM",
