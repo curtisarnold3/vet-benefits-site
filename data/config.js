@@ -6,7 +6,7 @@ window.SITE_CONFIG = {
 
   /* Canonical base URL. Used ONLY for canonical/og tags. All page links are relative, so the
      site works at a root domain (Vercel) and under /vet-benefits-site/ (GitHub Pages) with no change. */
-  baseUrl: "https://vet-benefits-site.vercel.app",
+  baseUrl: "https://claimbasecamp.com",
 
   /* Waitlist form handler. Mode "formspree" posts straight to Formspree from the browser (works on
      Vercel AND GitHub Pages). Mode "vercel" posts to /api/waitlist (Vercel only; see README). */

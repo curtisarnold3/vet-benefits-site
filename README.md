@@ -47,11 +47,18 @@ Every link in the HTML is relative (`../assets/site.css`, `../data/states.json`)
 3. The site appears at `https://curtisarnold3.github.io/vet-benefits-site/`.
 4. `.nojekyll` is present so folders and files starting with `_` or `.` are served as-is.
 
-## Custom domain
+## Custom domain: claimbasecamp.com
 
-1. Buy the domain. In Vercel: **Project > Settings > Domains > Add**. Vercel shows the DNS records (an A record for the apex and a CNAME for `www`). Add them at your registrar.
-2. **Do not** also set the same custom domain in GitHub Pages. Two hosts claiming one domain fight. Leave Pages on its `github.io` URL as the backup.
-3. After DNS verifies, update `baseUrl` in `data/config.js` and push.
+The domain is registered at Hostinger (Oct 17, 2026). Vercel serves the site and should also manage the DNS.
+
+1. Attach the domain to the Vercel project (already done): `vercel domains add claimbasecamp.com vet-benefits-site` and the same for `www.claimbasecamp.com`.
+2. At Hostinger (hPanel > Domains > claimbasecamp.com > DNS / Nameservers), choose **Change nameservers** and enter `ns1.vercel-dns.com` and `ns2.vercel-dns.com`. Save. This hands DNS to Vercel; Vercel then creates the A/CNAME records itself and issues the HTTPS certificate.
+   - Alternative if you want to keep Hostinger DNS: add an `A` record `@` -> `76.76.21.21` and a `CNAME` record `www` -> `cname.vercel-dns.com`.
+3. Wait for propagation (minutes to a few hours). Check with `vercel domains inspect claimbasecamp.com`; the Vercel dashboard shows "Valid Configuration" when done.
+4. `www.claimbasecamp.com` redirects to the apex automatically once both are attached.
+5. `baseUrl` in `data/config.js` is already `https://claimbasecamp.com`.
+6. **Do not** set the same custom domain in GitHub Pages. Leave Pages on its `github.io` URL as the backup; two hosts claiming one domain fight.
+7. Registrar transfer to Vercel is possible after the 60-day lock on new registrations (after Dec 16, 2026). Not required; nameservers are enough.
 
 ## Waitlist (Formspree) setup, about 5 minutes
 
