@@ -19,22 +19,22 @@
 
 <h2 style="margin-top:30px">All benefit guides</h2>
 <div class="grid">
-<a class="tile" href="health-care.html"><h3>VA health care</h3><p>Priority groups and 2026 copays by rating.</p></a>
-<a class="tile" href="dependents.html"><h3>Dependents</h3><p>Spouse, kids, parents added at 30%+.</p></a>
-<a class="tile" href="tdiu.html"><h3>TDIU</h3><p>Paid at 100% when you cannot work.</p></a>
-<a class="tile" href="smc.html"><h3>Special Monthly Compensation</h3><p>SMC-K, housebound, aid and attendance.</p></a>
-<a class="tile" href="pt-status.html"><h3>What P&amp;T means</h3><p>How to tell if you have it and what it unlocks.</p></a>
-<a class="tile" href="champva.html"><h3>CHAMPVA</h3><p>Family health coverage at P&amp;T.</p></a>
-<a class="tile" href="chapter-35.html"><h3>Chapter 35 (DEA)</h3><p>School money for spouse and kids at P&amp;T.</p></a>
-<a class="tile" href="gi-bill.html"><h3>Post-9/11 GI Bill</h3><p>Based on service, not rating. Vs. Chapter 35.</p></a>
-<a class="tile" href="vre.html"><h3>Chapter 31 VR&amp;E</h3><p>Training and degrees at 10% or 20%.</p></a>
-<a class="tile" href="crdp-crsc.html"><h3>CRDP and CRSC</h3><p>For military retirees.</p></a>
-<a class="tile" href="dental.html"><h3>VA dental</h3><p>Who gets it; Class IV at 100%.</p></a>
-<a class="tile" href="caregivers.html"><h3>Caregiver programs</h3><p>PCAFC at 70%; PGCSS for all.</p></a>
-<a class="tile" href="housing-auto-grants.html"><h3>Housing and auto grants</h3><p>SAH, SHA, HISA, automobile allowance.</p></a>
-<a class="tile" href="home-loan.html"><h3>Home loan and property tax</h3><p>Funding fee waiver; state exemptions.</p></a>
-<a class="tile" href="hiring-preference.html"><h3>Federal hiring preference</h3><p>10-point, CPS, the 30% authority.</p></a>
-<a class="tile" href="commissary-travel.html"><h3>Commissary, travel pay, passes</h3><p>Plus faster Social Security at P&amp;T.</p></a>
+<a class="tile" href="../benefits/health-care.html"><h3>VA health care</h3><p>Priority groups and 2026 copays by rating.</p></a>
+<a class="tile" href="../benefits/dependents.html"><h3>Dependents</h3><p>Spouse, kids, parents added at 30%+.</p></a>
+<a class="tile" href="../benefits/tdiu.html"><h3>TDIU</h3><p>Paid at 100% when you cannot work.</p></a>
+<a class="tile" href="../benefits/smc.html"><h3>Special Monthly Compensation</h3><p>SMC-K, housebound, aid and attendance.</p></a>
+<a class="tile" href="../benefits/pt-status.html"><h3>What P&amp;T means</h3><p>How to tell if you have it and what it unlocks.</p></a>
+<a class="tile" href="../benefits/champva.html"><h3>CHAMPVA</h3><p>Family health coverage at P&amp;T.</p></a>
+<a class="tile" href="../benefits/chapter-35.html"><h3>Chapter 35 (DEA)</h3><p>School money for spouse and kids at P&amp;T.</p></a>
+<a class="tile" href="../benefits/gi-bill.html"><h3>Post-9/11 GI Bill</h3><p>Based on service, not rating. Vs. Chapter 35.</p></a>
+<a class="tile" href="../benefits/vre.html"><h3>Chapter 31 VR&amp;E</h3><p>Training and degrees at 10% or 20%.</p></a>
+<a class="tile" href="../benefits/crdp-crsc.html"><h3>CRDP and CRSC</h3><p>For military retirees.</p></a>
+<a class="tile" href="../benefits/dental.html"><h3>VA dental</h3><p>Who gets it; Class IV at 100%.</p></a>
+<a class="tile" href="../benefits/caregivers.html"><h3>Caregiver programs</h3><p>PCAFC at 70%; PGCSS for all.</p></a>
+<a class="tile" href="../benefits/housing-auto-grants.html"><h3>Housing and auto grants</h3><p>SAH, SHA, HISA, automobile allowance.</p></a>
+<a class="tile" href="../benefits/home-loan.html"><h3>Home loan and property tax</h3><p>Funding fee waiver; state exemptions.</p></a>
+<a class="tile" href="../benefits/hiring-preference.html"><h3>Federal hiring preference</h3><p>10-point, CPS, the 30% authority.</p></a>
+<a class="tile" href="../benefits/commissary-travel.html"><h3>Commissary, travel pay, passes</h3><p>Plus faster Social Security at P&amp;T.</p></a>
 </div>
 <p class="verified">Ladder data last verified 2026-10-16. Dollar figures are VA rates effective December 1, 2025 and change every December 1.</p>
 </main>
@@ -48,7 +48,7 @@
     d.tiers.forEach(function(t){
       j.insertAdjacentHTML('beforeend','<a class="pill" href="#'+t.id+'">'+esc(t.short)+'</a>');
       l.insertAdjacentHTML('beforeend','<section class="card rung" id="'+t.id+'"><h2>'+esc(t.label)+'</h2><p class="muted">'+esc(t.intro)+'</p><ul>'+
-        t.items.map(function(i){return '<li><b>'+esc(i.name)+'</b><span>'+esc(i.detail)+'</span> <a href="'+i.page+'">Details</a></li>'}).join('')+'</ul></section>');
+        t.items.map(function(i){return '<li><b>'+esc(i.name)+'</b><span>'+esc(i.detail)+'</span> <a href="'+(/^(\.\.|https?:)/.test(i.page)?i.page:'../benefits/'+i.page)+'">Details</a></li>'}).join('')+'</ul></section>');
     });
     if(location.hash){var el=document.querySelector(location.hash);if(el)el.scrollIntoView()}
   }).catch(function(){document.getElementById('ladder').innerHTML='<div class="card warn">Could not load the ladder data. Use the guides below.</div>'});

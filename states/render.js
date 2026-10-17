@@ -8,15 +8,15 @@
     var cats=d.meta.categories,order=d.meta.rating_order;
     if(idx){
       var vs=d.states.filter(function(s){return s.status==='verified'}),ps=d.states.filter(function(s){return s.status!=='verified'});
-      idx.innerHTML='<h2>Ready now ('+vs.length+')</h2><div class="grid">'+vs.map(function(s){return '<a class="tile" href="'+s.slug+'.html"><h3>'+esc(s.name)+'</h3><p>'+s.benefits.length+' benefits · verified '+esc(s.last_verified)+'</p></a>'}).join('')+'</div>'+
-        '<h2 style="margin-top:26px">Coming in batches ('+ps.length+')</h2><p class="muted">These pages exist but are not researched yet. They show a "pending" notice and the official state veterans agency link where known.</p><div class="pills">'+ps.map(function(s){return '<a class="pill" href="'+s.slug+'.html" style="text-decoration:none">'+esc(s.name)+'</a>'}).join('')+'</div>';
+      idx.innerHTML='<h2>Ready now ('+vs.length+')</h2><div class="grid">'+vs.map(function(s){return '<a class="tile" href="../states/'+s.slug+'.html"><h3>'+esc(s.name)+'</h3><p>'+s.benefits.length+' benefits · verified '+esc(s.last_verified)+'</p></a>'}).join('')+'</div>'+
+        '<h2 style="margin-top:26px">Coming in batches ('+ps.length+')</h2><p class="muted">These pages exist but are not researched yet. They show a "pending" notice and the official state veterans agency link where known.</p><div class="pills">'+ps.map(function(s){return '<a class="pill" href="../states/'+s.slug+'.html" style="text-decoration:none">'+esc(s.name)+'</a>'}).join('')+'</div>';
       return;
     }
     if(!el)return;
     var code=el.getAttribute('data-state'),s=d.states.filter(function(x){return x.code===code})[0];
     if(!s){el.innerHTML='<div class="card warn">Unknown state code.</div>';return}
     if(s.status!=='verified'){
-      el.innerHTML='<div class="card warn"><h2>'+esc(s.name)+': research not finished</h2><p>This page is being built in batches, with every benefit checked against the official state source. Until then, start with '+(s.agency.url?'<a href="'+esc(s.agency.url)+'">'+esc(s.agency.name||s.name+' veterans affairs')+'</a>':'your state veterans affairs department')+' and your county veterans service officer.</p><p><a class="btn sm sec" href="./">All states</a> <a class="btn sm sec" href="'+ROOT+'benefits/">Federal rating ladder</a></p></div>';
+      el.innerHTML='<div class="card warn"><h2>'+esc(s.name)+': research not finished</h2><p>This page is being built in batches, with every benefit checked against the official state source. Until then, start with '+(s.agency.url?'<a href="'+esc(s.agency.url)+'">'+esc(s.agency.name||s.name+' veterans affairs')+'</a>':'your state veterans affairs department')+' and your county veterans service officer.</p><p><a class="btn sm sec" href="../states/">All states</a> <a class="btn sm sec" href="'+ROOT+'benefits/">Federal rating ladder</a></p></div>';
       return;
     }
     var h='<div class="card good"><h2>Official source</h2><p><a href="'+esc(s.agency.url)+'">'+esc(s.agency.name)+'</a> is the state agency. Benefits below were checked against state .gov pages and state law on <b>'+esc(s.last_verified)+'</b>. A <span class="badge flag">Needs verification</span> tag means we could not confirm every detail on an official page.</p></div>';
