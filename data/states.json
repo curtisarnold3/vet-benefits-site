@@ -1,7 +1,7 @@
 {
  "meta": {
   "schema_version": 1,
-  "last_updated": "2026-10-17",
+  "last_updated": "2026-10-18",
   "categories": {
    "property_tax": "Property tax",
    "vehicle": "Vehicle, plates, and ID",
@@ -7411,130 +7411,1702 @@
    "name": "South Dakota",
    "slug": "south-dakota",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "South Dakota Department of Veterans Affairs",
+    "url": "https://vetaffairs.sd.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "The big property tax break is a $200,000 reduction in the taxable value of your home (not a full exemption), and it requires a permanent and total (P&T) service-connected rating. A 100% rating that is not P&T may not qualify; ask the county director of equalization.",
+    "Apply for the property tax exemption to the county director of equalization by November 1. Once approved you do not reapply, but it ends if you sell, stop living there, or the use changes.",
+    "The home must be classified owner-occupied (your principal residence). Only one dwelling can be classified this way, and the exemption covers the home, garage and lot.",
+    "Missed the deadline? State law lets you petition the county commissioners for a refund. If your P&T claim was still pending with VA, taxes back to the claim effective date (up to 4 years) must be refunded.",
+    "A surviving spouse keeps the $200,000 exemption only while unremarried. The spouse qualifies if the veteran was rated P&T or if the spouse receives VA DIC for a service-connected death.",
+    "Separate, fuller exemption: a paraplegic veteran (or veteran with loss or loss of use of both lower extremities) with a wheelchair-designed home can be fully exempt from property tax, and the injury does not need to be service related.",
+    "The disabled veteran plate needs a total service-connected allotment, K award, or statutory loss-of-use benefit, and the disability must have been incurred in wartime or an armed-conflict mission. A 100% rating alone may not satisfy that.",
+    "The reduced-fee hunting and fishing card starts at 40% service-connected, but the state park lifetime pass requires 100% total disability (or K award). The two thresholds differ, so check each.",
+    "Free tuition for veterans is capped at 1 to 4 academic years, is for wartime veterans, and is paid only after federal education benefits are used up. A veteran qualifying solely on a disability needs at least a 10% VA rating.",
+    "South Dakota has no individual income tax, so military retirement pay and VA compensation are not taxed by the state.",
+    "The 2026 Legislature amended the veteran property tax laws (SL 2026 ch 40); the $200,000 figure in the current code text is unchanged, but confirm the effective date and any application form changes with your county."
+   ],
+   "benefits": [
+    {
+     "benefit": "Disabled veteran property tax exemption ($200,000)",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "Exempts $200,000 of the full and true value of an owner-occupied dwelling (home, garage and lot) for a veteran rated permanently and totally disabled from a service-connected disability. Apply on the Department of Revenue form to your county director of equalization on or before November 1, with a VA statement or benefits letter showing P&T. No annual reapplication once approved. Whether a TDIU-only veteran qualifies is not stated in the statute.",
+     "source_url": "https://sdlegislature.gov/Statutes/10-4-40",
+     "source_title": "SDCL 10-4-40 Partial exemption--Owner-occupied dwellings of certain disabled veterans",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Surviving spouse property tax exemption ($200,000)",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "The same $200,000 exemption applies to the owner-occupied home of the surviving spouse of a veteran rated P&T, or of a surviving spouse who receives VA DIC for a service-connected death. It ends if the spouse remarries, sells, stops living there or the use changes. Apply to the county director of equalization by November 1.",
+     "source_url": "https://sdlegislature.gov/Statutes/10-4-41",
+     "source_title": "SDCL 10-4-41 Partial exemption--Owner-occupied dwellings of surviving spouses of certain veterans",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Paraplegic veteran full property tax exemption",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "A dwelling designed for wheelchair use that a paraplegic veteran, or a veteran with loss or loss of use of both lower extremities (or the unremarried widow or widower), owns and occupies for the full calendar year is exempt from property tax. The Department of Revenue says the injury does not have to be service related and no annual reapplication is needed. Apply to the county director of equalization by November 1.",
+     "source_url": "https://sdlegislature.gov/Statutes/10-4-24.10",
+     "source_title": "SDCL 10-4-24.10 Exemption for dwelling of paraplegic or amputee veteran or surviving spouse",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Disabled veteran license plates ($10, no registration fee)",
+     "category": "vehicle",
+     "min_rating": "100%",
+     "details": "A veteran who receives a veteran's allotment for a total service-connected disability, a K award, or a statutory benefit for loss of use of extremities (disability incurred in wartime or armed-conflict service) can get disabled veteran plates for $10 initial and $10 annual renewal, with no annual registration fee, plus a $12 mailing fee. Up to two sets of plates are allowed, usable on cars, pickups or vans (heavier pickups and motorhomes pay regular fees). Apply with form MV-4000 through the county treasurer or Department of Revenue.",
+     "source_url": "https://sdlegislature.gov/Statutes/32-5-160",
+     "source_title": "SDCL 32-5-160 and 32-5-157 (military specialty plates)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Reduced-fee hunting and fishing card",
+     "category": "recreation",
+     "min_rating": "varies",
+     "details": "Residents who receive a VA allotment for a 40 percent or greater service-connected disability, or the K award, can get a small game plus fishing license card for $10, valid four years. The 40% threshold is the real minimum, not 10%. Send the application, VA letter and fee to Game, Fish and Parks, Fort Pierre.",
+     "source_url": "https://sdlegislature.gov/Statutes/41-6-10.2",
+     "source_title": "SDCL 41-6-10.2 Certain disabled residents eligible for reduced license fees",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Lifetime state park entrance license and 50% camping discount",
+     "category": "recreation",
+     "min_rating": "100%",
+     "details": "Residents with a VA letter or K award showing 100% total service-connected disability (also POWs and Purple Heart recipients) get a lifetime park entrance license with free vehicle entry and 50% off camping and electrical fees. Apply online through Go Outdoors South Dakota and upload the VA document; GFP says status updates come within two weeks.",
+     "source_url": "https://gfp.sd.gov/vet-pow/",
+     "source_title": "Military Park Entrance Licenses (SD Game, Fish and Parks)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled veteran special hunts (deer, pheasant)",
+     "category": "recreation",
+     "min_rating": "varies",
+     "details": "GFP and nonprofit sponsors hold free special hunts for disabled veterans. The 2025 resident deer hunt required a VA rating of 20% or more service-connected disability, a K award, or Purple Heart; the special pheasant hunt uses the same 20% threshold for residents and nonresidents. Apply by the posted deadline (2025 deer hunt: July 31); dates change yearly.",
+     "source_url": "https://gfp.sd.gov/special-pheasant-hunt/",
+     "source_title": "Disabled Veteran/Purple Heart Recipient Special Pheasant Hunt",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free tuition for veterans at state schools",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "Wartime veterans who are South Dakota residents get tuition-free undergraduate study at Board of Regents schools and technical colleges for one month of academic time per month of qualified service, with a minimum of one and maximum of four academic years. A veteran qualifying solely through disability needs a VA rating of 10% or higher. Federal education benefits must be exhausted first, and the Board of Regents determines eligibility.",
+     "source_url": "https://sdlegislature.gov/Statutes/13-55-2",
+     "source_title": "SDCL 13-55-2 Veterans entitled to free tuition at state institutions",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free tuition for children of residents who died in service",
+     "category": "education",
+     "min_rating": "none",
+     "details": "The child (under 25) of a South Dakota resident who died in service in the armed forces is entitled to free tuition at Board of Regents schools and technical colleges. This applies to death in service, not to children of living disabled veterans. A separate law covers children and spouses of National Guard members who died or were totally and permanently disabled on duty.",
+     "source_url": "https://sdlegislature.gov/Statutes/13-55-6",
+     "source_title": "SDCL 13-55-6 Free education of children of residents who died during service",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans preference in public employment",
+     "category": "employment",
+     "min_rating": "none",
+     "details": "Eligible veterans get preference for appointment, employment and promotion in state, county, municipal and school district jobs, and must be interviewed if minimally qualified. A veteran with a service-connected disability is preferred over a nondisabled veteran. SD does not use fixed point values; apply through the hiring agency and identify veteran status on the application.",
+     "source_url": "https://sdlegislature.gov/Statutes/3-3-1",
+     "source_title": "SDCL 3-3-1 Veterans preferred in public employment",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "No state income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "South Dakota has no personal income tax, so military retirement pay and VA disability compensation are not taxed by the state. The Department of Revenue states it has no corporate, unitary or personal income tax. No application is needed.",
+     "source_url": "https://dor.sd.gov/media/avyep2sr/2026-7_sales-use-tax-guide.pdf",
+     "source_title": "SD Department of Revenue Sales and Use Tax Guide (July 2026)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "TN",
    "name": "Tennessee",
    "slug": "tennessee",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Tennessee Department of Veterans Services",
+    "url": "https://www.tn.gov/veteran.html"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "Tennessee property tax relief is a reimbursement, not an exemption. You pay the tax first, then the state reimburses you, and only on the first $175,000 of market value. The Comptroller says you must have already paid your taxes when you first apply.",
+    "The property tax program has no income limit for disabled veterans. The income limits on the Comptroller brochure apply to the separate elderly and disabled homeowner programs. Eligibility is checked against VA records through the F-16 consent form, so a pending or temporary 100% rating is a risk.",
+    "The qualifying disabilities are narrow: paraplegia, paralysis of both legs, loss or loss of use of two or more limbs, legal blindness, 100% permanent and total from POW service, or a service-connected permanent and total disability as determined by the VA. A 100% rating that is not marked permanent and total may not qualify.",
+    "The state veterans page for surviving spouses still shows an old $100,000 cap. The 2026 Comptroller brochure shows $175,000 for surviving spouses too. Use the Comptroller figure and confirm with your county trustee.",
+    "The free Disabled Veteran (DV) plate is not tied to the rating alone. The state lists loss or loss of use of a foot or hand, permanent loss of vision in both eyes, or a 100% permanent and total service-connected disability. Only the first plate is free. The county motor vehicle privilege tax exemption needs 100% permanent and total (or former POW).",
+    "The TWRA disabled veteran hunting and fishing license is a one-time $10 fee for residents either 100% permanent and totally disabled from a service-connected cause or 30% or more disabled by reason of war service. The 30% route is tied to wartime service, so check eligibility with TWRA if your service was not during a war period.",
+    "State parks give 100% service-connected veterans 50% off camping and cabins year-round, with other Tennessee resident veterans getting 25% in season and 50% in December through February. Premium sites are excluded, and the tn.gov veterans page still shows the older, narrower discount rules.",
+    "Tennessee has no tax on wages or on military retirement or VA compensation, and the Hall tax on interest and dividends ended for tax years beginning January 1, 2021. Property taxes and sales taxes still apply.",
+    "State tuition help is narrow. Tennessee waives tuition for spouses and dependents of POW, MIA, killed-in-action, or died-on-duty service members, not for dependents of living disabled veterans. The Helping Heroes Grant depends on specific post-9/11 campaign medals, not a rating.",
+    "Several tn.gov veterans pages are old or inconsistent with each other (surviving spouse cap, state park discounts, parking statute text from 2010). When in doubt, the Comptroller property tax brochure and the 2026 OREA report are the most recent official sources."
+   ],
+   "benefits": [
+    {
+     "benefit": "Property tax relief for disabled veterans",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "The state reimburses county and city property taxes on the first $175,000 of market value of your primary residence. You qualify with a VA service-connected permanent and total disability, 100% P&T from POW service, or specific losses (paraplegia, paralysis of both legs, loss or loss of use of two or more limbs, legal blindness). There is no income limit. Apply with the county trustee (or city collecting official) when you receive your 2026 tax bill; the deadline is 35 days after the delinquency date and taxes must be paid by then. Whether a P&T TDIU rating counts was not stated on the official pages.",
+     "source_url": "https://comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TaxReliefBrochure.pdf",
+     "source_title": "Comptroller of the Treasury, 2026 Property Tax Relief Program brochure",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Property tax relief for surviving spouses of disabled veterans",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "A surviving spouse who has not remarried can receive the same reimbursement on the first $175,000 of market value if the veteran met the disability requirements at death. Relief also extends to spouses of veterans whose death resulted from a VA-determined service-connected, combat-related cause. Apply with the county trustee using form F-16S with a death certificate and personal ID. The tn.gov veterans page still lists an older $100,000 cap, so confirm the figure with the trustee.",
+     "source_url": "https://comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TaxReliefBrochure.pdf",
+     "source_title": "Comptroller of the Treasury, 2026 Property Tax Relief Program brochure",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "County motor vehicle privilege tax exemption",
+     "category": "vehicle",
+     "min_rating": "100% P&T",
+     "details": "Veterans with a 100 percent permanent, total service-connected disability, and former prisoners of war, are exempt from the county motor vehicle privilege tax (the wheel tax). Submit evidence of the disability to the county officer who collects the tax, usually the county clerk. The exemption is under T.C.A. 5-8-102.",
+     "source_url": "https://www.tn.gov/veteran/veteran-benefits/tn-state-benefits/motor-services/county-motor-vehicle-privilege-tax.html",
+     "source_title": "County Motor Vehicle Privilege Tax (Tennessee Department of Veterans Services)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Free Disabled Veteran license plate",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "The first Disabled Veteran (DV) plate is issued free for one vehicle under T.C.A. 55-4-256. Qualifying: loss or permanent loss of use of one or both feet or hands, permanent impairment of vision in both eyes, or a 100% permanent and total service-connected disability (the Comptroller's 2026 report lists these four). Additional plates cost the normal fees. Apply at your county clerk.",
+     "source_url": "https://comptroller.tn.gov/content/dam/cot/orea/advanced-search/2026/VeteransReport.pdf",
+     "source_title": "State Benefits and Services for Veterans in Tennessee (Comptroller OREA, March 2026)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran parking placard and decal",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "Veterans eligible for a free DV plate may, from July 1, 2026, choose a free Disabled Veteran placard instead; a veteran who keeps the free plate can get a placard for the standard passenger registration fee. A veteran who chooses a non-free or other specialty plate can get a free disabled driver decal, which gives disabled parking privileges. Apply at your county clerk using Department of Revenue form RV-F1310301. Proof of eligibility under T.C.A. 55-4-252 is required.",
+     "source_url": "https://www.tn.gov/content/dam/tn/revenue/documents/forms/titlereg/f1310301.pdf",
+     "source_title": "Application for Disabled Person License Plate, Placard, or Decal (RV-F1310301, Rev. 07/26)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "TWRA disabled veteran hunting and fishing license",
+     "category": "recreation",
+     "min_rating": "varies",
+     "details": "A one-time $10 hunting and fishing license, valid for life, for Tennessee residents certified by the VA as 100% permanent and totally disabled from a service-connected cause, or 30% or more disabled by reason of war service. This is a TWRA specialty license (listed as Type 198 in the state's veteran benefit matrix), so you apply with TWRA rather than at a normal agent. I could not open the TWRA application page itself.",
+     "source_url": "https://www.tn.gov/veteran/veteran-benefits/tn-state-benefits/state-parks/hunting-and-fishing-licenses.html",
+     "source_title": "Hunting and Fishing Licenses (Tennessee Department of Veterans Services)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State park camping and cabin discount for 100% service-connected veterans",
+     "category": "recreation",
+     "min_rating": "100%",
+     "details": "Tennessee resident veterans with a 100% service-connected disability get 50% off cabin rentals and campsites year-round; premium sites are excluded. Bring proof of Tennessee residency, veteran status, and a VA certification of your percentage. Other Tennessee resident veterans get 25% off in March through November and 50% in December through February, plus 25% off lodge rooms, 20% off golf green fees and carts, and 15% off gift shops.",
+     "source_url": "https://tnstateparks.com/about/discounts",
+     "source_title": "Discounts (Tennessee State Parks)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans Day free camping night and golf round",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "On Veterans Day, Tennessee resident veterans get one free night of camping (premium sites excluded) and a free 18-hole round of golf at state park courses. The Comptroller also lists complimentary camping and golf on each service branch's birthday. Reserve camping by phone at 1-888-867-2757 and show proof of residency and veteran status.",
+     "source_url": "https://tnstateparks.com/about/veterans",
+     "source_title": "Veterans Programs and Benefits (Tennessee State Parks)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Helping Heroes Grant",
+     "category": "education",
+     "min_rating": "none",
+     "details": "The grant pays $1,000 per semester for full-time students (12 or more hours), or $500 for 6 to 11 hours, up to eight full-time semesters. Applicants must be honorably discharged Tennessee residents of at least one year without a bachelor's degree, and hold the Iraq, Afghanistan, Global War on Terrorism Expeditionary (on or after 9/11/2001), or Inherent Resolve campaign medal. It is not tied to a disability rating.",
+     "source_url": "https://comptroller.tn.gov/content/dam/cot/orea/advanced-search/2026/VeteransReport.pdf",
+     "source_title": "State Benefits and Services for Veterans in Tennessee (Comptroller OREA, March 2026)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Tuition waiver for dependents of POW, MIA, killed-in-action or died-on-duty service members; in-state tuition for veterans",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "Spouses and dependent children (under 23) of a POW, MIA, service member killed in action, or one who died of injuries on active duty can get a tuition and specified fee waiver at state colleges and universities. Veterans and eligible dependents using federal education benefits cannot be charged out-of-state tuition. I found no state tuition waiver for dependents of living disabled veterans; a bill for a general veterans waiver did not advance.",
+     "source_url": "https://comptroller.tn.gov/content/dam/cot/orea/advanced-search/2026/VeteransReport.pdf",
+     "source_title": "State Benefits and Services for Veterans in Tennessee (Comptroller OREA, March 2026)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "No state income tax on wages, military retirement or VA compensation",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Tennessee does not tax wages. The Hall income tax on interest and dividends was repealed for tax periods beginning on or after January 1, 2021, and no return should be filed for those years. VA disability compensation is not state-taxed. I did not find a Department of Revenue page that addresses military retired pay directly.",
+     "source_url": "https://www.tn.gov/revenue/taxes/hall-income-tax.html",
+     "source_title": "Hall Income Tax (Tennessee Department of Revenue)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State employment veterans' preference",
+     "category": "employment",
+     "min_rating": "none",
+     "details": "Honorably discharged veterans who meet the minimum qualifications for a preferred-service state job must be invited to the first-round interview, and the veteran gets preference when qualifications are equal. Passing over a veteran requires a written reason filed with the Commissioner. A spouse or surviving spouse is also invited if the veteran is 100% service-connected, permanently and totally disabled, or died in the line of duty. Submit a DD-214 or similar proof with the application; veterans also get 60 extra months of service credit for layoff order.",
+     "source_url": "https://www.tn.gov/content/dam/tn/hr/policy/DOHRPolicy12-007.pdf",
+     "source_title": "Department of Human Resources Policy 12-007, Veterans' Preference (Rev. 10/01/2025)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Service-disabled veteran-owned business assistance and handgun permit discount",
+     "category": "other",
+     "min_rating": "varies",
+     "details": "The Governor's Office of Business Initiatives and Development helps service-disabled veteran-owned businesses compete for state contracts if the owner has at least a 20 percent service-connected disability. Separately, honorably discharged veterans get $35 off the initial enhanced handgun permit fee ($100 eight-year or $300 lifetime) from the Department of Safety. Neither depends on a higher rating.",
+     "source_url": "https://comptroller.tn.gov/content/dam/cot/orea/advanced-search/2026/VeteransReport.pdf",
+     "source_title": "State Benefits and Services for Veterans in Tennessee (Comptroller OREA, March 2026)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "TX",
    "name": "Texas",
    "slug": "texas",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Texas Veterans Commission",
+    "url": "https://www.tvc.texas.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "Texas has two different property tax breaks. The partial break (Tax Code 11.22) goes from $5,000 to $12,000 off assessed value, depending on your rating. The total homestead break (11.131) is for a 100% rating or unemployability only. There is nothing in between.",
+    "The partial 11.22 break comes off the 'assessed value' and you can use it on only ONE property. Each taxing unit (school district, county, city) applies it separately, so the real dollar savings are small. The 11.131 break wipes out the tax on your whole home.",
+    "The 100% break (11.131) covers only your residence homestead. The statute says '100 percent disability compensation' with a 'rating of 100 percent disabled or of individual unemployability.' It does not say 'permanent and total.' A TDIU rating counts. Show the appraisal district your VA award letter.",
+    "Apply at the county appraisal district where the home sits (Form 50-114 for 11.131, Form 50-135 for 11.22). The normal deadline is April 30. The Comptroller says you can file up to five years after the tax delinquency date. Once approved, you usually do not have to refile, but the chief appraiser can ask you to confirm every so often. Answer that letter or you can lose the break.",
+    "An unmarried surviving spouse keeps the 100% break on the same home. If the spouse remarries, the break ends. If the spouse moves, the new home gets an exemption only equal to the dollar amount on the old home in its last year, so it may not be a full exemption.",
+    "New for 2025: voters approved Proposition 7 in November 2025, and Tax Code 11.136 (HB 2508) gives a total homestead exemption to an unremarried surviving spouse of a veteran who died from a PACT Act presumptive condition, even if the veteran was never rated 100%. Ask your appraisal district how to file.",
+    "Disabled veteran plates need 50% (or 40% for loss of a lower extremity) and the plate is NOT a parking pass. Since 2022 (SB 792) you can park in a disabled space only with a plate or placard showing the International Symbol of Access. A plain DV plate does not allow it. You need a doctor's statement for the ISA version.",
+    "Registration fee waiver is only for ONE vehicle, owned by you, 18,000 lbs or less. The fee for the first set of DV plates is $3. You still pay other costs at the county tax office (inspection, sales tax on a purchase, and so on).",
+    "Thresholds differ by benefit: 50% for plates and the free hunting/fishing Super Combo, 60% for the free driver license and the Disabled Veterans state park pass, 70% for a free stay in a State Veterans Home. Do not assume one rating opens every door.",
+    "The Hazlewood Act is separate from the GI Bill and is NOT based on disability rating. A veteran needs Texas as the place of entry or home of record, 181 days of active duty, and an honorable or general under honorable discharge. The spouse and children of a veteran rated 100% P&T or TDIU can use their own hours, and the veteran does not need to live in Texas.",
+    "Texas has no state income tax. The state constitution bans one. VA disability pay is also tax-free federally.",
+    "State employment preference points: 10 points on a competitive exam for any veteran, plus 5 more for a veteran with a service-connected disability. The preference only applies when you are qualified and score at least the minimum."
+   ],
+   "benefits": [
+    {
+     "benefit": "Disabled veteran partial property tax exemption",
+     "category": "property_tax",
+     "min_rating": "10%",
+     "details": "A rating of 10% to 29% takes $5,000 off assessed value, 30% to 49% takes $7,500, 50% to 69% takes $10,000, and 70% or higher takes $12,000. A veteran who is 65 or older with at least 10%, totally blind in one or both eyes, or who has lost use of a limb gets $12,000. It applies to one property you own and designate (not just a homestead). An unmarried surviving spouse gets the amount the veteran had; a child under 18 can too if there is no spouse. Apply with Form 50-135 at the appraisal district by April 30; the Comptroller says up to five years after the delinquency date is allowed. You must be a Texas resident.",
+     "source_url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-faq.php",
+     "source_title": "Disabled Veteran and Surviving Spouse Exemptions FAQ (Tax Code 11.22)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "100% disabled veteran total homestead exemption",
+     "category": "property_tax",
+     "min_rating": "100%",
+     "details": "A veteran awarded 100% disability compensation due to a service-connected disability, with a rating of 100% disabled or of individual unemployability, pays no property tax on the total appraised value of the residence homestead. A TDIU rating qualifies under the statute and the statute does not use the words permanent and total. Apply with Form 50-114 at the county appraisal district by April 30; the Comptroller says late filing is allowed up to five years after the delinquency date. It is only for your residence homestead. An unmarried surviving spouse keeps the exemption on the same home if it remained the spouse's homestead; remarriage ends it, and a move limits the new exemption to the old dollar amount.",
+     "source_url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-100-faq.php",
+     "source_title": "100 Percent Disabled Veteran and Surviving Spouse FAQ (Tax Code 11.131)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Surviving spouse of a veteran who died from a PACT Act presumptive condition",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "New under Tax Code 11.136 (HB 2508, implementing Proposition 7 approved by voters in November 2025). The unmarried surviving spouse of a veteran who died as a result of a condition the PACT Act presumes service-connected gets a total exemption on the residence homestead, regardless of the veteran's rating at death and regardless of the date of death. File with the appraisal district; the Comptroller's exemptions page now lists 11.136. Ask the appraisal district for the current form and deadline.",
+     "source_url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/",
+     "source_title": "Property Tax Exemptions (Tax Code 11.136)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Donated homestead for a partially disabled veteran",
+     "category": "property_tax",
+     "min_rating": "any service-connected",
+     "details": "A veteran with a rating below 100% whose home was donated by a charity (free, or for no more than 50% of market value) gets an exemption equal to the veteran's disability rating, as a percent of the home's appraised value. An unmarried surviving spouse keeps it if the home stays the spouse's homestead. File Form 50-114 with the appraisal district by April 30; five years after the delinquency date for the veteran, two years for a surviving spouse.",
+     "source_url": "https://comptroller.texas.gov/taxes/property-tax/exemptions/disabledvet-faq.php",
+     "source_title": "Disabled Veteran and Surviving Spouse Exemptions FAQ (Tax Code 11.132)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Disabled Veteran (DV) plates and one-vehicle registration fee waiver",
+     "category": "vehicle",
+     "min_rating": "50%",
+     "details": "A veteran with at least 50% service-connected disability (or 40% for amputation of a lower extremity) who receives VA compensation can register one vehicle, owned by the veteran and 18,000 lbs or less, without paying other registration fees. The first set of DV plates costs $3 and each additional set has no fee. Apply at the county tax assessor-collector with Form VTR-615 and a doctor statement or VA approval. DV plates alone do NOT allow parking in a disabled space; you need the ISA plate or a placard. The ISA version requires a permanent mobility problem or other qualifying disability, which not every qualifying veteran meets.",
+     "source_url": "https://www.txdmv.gov/motorists/disabled-parking-placards-plates",
+     "source_title": "TxDMV Disabled Parking, Placards and Plates; Transportation Code 504.202",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Free driver license or ID card",
+     "category": "vehicle",
+     "min_rating": "60%",
+     "details": "An honorably discharged veteran with a service-related disability of at least 60% who receives VA compensation is exempt from the fees for a Texas driver license or ID card. Not available to persons subject to sex offender registration. Ask the Texas DPS driver license office what proof they require; TVC lists the same 60% threshold.",
+     "source_url": "https://statutes.capitol.texas.gov/Docs/TN/htm/TN.521.htm",
+     "source_title": "Transportation Code Sec. 521.426 Disabled Veteran Exemption",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free Disabled Veteran Super Combo hunting and fishing package",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "A resident or non-resident with a VA disability rating of 50% or more (or loss of use of a foot or leg) who receives VA compensation gets the Super Combo package (hunting, fishing, and five state endorsements) for free. Show VA proof issued within the last 12 months, or a Texas driver license with the Disabled Veteran designation, each year. Available in person only at a license retailer. The federal Duck Stamp is not included.",
+     "source_url": "https://tpwd.texas.gov/regulations/outdoor-annual/licenses/combination-hunting-fishing/disabled-veteran-super-combo-hunting-and-all-water-fishing-package",
+     "source_title": "TPWD Disabled Veteran Super Combo Hunting and All-Water Fishing Package",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free state parks entry: Disabled Veterans Parklands Passport",
+     "category": "recreation",
+     "min_rating": "60%",
+     "details": "A U.S. veteran with a 60% or more service-connected disability (or loss of a lower extremity) gets free entry to Texas state parks, and a companion enters free too. Get it at any state park with photo ID plus a Disabled Veterans of Texas plate receipt, a VA award letter showing the rating, or a Texas veterans tax exemption letter. It covers entry only, not camping or other fees.",
+     "source_url": "https://tpwd.texas.gov/state-parks/park-information/passes/texas-parklands-passports",
+     "source_title": "TPWD Texas Parklands Passports",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free state parks entry: Veterans Parklands Passport",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "Any U.S. veteran who was honorably discharged gets free entry to Texas state parks (pass holder only, no companion). Get it at a state park with photo ID plus a DoD veteran ID, a driver license with the veteran designation, a DD 214 showing an honorable discharge, or a VA health ID card. Useful if you are rated below 60%.",
+     "source_url": "https://tpwd.texas.gov/state-parks/park-information/passes/texas-parklands-passports",
+     "source_title": "TPWD Texas Parklands Passports",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Hazlewood Act tuition exemption (veteran, and Legacy transfer to a child)",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Up to 150 credit hours of tuition and most fees at public Texas colleges. It is not tied to a disability rating. The veteran needs Texas as place of entry or home of record, 181 days of active duty (not counting initial training), an honorable or general discharge, Texas residency now, and no federal benefit that pays tuition and fees only. A child 25 or younger can use unused hours under the Legacy rules while the veteran lives in Texas. Apply through your college with the TVC Hazlewood account and DD 214.",
+     "source_url": "https://tvc.texas.gov/education/hazlewood-act/",
+     "source_title": "TVC Hazlewood Act",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Hazlewood for spouse and children of a 100% P&T or TDIU veteran",
+     "category": "education",
+     "min_rating": "100% P&T or TDIU",
+     "details": "The spouse or dependent child of a veteran rated 100% total and permanent, or awarded individual unemployability, can get their own 150 hours of tuition exemption at public Texas colleges. The veteran must have had Texas as place of entry or home of record. The veteran does not have to live in Texas. The child must be a biological, adopted, or step child or a tax dependent. Apply through the college; the college makes the final decision.",
+     "source_url": "https://tvc.texas.gov/education/hazlewood-act/",
+     "source_title": "TVC Hazlewood Act (Spouse/Dependent category)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "No state income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Texas does not tax individual income, including military retirement pay and VA disability compensation. The Texas Constitution says the legislature may not impose a tax on the net incomes of individuals.",
+     "source_url": "https://statutes.capitol.texas.gov/docviewer/?docName=CN.8.24-a.htm",
+     "source_title": "Texas Constitution Art. VIII, Sec. 24-a",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State employment preference",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "State agencies must give a veteran with a disability first priority, then other veterans, over applicants with no greater qualification. On a competitive exam a veteran gets 10 points and a veteran with a service-connected disability gets 5 more. Agencies must interview qualifying applicants. Disabled veterans furnish official records. Apply through the state agency or the Texas state jobs site and claim the preference on the application.",
+     "source_url": "https://statutes.capitol.texas.gov/Docs/GV/htm/GV.657.htm",
+     "source_title": "Government Code Chapter 657, Military Employment Preference",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Texas State Veterans Homes",
+     "category": "other",
+     "min_rating": "varies",
+     "details": "State veterans nursing homes run by the Veterans Land Board for veterans, spouses, and Gold Star parents. The VLB says veterans with a 70% or higher service-related disability can generally live there for free. Others pay. Admission follows Texas Administrative Code Title 40, VA rules, and a physician order for skilled nursing. Apply through the VLB.",
+     "source_url": "https://www.glo.texas.gov/veterans/texas-state-veterans-homes",
+     "source_title": "GLO Texas State Veterans Homes",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans Land Board land loan",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Eligible Texas veterans can borrow up to $200,000 to buy land (one acre or more), with a minimum 5% down. Not tied to a disability rating. You must be 18+ and a Texas resident, with an honorable, general, or medical discharge. Check current rates and the 2026 handbook with the VLB.",
+     "source_url": "https://www.glo.texas.gov/veterans/land-sale/land-loans",
+     "source_title": "GLO Veterans Land Sale: Land Loans",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "UT",
    "name": "Utah",
    "slug": "utah",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Utah Department of Veterans and Military Affairs",
+    "url": "https://veterans.utah.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "Utah's property tax exemption is not a flat 100% break. It is a dollar amount of taxable value taken off your primary residence (and optionally personal property such as vehicles), equal to your disability percentage times a yearly inflation-indexed cap (Utah Code 59-2a-501). A 100% rating gets the full cap. A 30% rating gets 30% of the cap. The first 10% rating is the minimum.",
+    "The disability must have been acquired in the line of duty during military training or a military conflict, as shown on a statement of disability from the VA or a military branch (59-2a-101). The VA calls this service-connected. If the VA certifies Individual Unemployability (TDIU), the county must treat you as 100% disabled for this exemption (59-2a-501(2)(c)).",
+    "The cap amount is in conflict across official sources. The Tax Commission's Publication 36 (marked draft, Rev. 9/26) says up to $535,459. The Department of Veterans and Military Affairs benefit booklet (Aug 2026) still says $505,548. Ask your county assessor for the figure used on your tax notice.",
+    "Apply with the county where you live by September 1 of the year you want the exemption (59-2a-502). After the county has your application and statement of disability on file you generally do not have to reapply, unless your rating changes, ownership or occupancy changes, or you move the exemption to personal property. If you miss the deadline the county must extend it one year in certain cases (new VA decision, illness, death in family, out of state six months, or equity).",
+    "Surviving spouses: the full-value exemption goes to the unmarried surviving spouse or minor orphan of a veteran killed in action or who died in the line of duty. The unmarried surviving spouse of a veteran who died with a disability is a covered claimant under 59-2a-101, but the statute's full-value rule in 59-2a-501(3) lists only line-of-duty deaths and pre-1921 veterans. Ask the county how it computes the exemption for a veteran who died of a service-connected disability after leaving service.",
+    "Utah has no veteran registration fee waiver. The Disabled Veteran plate costs the regular plate fees with no contribution, and it does NOT give handicapped parking. You must get a separate disabled placard through the DMV's rules for medical qualification.",
+    "Utah does not tax VA disability compensation, but this is because Utah starts from federal adjusted gross income, not because of a Utah veteran statute. Military retirement pay is taxed, then offset by a nonrefundable credit equal to 4.5% of it (tax year 2025). The state veterans booklet calls this an exclusion, which is misleading: you still file and the credit cannot exceed your tax liability.",
+    "Hunting, fishing and combination license discounts need a service-connected rating of 20% or more and Utah residency. They are discounts, not free licenses. Apply once with the Division of Wildlife Resources and you stay approved for later years.",
+    "The Veterans With Disabilities Honor Pass (state parks day-use) is free but the pass system is being rebuilt in 2026. Use a current VA Summary of Benefits letter or a 2025 pass at the gate. Day-use only: camping and special fees are still owed.",
+    "The Purple Heart tuition waiver is for Purple Heart recipients, not for every disabled veteran, and was changed in 2026 to cap graduate waivers at $15,000. The Scott B. Lundell waiver is for dependents of service members who were killed or died of wounds, not for dependents of living disabled veterans. Utah has no tuition waiver for dependents of living disabled veterans that we could find.",
+    "State employment preference is 5 points (veteran) or 10 points (disabled veteran or Purple Heart recipient) added to the score, 'whichever is greater' of points or percent per the state HR division. A disabled veteran gets 10 'regardless of the percentage of disability.'",
+    "A 2026 bill (H.B. 124) proposed changing how often counties can require a new property tax application. We could not confirm it passed. The current code on le.utah.gov still shows the 1/1/2026 text of 59-2a-502, so treat the rules here as current and ask the county if you are told something different."
+   ],
+   "benefits": [
+    {
+     "benefit": "Disabled veteran property tax exemption (primary residence and personal property)",
+     "category": "property_tax",
+     "min_rating": "10%",
+     "details": "The taxable value exempt equals your disability percentage multiplied by the adjusted taxable value limit, never more than the property's taxable value. Pub. 36 (Rev. 9/26 draft) states 'up to $535,459'; the department's August 2026 booklet still states $505,548, so confirm the current cap with your county. 10% is the minimum; TDIU counts as 100%. It covers your primary residence (including one you cannot live in because you are an inpatient in a health care facility) and personal-use property such as vehicles. File with the county where you live by September 1 with proof of service and a statement of disability from the VA or a military branch.",
+     "source_url": "https://le.utah.gov/xcode/Title59/Chapter2a/C59-2a-S501_2026010120250507.html",
+     "source_title": "Utah Code 59-2a-501 Veteran armed forces exemption amount (eff. 1/1/2026); 59-2a-502; Tax Commission Pub 36",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Property tax exemption - apply before you own the home (100% P&T)",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "A veteran with a 100% service-connected rating that is permanent and total may file the application before owning a residence if there is a real estate purchase contract or similar document and the home will be the primary residence. File in the county where the home is located. The county must send a receipt with preliminary approval or denial and the calculated exemption within 15 business days.",
+     "source_url": "https://le.utah.gov/xcode/Title59/Chapter2a/C59-2a-S502_2026010120250507.html",
+     "source_title": "Utah Code 59-2a-502(5) and 59-2a-101 'qualifying disabled veteran claimant'",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Property tax exemption - surviving spouse or minor orphan",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "The unmarried surviving spouse or minor orphan of a veteran killed in action or who died in the line of duty gets an exemption equal to the total taxable value of the eligible property (59-2a-501(3)). The unmarried surviving spouse or minor orphan of a deceased veteran with a disability is also a covered claimant under 59-2a-101, with the amount tied to the disability percentage on the statement of disability; the full-value rule in (3) lists pre-1921 veterans only for that group. Apply to the county by September 1 and verify the amount with the county.",
+     "source_url": "https://le.utah.gov/xcode/Title59/Chapter2a/C59-2a-S501_2026010120250507.html",
+     "source_title": "Utah Code 59-2a-501(3); 59-2a-101 'veteran claimant'",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Disabled Veteran license plate",
+     "category": "vehicle",
+     "min_rating": "any service-connected",
+     "details": "The plate recognizes Utah resident disabled veterans. You need a letter from the Utah Department of Veterans and Military Affairs or another U.S. military entity certifying disabled status. Fees listed: $0 contribution, standard plate fee $8.25 (special group fee $5.00, registration certificate $4.00, $3.00 to order a set, plus shipping). It does not give handicapped parking; get a disabled windshield placard separately. The DMV page does not state a minimum percentage or how many plates you may get.",
+     "source_url": "https://dmv.utah.gov/plates/license-plates/disabledveteran/",
+     "source_title": "Disabled Veteran plate - Utah DMV",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Discounted hunting, fishing or combination license",
+     "category": "recreation",
+     "min_rating": "varies",
+     "details": "Utah residents with a service-connected disability of 20 percent or more can buy discounted 365-day licenses: fishing $12, hunting $25.50, combination $28.50 (regular resident prices on the fee page: $40, $40, $44). Multi-year purchases are available at the same yearly price for up to five years. Apply online with the Division of Wildlife Resources or at a DWR office with VA documentation.",
+     "source_url": "https://wildlife.utah.gov/accessibility",
+     "source_title": "Hunting and fishing opportunities for people with disabilities - Utah DWR; Utah Admin. Code R657-12-10",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans With Disabilities Honor Pass (state parks)",
+     "category": "recreation",
+     "min_rating": "any service-connected",
+     "details": "Free day-use entry for the qualified veteran and up to seven guests in the same vehicle at Utah state parks. You must be a Utah resident, honorably discharged, with a documented service-connected disability (a current VA Summary of Benefits letter works). The pass system is being updated in 2026, so 2025 passes are still accepted; the department also says a lifetime pass is planned pending federal approval. It is day-use only and does not cover camping or special fees.",
+     "source_url": "https://stateparks.utah.gov/park-passes/",
+     "source_title": "Park Passes - Utah State Parks",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Purple Heart tuition waiver",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "A Utah resident veteran who earned a Purple Heart gets undergraduate resident tuition waived at public Utah colleges, and graduate tuition waived up to $15,000 total for the lesser of the degree time or five years (amended 5/6/2026). Fees are not waived. Ask the Department of Veterans and Military Affairs for verification, then give it to the school. Not tied to a VA disability rating.",
+     "source_url": "https://le.utah.gov/xcode/Title53H/Chapter11/C53H-11-S303_2026050620260506.pdf",
+     "source_title": "Utah Code 53H-11-303 Tuition waivers for Purple Heart recipients",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans Tuition Gap Program",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "A state grant for a resident veteran in the final year of a bachelor's degree who has used up or does not qualify for federal education benefits and has not finished a bachelor's degree. It is not tied to a disability rating and does not cover family members. Funds come through the school, you must file the FAFSA, and awards depend on available appropriations, so ask the school's veterans office.",
+     "source_url": "https://le.utah.gov/xcode/Title53H/Chapter11/C53H-11_2025101420251206.pdf",
+     "source_title": "Utah Code 53H-11-413 Establishment of the Veterans Tuition Gap Program",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "In-state tuition for veterans and immediate family",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Public colleges must grant resident status to a military veteran with an honorable or general discharge, and to the veteran's immediate family, regardless of where the veteran served. The department's 2025 legislative summary says H.B. 142 removed the residency requirement for in-state tuition for service members, veterans and families. Show the discharge documents to the school's admissions office.",
+     "source_url": "https://le.utah.gov/xcode/Title53H/Chapter11/C53H-11_2025101420251206.pdf",
+     "source_title": "Utah Code 53H-11-202 Resident status; Utah DVMA 2025 Legislative Wrap-up",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Scott B. Lundell Military Survivors tuition waiver",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "Undergraduate tuition is waived for a dependent of a service member who was killed or died of wounds or injuries on federal or state active duty on or after September 11, 2001 (a Utah resident or Utah National Guard member). This is for survivors, not for dependents of living disabled veterans. Fees, books and housing are not covered. The Department of Veterans and Military Affairs certifies the dependent to the school.",
+     "source_url": "https://le.utah.gov/xcode/Title53H/Chapter11/C53H-11_2025101420251206.pdf",
+     "source_title": "Utah Code 53H-11-308 Scott B. Lundell Military Survivors' tuition waiver",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement income tax credit",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Utah taxes military retirement pay and then gives a nonrefundable credit equal to 4.5% of the taxable military retirement pay in federal adjusted gross income (2025 TC-40 worksheet, code AJ). It cannot be carried forward or back and cannot be claimed with the Retirement Credit (code 18). Utah does have an income tax; the statute ties the rate to the state income tax rate in 59-10-104(2).",
+     "source_url": "https://files.tax.utah.gov/tax/forms/current/tc-40inst.pdf",
+     "source_title": "2025 Utah TC-40 Instructions - Military Retirement Credit (AJ); Utah Code 59-10-1043",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VA disability compensation and state income tax",
+     "category": "income_tax",
+     "min_rating": "any service-connected",
+     "details": "Utah's return starts from federal adjusted gross income (TC-40 line 4), so VA disability compensation that is not included in federal income is not in the Utah starting figure. We did not find a Utah page that says this about VA compensation by name. Confirm with the Tax Commission if you have a question.",
+     "source_url": "https://files.tax.utah.gov/tax/forms/current/tc-40inst.pdf",
+     "source_title": "2025 Utah TC-40 Instructions, Line 4 Federal Adjusted Gross Income",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State government hiring preference (veterans preference)",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "Government entities add 5% of the total possible score for a veteran or service member and 10% for a veteran or service member with a disability or a Purple Heart recipient (spouses and surviving spouses get the veteran's percentage). The state HR division says five or ten points or percent, whichever is greater, and the disability tier applies 'regardless of the percentage of disability.' Mark veteran status on the job application and upload a DD-214 or VA letter.",
+     "source_url": "https://le.utah.gov/xcode/Title71A/Chapter2/C71A-2-S102_2023050320230503.pdf",
+     "source_title": "Utah Code 71A-2-102 Veterans preference; DHRM Veterans hiring pathway",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "No-cost State Veterans Homes for 70% or higher",
+     "category": "other",
+     "min_rating": "70%",
+     "details": "The Utah State Veterans Homes page states there is no cost for veterans with a 70% or higher service-connected disability. Others who qualify as veterans (served on active duty or deployed in the reserves) pay a fee. Contact the department for admission.",
+     "source_url": "https://veterans.utah.gov/veterans-homes",
+     "source_title": "Utah State Veterans Homes - Utah DVMA",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "VT",
    "name": "Vermont",
    "slug": "vermont",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Vermont Office of Veterans Affairs",
+    "url": "https://veterans.vermont.gov"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "The property tax exemption needs a 50% or higher VA disability rating (or VA non-service-connected pension, or permanent medical military retirement). A rating below 50% does not qualify.",
+    "The state minimum is only $10,000 off appraised value (not a percentage). Each town may vote to raise it up to $40,000, so the actual amount depends on your town.",
+    "The home must be your owned primary residence. Renters cannot pass the exemption to a landlord, and rental or business portions are excluded.",
+    "Filing deadline is May 1 with the Vermont Office of Veterans Affairs, with a VA letter proving the rating. Veterans who are permanently and totally disabled only file the first year (refile if you move); everyone else must refile each year.",
+    "Vermont's 100% rating does NOT automatically waive vehicle fees. The Office of Veterans Affairs says the registration, license and sales-tax waiver applies only to disabled veterans whose vehicle was modified for the disability with VA paying for it.",
+    "The Disabled Veteran license plate needs a veteran certificate (VG-168) plus a medical evaluation (VS-113); the plate itself does not by itself grant disabled parking privileges. Those follow the separate DMV rules for ambulatory disability.",
+    "The free permanent hunting/fishing license applies if you 'are, or ever have been' rated 60% or more service-connected, and requires a VA letter.",
+    "The new military retirement income exemption applies from tax year 2025 and phases out between $125,000 and $175,000 AGI. A taxpayer can elect either the Social Security exemption or the military retirement exemption, not both.",
+    "Vermont has no statewide tuition waiver for disabled veterans or their dependents that was found on official pages; the state's Armed Services Scholarship is only for survivors of those who died on active duty (since 2001) or Vermont Guard members who died serving.",
+    "The Green Mountain Passport (free state park day use) is for Vermont residents 62+ or honorably discharged veterans; no disability rating is needed."
+   ],
+   "benefits": [
+    {
+     "benefit": "Property tax exemption for disabled veterans",
+     "category": "property_tax",
+     "min_rating": "50%",
+     "details": "Reduces the appraised value of your primary residence by at least $10,000 (statewide minimum); towns may vote to raise it up to $40,000. Qualify with VA disability compensation of 50% or higher, VA non-service-connected pension, or permanent medical military retirement pay. Apply with the Vermont Office of Veterans Affairs with a VA proof-of-benefits letter before May 1; permanently and totally disabled veterans file only the first year.",
+     "source_url": "https://legislature.vermont.gov/statutes/section/32/125/03802",
+     "source_title": "32 V.S.A. 3802(11)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Surviving spouse property tax exemption",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "An unremarried widow or widower of a previously qualified veteran keeps the 32 V.S.A. 3802(11) exemption whether or not they are receiving government compensation or pension. The OVA page also describes spouses, widows, widowers and children of a qualifying veteran who own and occupy the home. Same May 1 filing with the Office of Veterans Affairs; the amount is the town's $10,000 to $40,000.",
+     "source_url": "https://legislature.vermont.gov/statutes/section/32/125/03802",
+     "source_title": "32 V.S.A. 3802(11)(C)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Vehicle sales tax, registration and license fee waiver",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "Only for disabled veterans whose vehicle was modified for their disability with the modification paid by VA; OVA states 'All other veterans are not exempt, including veterans who may be 100% disabled.' Qualifying veterans are exempt from vehicle sales tax, registration fees and license fees. Contact Vermont DMV, (802) 828-2000.",
+     "source_url": "https://veterans.vermont.gov/benefits-and-services/veteran-benefits/tax-exemptions-veterans",
+     "source_title": "Tax Exemptions for Veterans (Vermont Office of Veterans Affairs)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran license plate",
+     "category": "vehicle",
+     "min_rating": "any service-connected",
+     "details": "DMV issues a Disabled Veteran plate; required forms are the Vermont Certificate of Veteran Status (VG-168, certified by the Office of Veterans Affairs) and a Universal Medical Evaluation (VS-113) unless a medical was filed within four years. The DMV page does not state a minimum rating. The separate disabled parking plate or placard (no extra fee for one set) goes to people who are blind or have an ambulatory disability.",
+     "source_url": "https://dmv.vermont.gov/military/military-license-plates",
+     "source_title": "Military License Plates (Vermont DMV)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free permanent hunting and fishing license",
+     "category": "recreation",
+     "min_rating": "60%",
+     "details": "A Vermont resident veteran who 'is, or ever has been, 60% disabled due to a service connected disability' may receive a free permanent license upon presentation of a specific VA letter. Non-resident veterans from reciprocal states (currently NH and ME) may get a free one-year license. Contact Fish and Wildlife or the VA benefits line 1-800-827-1000.",
+     "source_url": "https://vtfishandwildlife.com/node/340",
+     "source_title": "Vermont Fish and Wildlife: Licenses for Veterans with Disabilities",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Green Mountain Passport (state park day use)",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "Lifetime free day-use entry at Vermont State Parks for Vermont residents who are 62+ or honorably discharged veterans. No disability rating is needed. Available for $2 at your local Town Clerk's Office.",
+     "source_url": "https://www.vtstateparks.com/fees",
+     "source_title": "Day Use Admission (Vermont State Parks)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement pay income tax exemption",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Under Act 71, military retirement and survivor benefit income is fully exempt for taxpayers with AGI of $125,000 or less, phases out between $125,000 and $175,000, and gets no exemption at $175,000 or more. Effective tax year 2025, claimed when filing in 2026. A taxpayer elects either this or the Social Security exemption, not both.",
+     "source_url": "https://tax.vermont.gov/node/604",
+     "source_title": "Vermont Department of Taxes: Military and Veterans",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Vermont Veteran Tax Credit",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "$250 refundable credit for Vermont resident and part-year resident veterans with AGI of $25,000 or less. The page says 'No credit is available for veterans with more than $30,000 of adjusted gross income,' with a reduced credit between $25,000 and $30,000. No disability rating is required.",
+     "source_url": "https://tax.vermont.gov/node/604",
+     "source_title": "Vermont Department of Taxes: Military and Veterans",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VA disability compensation and state income tax",
+     "category": "income_tax",
+     "min_rating": "any service-connected",
+     "details": "VA disability compensation is excluded from federal gross income, and Vermont income tax starts from federal AGI, so it should not be taxed. I could not find an official Vermont tax page that states this directly; confirm with Vermont Department of Taxes.",
+     "source_url": "https://tax.vermont.gov/node/604",
+     "source_title": "Vermont Department of Taxes: Military and Veterans",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State employment veterans preference",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "Veterans who pass a point-based exam get five points added; service-connected disabled veterans, unremarried widows or widowers, and spouses of totally service-connected disabled veterans get 10 points, subject to 20 V.S.A. 1543. Eligible veterans can also compete for 'State promotional only' vacancies. Apply through the Department of Human Resources career center.",
+     "source_url": "https://legislature.vermont.gov/statutes/fullchapter/03/013",
+     "source_title": "3 V.S.A. 310(g),(h) and DHR Veterans Preference page",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "In-state tuition for veterans (UVM)",
+     "category": "education",
+     "min_rating": "none",
+     "details": "UVM charges the in-state rate to qualifying veterans and some family members even if not a Vermont resident, based on federal Higher Education Opportunity Act rules; a review is done each term. This is not a disability-based waiver and the exact eligibility must be confirmed with UVM.",
+     "source_url": "https://uvm.edu/policies/tuition-billing-members-qualifying-federal-service-vermont-national-guard-veterans-and",
+     "source_title": "UVM Tuition Billing for Qualifying Federal Service, Guard, Veterans and Families",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Armed Services Scholarship for survivors",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "State scholarship for the spouse and children of military members who died on active duty since 2001, or Vermont National Guard members who died serving at any time. Covers full tuition at Vermont state schools and reduces tuition at private Vermont schools. Apply to the Office of Veterans Affairs Veteran Services Director.",
+     "source_url": "https://veterans.vermont.gov/benefits-and-services/veteran-benefits/survivor-and-family-benefits",
+     "source_title": "Survivor and Family Benefits (Vermont Office of Veterans Affairs)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Vermont Veterans' Home (Bennington)",
+     "category": "other",
+     "min_rating": "none",
+     "details": "State skilled nursing facility; Vermont veterans have admission priority. Eligible veterans served at least ninety days and were discharged under honorable conditions. Apply through the Admissions Department, 802-447-6539.",
+     "source_url": "https://www.vvh.vermont.gov/admissions/eligibility",
+     "source_title": "Vermont Veterans' Home: Admissions Eligibility",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "VA",
    "name": "Virginia",
    "slug": "virginia",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Virginia Department of Veterans Services",
+    "url": "https://www.dvs.virginia.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "The real estate and vehicle property tax exemptions require a VA rating of 100 percent service-connected, permanent, and total. A 100% rating that is not permanent, or a TDIU-only rating, is not described in the statute as qualifying, so ask your commissioner of the revenue how they treat TDIU.",
+    "The real estate exemption covers only the veteran's principal place of residence, and the land up to one acre (more if the locality exempts more under its elderly/disabled program). You file with your county, city, or town commissioner of the revenue, not with the state.",
+    "The personal property tax exemption covers one passenger car or pickup/panel truck registered for personal use. It ends at the veteran's death and does not pass to a surviving spouse.",
+    "The real estate exemption does pass to an unremarried surviving spouse if the veteran died on or after January 1, 2011, and the spouse may move to a new home.",
+    "Disabled veteran DV plates and the registration fee waiver now apply to any VA-certified service-connected disability (Code 46.2-739 as updated in 2026). The older DMV web page still lists narrower free-plate categories, so bring the VA benefit letter and cite the Code section if a counter clerk quotes the old rules.",
+    "DV plates alone do not allow parking in spaces reserved for people with mobility disabilities. You need the separate DV disabled parking plate, with a physician or other licensed provider certification.",
+    "The sales and use tax exemption on a vehicle purchase requires 100% service-connected, permanent, and total, covers one vehicle at a time, and excludes motorcycles, RVs, and ATVs.",
+    "The lifetime hunting and fishing license is priced by rating: free for total and permanent, $50 at 70%+, $75 at 50%+, $100 at 30%+. It does not cover trout-stocked waters.",
+    "The state parks Disabled Veteran's Passport requires a 100 percent rating; a rating of less than 100% does not qualify.",
+    "VMSDEP tuition waivers go to the spouse or child (ages 16 to 29) of a veteran rated totally and permanently disabled or at least 90 percent permanently disabled, with domicile or five-year Virginia presence rules. The veteran does not use it for himself or herself.",
+    "VA disability compensation itself is not federally taxable income; the Virginia military benefits subtraction applies to military retirement pay, up to $40,000 for tax year 2025 and later.",
+    "Check dates: the property tax exemptions apply from the rating date or acquisition date, and refunds of earlier taxes carry no interest, so file as soon as you are rated."
+   ],
+   "benefits": [
+    {
+     "benefit": "Real property tax exemption (principal residence)",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "Total exemption from real property tax on the principal residence of a veteran rated by VA with a 100 percent service-connected, permanent, and total disability, including land up to one acre. File an affidavit or written statement with the commissioner of the revenue of the county, city, or town where the home is; the statute sets no annual deadline, and you refile only if you move. An unremarried surviving spouse keeps the exemption if the veteran died on or after Jan 1, 2011.",
+     "source_url": "https://law.lis.virginia.gov/vacode/title58.1/chapter32/section58.1-3219.5/",
+     "source_title": "Code of Virginia 58.1-3219.5 and 58.1-3219.6",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Real property tax exemption, surviving spouse of service member killed in line of duty",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "The Constitution (Art. X, Sec. 6-A(b)) lets the General Assembly exempt the principal residence of the surviving spouse of a service member who died in the line of duty with a DoD Line of Duty determination; the exemption ends on remarriage. This is an enabling provision; confirm the implementing statute and local application with your commissioner of the revenue.",
+     "source_url": "https://law.lis.virginia.gov/constitution/article10/section6-A/",
+     "source_title": "Constitution of Virginia, Art. X, Sec. 6-A",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Personal property tax exemption, one vehicle",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "One passenger car or pickup/panel truck registered for personal use, owned and used primarily by or for a veteran rated 100 percent service-connected, permanent, and total, is exempt from local personal property (car) tax. A vehicle owned by a married person qualifies if either spouse is the rated veteran. Apply under your locality's procedure; it applies from acquisition or Jan 1, 2021 at the earliest and ends at the veteran's death.",
+     "source_url": "https://law.lis.virginia.gov/vacode/title58.1/chapter36/section58.1-3668/",
+     "source_title": "Code of Virginia 58.1-3668",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Sales and use tax exemption on a vehicle purchase",
+     "category": "vehicle",
+     "min_rating": "100% P&T",
+     "details": "A veteran rated by VA at 100% service-connected, permanent and total is exempt from the vehicle sales and use tax on one vehicle used by or for the veteran. Submit the title documents, Purchaser's Statement of Exemption (SUT3), and a VA benefit summary letter to DMV; a refund of tax already paid is possible. Motorcycles, trailers, RVs, and ATVs are not eligible.",
+     "source_url": "https://www.dmv.virginia.gov/vehicles/title/disabled-vet-tax-exemption",
+     "source_title": "DMV Disabled Veteran Sales and Use Tax Exemption",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled veteran (DV) license plates",
+     "category": "vehicle",
+     "min_rating": "any service-connected",
+     "details": "DMV issues permanent DV plates to a veteran certified by VA as having a service-connected disability, or an unremarried surviving spouse. Submit a VA benefit letter or the VSA 54 certificate. DMV's July 2026 licensing guide lists no fee for the first set of plates; additional sets and personalization cost extra.",
+     "source_url": "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-739/",
+     "source_title": "Code of Virginia 46.2-739 (2026 updated) and DMV VLIC-4.211",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Annual registration fee waiver, one vehicle",
+     "category": "vehicle",
+     "min_rating": "any service-connected",
+     "details": "No annual registration fee and no annual special plate fee for one motor vehicle owned and used personally by a disabled veteran with VA-certified service-connected disability (or an unremarried surviving spouse), if it displays DV plates or standard passenger plates. The 2026 statutory text sets no rating minimum; the public DMV plate page still describes narrower categories (loss of limb, blind, or P&T), so confirm with DMV.",
+     "source_url": "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-739/",
+     "source_title": "Code of Virginia 46.2-739(C)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "DV disabled parking plates",
+     "category": "vehicle",
+     "min_rating": "any service-connected",
+     "details": "A veteran who also has a disability that limits or impairs walking can get DV plates with the international symbol of access, which allow use of reserved disabled parking spaces. The application needs a certification from a licensed physician, podiatrist, chiropractor, advanced practice nurse, or physician assistant. Standard DV plates do not carry this privilege.",
+     "source_url": "https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-739/",
+     "source_title": "Code of Virginia 46.2-739(B)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Lifetime hunting and freshwater fishing license",
+     "category": "recreation",
+     "min_rating": "30%",
+     "details": "Resident veterans with a service-connected disability may get a nontransferable lifetime hunting and/or freshwater fishing license. Cost by VA rating: total and permanent, no cost; 70%+, $50; 50%+, $75; 30%+, $100. Not valid for trout-stocked waters; apply through the Department of Wildlife Resources.",
+     "source_url": "https://law.lis.virginia.gov/vacode/title29.1/chapter3/section29.1-302/",
+     "source_title": "Code of Virginia 29.1-302",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State parks Disabled Veteran's Passport",
+     "category": "recreation",
+     "min_rating": "100%",
+     "details": "Free parking and admission at Virginia state parks plus a 50 percent discount on camping, swimming, picnic shelter rentals and other equipment rentals. Requires a letter from VA or the discharging service certifying a 100 percent service-connected rating; valid while the 100% determination remains in effect. Request through the Department of Conservation and Recreation.",
+     "source_url": "https://law.lis.virginia.gov/vacode/title10.1/chapter2/section10.1-202.2/",
+     "source_title": "Code of Virginia 10.1-202.2",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VMSDEP tuition and fee waiver for spouse and children",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "Waives tuition and mandatory fees at Virginia public colleges for the spouse or a child aged 16 to 29 of a veteran rated by VA as totally and permanently disabled or at least 90 percent permanently disabled (with a service-connected cause and a non-dishonorable discharge). Domicile or five-year Virginia presence rules apply; the Commissioner of Veterans Services certifies eligibility.",
+     "source_url": "https://law.lis.virginia.gov/vacode/title23.1/chapter6/section23.1-608/",
+     "source_title": "Code of Virginia 23.1-608 (2025 c. 384 amended)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement income subtraction",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Virginia income tax applies, but taxpayers can subtract up to $40,000 of military benefits (military retirement pay, Survivor Benefit Plan payments, and certain qualified military benefits) for tax year 2025 and later; the age 55 limit applies only to earlier years. It is not tied to a disability rating.",
+     "source_url": "https://www.tax.virginia.gov/military-benefits-faq",
+     "source_title": "Virginia Tax Military Benefits Subtraction FAQ; Code 58.1-322.02",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VA disability compensation and state income tax",
+     "category": "income_tax",
+     "min_rating": "any service-connected",
+     "details": "Virginia has an income tax, but the official tax pages located state that the Military Benefits Subtraction covers retirement-type benefits. VA disability compensation is excluded from federal income, so it should not enter Virginia income; I did not find a Virginia Tax page saying this directly.",
+     "source_url": "https://www.tax.virginia.gov/subtractions",
+     "source_title": "Virginia Tax Subtractions",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State employment veterans preference",
+     "category": "employment",
+     "min_rating": "none",
+     "details": "Veterans, surviving spouses, and eligible children get 5 percent added to a written exam grade; a veteran with a service-connected disability gets 10 percent, only if the exam is passed. Non-exam hiring also gives preference and additional consideration for service-connected disability ratings.",
+     "source_url": "https://law.lis.virginia.gov/vacode/title2.2/chapter29/section2.2-2903/",
+     "source_title": "Code of Virginia 2.2-2903",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "WA",
    "name": "Washington",
    "slug": "washington",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Washington State Department of Veterans Affairs",
+    "url": "https://dva.wa.gov"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "The property tax exemption threshold is changing. DOR and WDVA pages still say 80% (or compensation at the 100% rate), but RCW 84.36.381 now reads 40% combined rating or a total disability rating, applying to taxes levied for collection in 2027 and after (2025 c 200, 2026 c 163). Ask your county assessor which rule applies to your claim year.",
+    "The property tax exemption is income-tested. Income limits are based on county median household income (60%, 70%, 80% tiers), so the benefit varies by county. VA disability compensation is not counted as income, but military retirement pay is.",
+    "The property tax exemption is not automatic. You must own and occupy the home as your principal residence and apply with your county assessor; it must be renewed periodically.",
+    "The free disabled veteran license plate requires a 100% VA rating and covers one vehicle. DOL states it does NOT give disabled parking privileges. Parking privileges are a separate permit requiring 70% or higher plus a service animal.",
+    "The Discover Pass-type disabled veteran pass needs 30% or more service-connected disability and Washington residency. As of Oct. 1, 2025, passholders still camp free but pay reservation and change fees.",
+    "WDFW reduced-fee hunting and fishing licenses require 30% or more (or age 65+ with any service-connected disability), verified with the one-page VA rating letter. WDFW warns you may not be eligible if you also receive a disability award from Social Security or another government entity.",
+    "The tuition and fee waiver for children and spouses requires the veteran to be rated 100% disabled by VA (or POW/MIA or died from service). Children must be ages 17 to 26; surviving spouses have 10 years and lose it on remarriage. The statute caps credits at 250 quarter credits, while the WDVA page says 200; confirm with the school.",
+    "Washington has no individual income tax today, so military retirement pay and VA compensation are not taxed by the state. A 9.9% tax on income over $1 million is scheduled from Jan. 1, 2028 (SB 6346), and a separate capital gains excise tax exists.",
+    "Veteran hiring preference is a 5% or 10% addition to passing scores on civil service exams, used until first appointment. The statute text found has no extra points based on disability rating.",
+    "Many WDVA pages show no last-updated date and some summaries are dated; the statutes (RCW) are the controlling source."
+   ],
+   "benefits": [
+    {
+     "benefit": "Property tax exemption for seniors, people retired due to disability, and disabled veterans",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "Reduces regular property taxes on your primary residence, based on income tier and home value. RCW 84.36.381 requires a combined service-connected rating of 40% or higher, or a total disability rating regardless of percent (DOR and WDVA pages still say 80% or the 100% rate; the 40% rule applies to taxes levied for collection in 2027 and after). Must own and occupy the home; apply with your county assessor, with eligibility met by Dec. 31 of the assessment year. A surviving spouse or partner of a recipient can qualify at age 57 or older.",
+     "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.381",
+     "source_title": "RCW 84.36.381 - Senior citizens, persons retired for disability, and disabled veterans exemption",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Property tax exemption income limits and treatment of VA pay",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "Income limits are set at the greater of the prior threshold or 60%, 70%, or 80% of the county median household income, depending on the tier, and are adjusted every three years starting Aug. 1, 2026. Disability compensation is excluded from disposable income. Military retirement pay counts as income. Ask your county assessor for the current dollar limits.",
+     "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=84.36.383",
+     "source_title": "RCW 84.36.383 - Definitions (disposable income, income thresholds)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Property tax exemption status of DOR program page",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "The Department of Revenue program page describes the exemption as requiring a service-connected evaluation of at least 80% or compensation at the 100% rate, and says to apply through your county assessor with eligibility by Dec. 31 of the assessment year. A DOR legislative notice (issued July 18, 2025, under EHB 1106) says the rating drops from 80% to 40% for taxes due in 2027 and beyond.",
+     "source_url": "https://dor.wa.gov/forms-publications/publications-subject/special-notices/legislative-changes-property-tax-administration-3",
+     "source_title": "Legislative changes to property tax administration",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Free disabled American veteran license plates",
+     "category": "vehicle",
+     "min_rating": "100%",
+     "details": "Veterans with a 100% VA disability rating expected to last more than a year get disabled American veteran plates exempt from license fees on one vehicle per year. You provide a VA letter verifying the rating. The plate does not give disabled parking privileges.",
+     "source_url": "https://dol.wa.gov/vehicles-and-boats/license-plates/get-custom-plates/special-design-plates/disabled-american-veteran",
+     "source_title": "Disabled American veteran specialty design plate",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "License plate fee and excise tax exemption (statute)",
+     "category": "vehicle",
+     "min_rating": "100%",
+     "details": "RCW 46.18.235 requires the veteran to be receiving service-connected compensation at the 100% rate. Plates are issued without vehicle license fees, plate fees, or excise taxes for one personal use motor vehicle, and can be transferred to another vehicle you own.",
+     "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=46.18.235",
+     "source_title": "RCW 46.18.235 - Disabled veteran license plates",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled veteran parking permit",
+     "category": "vehicle",
+     "min_rating": "70%",
+     "details": "DOL lists a qualifying discharge with a 70 percent disability rating or higher, plus use of a service animal; the page does not clearly say whether both are required, so confirm with DOL. Permits last 5 years and allow free parking in time-restricted street spaces, including meters, and use of designated disabled spaces. It does not cover private lots or reserved zones.",
+     "source_url": "https://dol.wa.gov/driver-licenses-and-permits/get-or-renew-disabled-parking-permits/disabled-veteran-parking",
+     "source_title": "Disabled veteran parking",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Lifetime disabled veteran pass (state parks and recreation lands)",
+     "category": "recreation",
+     "min_rating": "30%",
+     "details": "Washington resident veterans with a service-connected disability of at least 30 percent get a no-cost lifetime pass with free admission to state recreation sites and lands and free campsite use in state parks. It is not valid at concessionaire-run facilities. As of Oct. 1, 2025, WDVA says passholders pay reservation and change fees.",
+     "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=79A.05.065",
+     "source_title": "RCW 79A.05.065 - Disabled veteran pass",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Reduced-fee hunting and fishing licenses",
+     "category": "recreation",
+     "min_rating": "30%",
+     "details": "Residents with a qualifying discharge and a service-connected disability of 30% or more, or age 65 or older with a service-connected disability, can get a combination fishing license at a reduced rate and hunting licenses at the youth fee. Send the WDFW veterans reduced-fee application with the one-page VA rating letter to WDFW Licensing, PO Box 43154, Olympia, WA 98504. Nonresident disabled veterans pay the same as a nondisabled Washington resident.",
+     "source_url": "https://wdfw.wa.gov/accessibility/eligibility-requirements-veterans-reduced-fees",
+     "source_title": "Eligibility requirements for veterans' reduced fees",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Tuition and fee waiver for dependents of 100% disabled veterans",
+     "category": "education",
+     "min_rating": "100%",
+     "details": "Public colleges and universities must waive all tuition and fees for a child (Washington domiciliary, ages 17 to 26) or spouse or domestic partner of a veteran or Guard member determined 100% disabled by VA, or who is POW/MIA or died from service. Statute caps credits at 250 quarter credits and provides a $500 per year book stipend subject to appropriations. Surviving spouses have 10 years, ending on remarriage.",
+     "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=28B.15.621",
+     "source_title": "RCW 28B.15.621 - Waiver of tuition and fees for dependents of eligible veterans",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veteran tuition waiver at state colleges",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "WDVA says state law lets colleges and universities waive all or a portion of tuition and fees for eligible veterans and National Guard members, and each school runs its own program with no uniform rating threshold. Contact the school's veteran services office for eligibility and amounts.",
+     "source_url": "https://dva.wa.gov/veterans-their-families/veterans-benefits/education-and-training/washington-tuition-waiver",
+     "source_title": "Washington Tuition Waiver",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "No state individual income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Washington does not currently have an individual income tax, so military retirement pay and VA compensation are not state-taxed. DOR says a 9.9% tax on adjusted gross income over $1 million starts Jan. 1, 2028 (SB 6346). The page does not mention military retirement specifically.",
+     "source_url": "https://dor.wa.gov/taxes-rates/income-tax",
+     "source_title": "Income tax - Washington Department of Revenue",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans' preference points in civil service exams",
+     "category": "employment",
+     "min_rating": "none",
+     "details": "Veterans who served in a war or armed conflict and do not receive military retirement get 10 percent added to the passing score; other veterans or retirees get 5 percent. The points apply to open competitive exams until the first appointment, not to promotional exams. The statute text found has no extra points based on disability rating. Claim preference with a DD 214 or equivalent showing a qualifying discharge.",
+     "source_url": "https://app.leg.wa.gov/RCW/default.aspx?cite=41.04.010",
+     "source_title": "RCW 41.04.010 - Veterans' scoring criteria in examinations",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "WV",
    "name": "West Virginia",
    "slug": "west-virginia",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "West Virginia Department of Veterans Assistance",
+    "url": "https://veterans.wv.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "West Virginia has two property tax benefits that are easy to confuse: the Disabled Veteran Real Property Tax Credit (an income tax credit, claimed on the IT-140 with Form DV-1) and the county Homestead Exemption (first $20,000 of assessed value, filed with the county assessor by December 1).",
+    "The property tax credit threshold is a 90% to 100% combined rating that is permanent and total, per the Tax Division, not simply a 100% rating. A temporary or non-permanent rating may not qualify.",
+    "You cannot take the Disabled Veteran credit together with the Senior Citizen Tax Credit or the Homestead Excess Property Tax Credit; the DV credit must be taken alone.",
+    "Property taxes must be paid on time (first half before October 1, second half before April 1) or you lose the credit for that year, and it only covers tax actually paid on a primary residence you occupied at least 6 months.",
+    "A surviving spouse can continue the DV credit only if the veteran already claimed it, the spouse has not remarried, and the home was not sold or reclassified.",
+    "The registration fee exemption is limited to one vehicle for 100% total and permanent veterans (not used commercially) and must be certified by the WV Department of Veterans Assistance; vehicles used for hire are excluded.",
+    "The free hunting and fishing license (Class V) is tied to total permanent service-connected disability or the registration-fee exemption, not to a lower rating; you must apply through the DNR and carry the card. Some stamps are still extra.",
+    "Military retirement pay is fully exempt from WV income tax since 2019, but you must claim the modification (IT-140 Line 32) and attach the 1099-R. I could not find an official page that explicitly addresses VA compensation, though it is generally not in federal AGI.",
+    "The War Orphan program statute (Code 18-19) was repealed in 2025, yet the WVDVA page still describes it; check with a WVDVA benefit office before planning around it.",
+    "State civil service preference points apply only to a passing exam score, and the 5-point and 10-point categories do not stack; the veteran gets the highest one.",
+    "Several DMV and DNR web pages were blocked or outdated; benefits marked needs_verification could not be confirmed on a current official page."
+   ],
+   "benefits": [
+    {
+     "benefit": "Disabled Veteran Real Property Tax Credit",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "Threshold is 90% to 100% combined and 'permanently and totally disabled' per the Tax Division (not exactly 100%). An honorably discharged veteran who owns and lives in the homestead (at least 6 months) gets an income tax credit for property tax actually paid, and any excess is refunded. Claim it with Form DV-1 attached to the WV income tax return (IT-140), with tax receipts and the VA rating letter. Property tax must be paid on time (first half before October 1, second half before April 1). It cannot be combined with the Senior Citizen or Homestead Excess credits, and an unremarried widow(er) of a veteran who claimed it may continue to claim it. The pages do not say whether TDIU alone qualifies; the stated test is a 90-100% permanent and total VA rating.",
+     "source_url": "https://tax.wv.gov/Documents/TSD/tsd455.pdf",
+     "source_title": "TSD 455 Disabled Veteran Real Property Tax Credit (Rev. January 2026)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Homestead property tax exemption (first $20,000 of assessed value)",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "Statute exempts the first $20,000 of assessed value of an owner-occupied homestead for an owner who is 65 or older or certified permanently and totally disabled; a written certification from the VA that the person is totally and permanently disabled is an accepted proof. Two consecutive years of WV residency are required (with a military-return exception). File with the county assessor on or before December 1 after the July 1 assessment date. The WVDVA page describes it for veterans rated 90-100 percent permanent and disabled and says to contact the county assessor. I did not find an official statement on how it interacts with the DV-1 credit, so ask the assessor.",
+     "source_url": "https://code.wvlegislature.gov/11-6B-3/",
+     "source_title": "W. Va. Code 11-6B-3 (and 11-6B-4 claim filing)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Vehicle registration fee exemption",
+     "category": "vehicle",
+     "min_rating": "100% P&T",
+     "details": "Statute exempts from registration fees any vehicle owned by a disabled veteran under Public Laws 663 (79th), 187 (82nd) or 77 (90th) Congress (the VA auto-grant laws), and 'not more than one vehicle' owned by a veteran with a hundred percent total and permanent service-connected disability as certified by the WV Department of Veterans Assistance and not used for commercial purposes. Vehicles used for hire do not qualify. Certification is through the WVDVA, then the DMV.",
+     "source_url": "https://code.wvlegislature.gov/17A-10-8/",
+     "source_title": "W. Va. Code 17A-10-8 Vehicles exempt from payment of registration fees",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled veteran license plates (no fee)",
+     "category": "vehicle",
+     "min_rating": "100% P&T",
+     "details": "WVDVA says special license plates and disabled veteran tags are provided without fee to veterans who qualify for the VA auto grant or have a 100 percent permanent and total service-connected rating; former POWs, Purple Heart recipients and Pearl Harbor survivors also get special plates without fee. Other honorably discharged veterans can get veterans plates for a one-time $10 over the regular fee. Apply on the DMV military plates page and contact the local DMV office. I could not open the DMV forms directly, so parking-placard and insurance/litter fee details are unconfirmed.",
+     "source_url": "https://veterans.wv.gov/benefits-assistance/benefits/state-benefits",
+     "source_title": "WVDVA State Benefits - Veteran License Plates",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free hunting and fishing license (Class V Disabled Veterans and Former POW License)",
+     "category": "recreation",
+     "min_rating": "100% P&T",
+     "details": "Residents honorably discharged who receive total permanent service-connected disability benefits as determined by the VA, former POWs, and residents who qualify under Code 17A-10-8 (exempt from motor vehicle registration fee) may apply to the DNR for a Class V license. It carries the privileges of a resident AB-O-L license plus DS (the 2026-27 hunting regulations summary). Fishing exemption requires carrying a card issued by the DNR. Stamps for some game (Class N, RB, RG, RM) must be bought separately. Statute 20-2-28(g) and (h) also exempt these veterans from needing a license.",
+     "source_url": "https://wvdnr.gov/wp-content/uploads/2026/07/Pub_Regs_HuntTrap_202627_DNR_WILD_20260724.pdf",
+     "source_title": "WV Hunting and Trapping Regulations Summary July 2026; W. Va. Code 20-2-28",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Fishing license exemption and trout stamp waiver",
+     "category": "recreation",
+     "min_rating": "100% P&T",
+     "details": "The DNR fishing regulations list residents who are disabled veterans receiving 100% permanent service-connected disability, and former POWs, among those not required to buy a fishing license, and state they must carry a card issued by the DNR. Apply through the DNR (WVDVA says a printable application is on the DNR website). This is the 2025 regulations edition; confirm it still applies for 2026.",
+     "source_url": "https://wvdnr.gov/wp-content/uploads/2025/01/Pub_Regs_Fishing2025_DNR_WILD_Interactive_20250107.pdf",
+     "source_title": "WV Fishing Regulations Summary 2025",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "State parks Veterans' Salute lodging discount",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "WVDVA states veterans and active-duty military receive a 10 percent discount on standard lodge rooms, cabins and campsites at WV State Parks year-round, with extra seasonal offers. No disability rating is required. I could not load the State Parks deal page to confirm the current code or exclusions. No free state park pass for disabled veterans was found.",
+     "source_url": "https://veterans.wv.gov/benefits-assistance/benefits/state-benefits",
+     "source_title": "WVDVA State Benefits - West Virginia State Parks Veterans' Salute",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Tuition waiver for Medal of Honor and Purple Heart recipients",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "WVDVA lists a Medal of Honor and Andrew J. Trail Purple Heart Recipient Tuition Waiver: all public institutions of higher education waive tuition and mandatory fees for West Virginia residents awarded the Medal of Honor or Purple Heart. Eligibility depends on the award, not a VA rating percentage. I did not find the controlling statute section.",
+     "source_url": "https://veterans.wv.gov/benefits-assistance/benefits/education-benefits",
+     "source_title": "WVDVA Education Benefits",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "War Orphan Education Program (dependents)",
+     "category": "education",
+     "min_rating": "100% P&T",
+     "details": "WVDVA says a surviving spouse or child under 26 of a veteran who died on active duty or from a service-connected cause, or of a permanently and totally disabled service-connected veteran, may have tuition and fees waived at WV public schools after DEA/Fry benefits, plus up to $1,000 per semester ($2,000 per year). The enabling statute (W. Va. Code 18-19-1 through 18-19-4) shows as repealed by 2025 HB 3192, so confirm with WVDVA that the program is still operating before relying on it.",
+     "source_url": "https://veterans.wv.gov/benefits-assistance/benefits/education-benefits",
+     "source_title": "WVDVA Education Benefits - War Orphan Program",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "In-state tuition for nonresident G.I. Bill users",
+     "category": "education",
+     "min_rating": "none",
+     "details": "WVDVA says all public institutions of higher education charge the in-state rate to nonresident G.I. Bill recipients who enroll within three years of discharge. Also all public institutions participate in the Yellow Ribbon program. This is a federal-benefit companion, not tied to a disability rating.",
+     "source_url": "https://veterans.wv.gov/benefits-assistance/benefits/education-benefits",
+     "source_title": "WVDVA Education Benefits",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement pay exempt from state income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "For tax years beginning on and after January 1, 2019, all military retirement income from the regular Armed Forces, Reserves, National Guard and uniformed services is exempt from WV income tax, taken as a decreasing modification to federal AGI (Line 32 of the IT-140, with the 1099-R attached). West Virginia does have a state income tax on other income. The exemption applies regardless of disability rating.",
+     "source_url": "https://tax.wv.gov/Documents/TSD/tsd443.pdf",
+     "source_title": "TSD 443 Personal Income Tax of Military Servicemembers (Rev. April 2024)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VA disability compensation and state income tax",
+     "category": "income_tax",
+     "min_rating": "any service-connected",
+     "details": "I did not find an official WV Tax Division page that states VA disability compensation is exempt. West Virginia income tax starts from federal adjusted gross income, and VA compensation is not included in federal gross income, so it should not be taxed, but this is an inference and not a quoted rule. Confirm with the Tax Division (304-558-3333).",
+     "source_url": "https://tax.wv.gov/Documents/PIT/2025/it140.PersonalIncomeTaxFormsAndInstructions.2025.pdf",
+     "source_title": "2025 WV Personal Income Tax Forms and Instructions (IT-140)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans' preference points in state civil service hiring",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "Under the 2023 statute, a veteran with an honorable separation gets 5 points added to a passing exam score, and a veteran who meets the 'disabled veteran' definition (a present service-connected disability, or receiving VA compensation or a pension) or who received a Purple Heart gets 10 points instead (the highest single category applies, not both). Points apply only to passing scores, apply to Rule of 3 selection, and the 10-point group is listed ahead of non-preference eligibles with equal scores. Applicants submit the DD-214 and, for disability, a VA letter to the hiring agency or Division of Personnel; the DOP page may still describe an older 5-plus-5 structure.",
+     "source_url": "https://code.wvlegislature.gov/6-13-2/",
+     "source_title": "W. Va. Code 6-13-2 and 6-13-1(e)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans Re-education Assistance stipend",
+     "category": "education",
+     "min_rating": "none",
+     "details": "WVDVA says the Legislature funds a program of up to $500 per semester for veterans enrolled in a certified post-secondary education course, and may assist vocational and non-traditional education case by case. I could not confirm current funding, eligibility details or application deadline.",
+     "source_url": "https://veterans.wv.gov/benefits-assistance/benefits/education-benefits",
+     "source_title": "WVDVA Education Benefits - Veterans Re-education Assistance",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "WI",
    "name": "Wisconsin",
    "slug": "wisconsin",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Wisconsin Department of Veterans Affairs",
+    "url": "https://dva.wi.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "The property tax credit is not a reduction on your tax bill. It is a refundable credit claimed on your Wisconsin income tax return for the property taxes you paid on your main home. You must file a Wisconsin return even if you owe no income tax, or you will not get the refund.",
+    "The credit needs a VA rating of 100 percent schedular or a 100 percent rating based on individual unemployability (TDIU). It does not require a permanent and total rating, but the rating must be in place for the first year you claim and for every year you claim. If your rating drops below 100 percent for any part of a year, you cannot claim that year.",
+    "You need certification from the Wisconsin Department of Veterans Affairs before you claim the credit. Contact your County or Tribal Veterans Service Office or mail form WDVA 2097 with your DD-214 and a VA letter dated within 12 months. The summary-of-benefits letter is not what they ask for; WDVA directs veterans to request a VA 'Tax Abatement Letter' using the approved form. After the first certification you do not need to reapply unless your status changes.",
+    "Residency has two tests. You must have been a Wisconsin resident when you entered service (or lived in Wisconsin for any consecutive 5-year period after entering), and you must live in Wisconsin now. If your DD-214 does not show Wisconsin as your home of record, you must submit extra proof of residency.",
+    "The credit covers the home and up to one acre of land. Second homes and vacation homes do not qualify. If you own the home jointly, you can claim only your ownership share. Only the residential part counts if part of the property is a farm or business.",
+    "An unremarried surviving spouse can claim the credit if the veteran died on active duty, had a 100 percent or TDIU rating and was a Wisconsin resident at death, or if the spouse receives Dependency and Indemnity Compensation (DIC). Remarrying ends eligibility. A living veteran's spouse who files a separate return can claim a share based on their ownership of the veteran's home.",
+    "The recreation benefits use different ratings. A veteran rated 50 percent or more (or TDIU) can buy a $7 disabled veteran recreation card; 70 percent or more (or TDIU) gets the $3 veteran fishing license and a free state park and trail admission pass. The free pass is certified by your County Veterans Service Officer, then mailed by the DNR.",
+    "The Wisconsin GI Bill covers tuition and segregated fees at University of Wisconsin and Wisconsin Technical College schools for up to 128 credits or 8 semesters, whichever is longer. A spouse or child can use it only if the veteran has a VA rating of at least 30 percent (or died in service or of a service-connected condition). A child must be at least 17 and not yet 26.",
+    "Wisconsin has no income tax on military retired pay. VA disability compensation is also not federally taxable and Wisconsin starts from federal income, but no Wisconsin page I found says this in so many words about VA compensation.",
+    "Wisconsin disabled veteran license plates are only for veterans whose service-connected disability limits walking and who are certified by a VA health care specialist. A high VA rating alone does not qualify, and there is no registration fee waiver; you still pay the regular registration fee.",
+    "For state jobs, I found only a non-competitive appointment path for veterans with at least a 30 percent service-connected rating (Wis. Stat. 230.275). I did not find current numeric hiring preference points in the state civil service statutes.",
+    "Several 2023 bills would have lowered thresholds (for example the property tax credit to 70 percent and DNR benefits to 50 percent). I could not find that any of them became law, and the current official pages still show the thresholds in these notes."
+   ],
+   "benefits": [
+    {
+     "benefit": "Veterans and Surviving Spouses Property Tax Credit (refundable; full property tax on main home)",
+     "category": "property_tax",
+     "min_rating": "100%",
+     "details": "Refundable income tax credit equal to 100 percent of the property taxes you paid on your Wisconsin primary home and up to one acre. You qualify with an honorable-conditions active duty veteran who was a Wisconsin resident at entry or for any consecutive 5-year period afterward, who lives in Wisconsin now, and who has a 100 percent service-connected rating under 38 USC 1114 or 1134 or a 100 percent rating based on individual unemployability (TDIU), so both qualify. Get certified first by WDVA (through your County Veterans Service Office, or mail form WDVA 2097 with your DD-214 and a VA letter dated within 12 months), then attach your tax bill and the certification copy to your Wisconsin income tax return filed with the Department of Revenue. The claim must be made within the time limit in Wis. Stat. 71.75(2). You must file a return even if you owe no tax.",
+     "source_url": "https://dva.wi.gov/wp-content/uploads/2025/10/WDVA_B0106_WI_Veterans_Property_Tax_Credit.pdf",
+     "source_title": "WDVA B0106 (10/25) Wisconsin Disabled Veterans and Unremarried Surviving Spouses Property Tax Credit; Wis. Stat. 71.07(6e)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Property tax credit for unremarried surviving spouses (death on duty, 100% or TDIU veteran, or DIC)",
+     "category": "property_tax",
+     "min_rating": "100%",
+     "details": "An unremarried surviving spouse gets the same refundable credit on the main home if the veteran was a Wisconsin resident at entry (or for 5 consecutive years) and (a) died on active duty, (b) had a 100 percent or TDIU rating and was a Wisconsin resident at death, (c) was a Guard or reserve member who died in the line of duty, or (d) died a Wisconsin resident and the spouse began and continues to receive Dependency and Indemnity Compensation (DIC). The spouse's own residency is not tested. Request WDVA certification with the DD-214, marriage certificate, death certificate or casualty report if on active duty, and a VA letter or DIC award, then claim on the Wisconsin income tax return. Remarriage ends eligibility.",
+     "source_url": "https://dva.wi.gov/wp-content/uploads/2025/10/WDVA_B0106_WI_Veterans_Property_Tax_Credit.pdf",
+     "source_title": "WDVA B0106 (10/25) Wisconsin Disabled Veterans and Unremarried Surviving Spouses Property Tax Credit; Wis. Stat. 71.07(6e)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran Recreation Card ($7 a year): fishing, small game hunting, park and trail admission",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "Wisconsin residents receiving VA compensation for a service-connected disability rated 50 percent or more, or TDIU, can buy the annual Disabled Veteran Recreation Card for $7. The card works as a resident small game license and resident fishing license (stamps are still required) and covers vehicle admission to state parks and forests, Heritage Hill, and state trails. Buy it at a license sales location with photo ID and a VA award letter or equivalent showing the 50 percent or TDIU benefit. Wis. Stat. 29.236 sets the 50 percent threshold. The same 50 percent rating lets you buy a spring turkey harvest authorization for $10 without winning the drawing.",
+     "source_url": "https://dnr.wisconsin.gov/permits/veterans.html",
+     "source_title": "Wisconsin DNR - Veterans Privileges (Disabled Veteran Recreation Card); Wis. Stat. 29.236",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Resident Veteran/Disabled Fishing License ($3 a year)",
+     "category": "recreation",
+     "min_rating": "70%",
+     "details": "A discounted annual resident fishing license for $3 is available to veterans receiving VA disability compensation for a service-connected disability rated 70 percent or more, or TDIU. Required stamps (such as trout) are not included. Buy it at any DNR sales location, showing a VA award letter or a letter from the VA stating the 70 percent or TDIU benefit, a form 2500-123 signed by a County Veterans Service Officer, or a DNR-issued disabled veteran ID card.",
+     "source_url": "https://dnr.wisconsin.gov/permits/disabled.html",
+     "source_title": "Wisconsin DNR - Permits for People with Disabilities; Veterans Privileges page",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free state park, forest, and trail admission (Honor Admission Pass)",
+     "category": "recreation",
+     "min_rating": "70%",
+     "details": "Wisconsin resident veterans receiving disability compensation for a rating of 70 percent or more, or TDIU (and former prisoners of war), get free vehicle admission to state parks and forests and free state trail passes. Wis. Stat. 27.01 (7)(c) and (8) exempt vehicles occupied by such a veteran. Apply with the Disabled Veteran Free State Park/Forest/Trail Pass Application (form 2300-123), have your County Veterans Service Officer sign and stamp it, then mail it to the DNR Bureau of Parks and Recreation, PO Box 7921, Madison WI 53707. The DNR mails an ID card that you display on the driver-side dash. Veterans rated 50 to 69 percent can use the $7 recreation card instead.",
+     "source_url": "https://dva.wi.gov/benefits/outdoor-rec-and-sports/park-pass/",
+     "source_title": "Wisconsin DVA - Wisconsin State Parks Pass; DNR Veterans Privileges; Wis. Stat. 27.01(7)(c)1m.",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Wisconsin GI Bill: tuition and fee remission for the veteran (UW and technical colleges)",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Qualifying veterans get full tuition and segregated fee remission for up to 128 credits or 8 semesters, whichever is longer, at University of Wisconsin System and Wisconsin Technical College System schools, with the limit counted across both systems including graduate programs. You must be a current Wisconsin resident who entered service from Wisconsin or has lived in Wisconsin 3 consecutive years before the semester, with honorable service of 90 days in a war period, 2 years in peacetime, or a qualifying discharge. No disability rating is required. Apply at MyWisVets.com for a certificate of eligibility, then through the school. People eligible for federal education benefits should talk to the school's certifying official.",
+     "source_url": "https://dva.wi.gov/benefits/education/wi-gi-bill/",
+     "source_title": "Wisconsin DVA - Wisconsin GI Bill; WDVA brochure B0104 (07/26)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Wisconsin GI Bill for spouses and children of veterans rated 30% or more",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "A veteran's spouse or child can use the same 128-credit or 8-semester tuition and fee remission if the veteran has been awarded a VA service-connected disability rating of at least 30 percent, or died on active duty, in the line of duty, or from a service-connected condition. The veteran must meet Wisconsin residency rules, and the spouse or child must meet the school's residency-for-tuition rules. A child must be at least 17 and not yet 26. Apply at MyWisVets.com with proof of the VA rating, then add the dependent and apply through the school.",
+     "source_url": "https://dva.wi.gov/benefits/education/wi-gi-bill/",
+     "source_title": "Wisconsin DVA - Wisconsin GI Bill (Eligibility: Spouse/Child Students)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Military retirement pay exempt from Wisconsin income tax",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "All retirement payments from the U.S. military retirement system, including Survivor Benefit Plan payments, are exempt from Wisconsin income tax under Wis. Stat. 71.05(1)(am); the same applies to Coast Guard, NOAA, and Public Health Service commissioned corps retirement under 71.05(1)(an). Subtract the amount on Schedule SB, line 12 (Form 1) or Schedule M, line 46 (Form 1NPR). Wisconsin does have a state income tax on other income.",
+     "source_url": "https://www.revenue.wi.gov/DOR%20Publications/pb128.pdf",
+     "source_title": "Wisconsin Department of Revenue Publication 128 (1/26), Wisconsin Tax Information for Military Personnel and Veterans",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VA disability compensation and Wisconsin income tax",
+     "category": "income_tax",
+     "min_rating": "any service-connected",
+     "details": "Wisconsin Publication 128 says Wisconsin follows the federal treatment of military disability pensions. VA disability compensation is not part of federal income, and Wisconsin income starts from federal adjusted gross income, so it is not taxed. The Wisconsin page I read does not state this about VA compensation in plain words, so confirm with the Department of Revenue at (608) 266-2486 if you need certainty.",
+     "source_url": "https://www.revenue.wi.gov/DOR%20Publications/pb128.pdf",
+     "source_title": "Wisconsin Department of Revenue Publication 128 (1/26), Part 4.B Federal Disability Payments",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled Veteran parking license plates (walking-limiting service disability)",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "Plates are for Wisconsin veterans certified by a VA health care specialist as having a permanent service-incurred disability that limits or impairs walking; the rule is based on the walking limitation, not a VA percentage. The plates give disabled parking privileges (meter and time-limit exemptions) and the veteran may get one permanent DIS ID permit. Wis. Stat. 341.14(1) says no charge beyond the registration fee is made for the plates, so the regular registration fee still applies, and one set design, personalization costs $15 a year. The vehicle must be titled to the veteran. Apply by mail with form MV2172; plates are not available at DMV counters.",
+     "source_url": "https://wisconsindot.gov/Pages/dmv/vehicles/dsbld-prkg/dvetplat.aspx",
+     "source_title": "Wisconsin DOT - Disabled Veteran parking license plates; Wis. Stat. 341.14(1)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Non-competitive appointment to state jobs for veterans rated 30% or more",
+     "category": "employment",
+     "min_rating": "varies",
+     "details": "State agencies may hire a veteran without competing if the veteran is on a military permanent disability list at 30 percent or more or has a VA compensable service-connected disability of at least 30 percent, has written federal documentation dated within the past year, is qualified for the position, and does not hold a permanent state position. It is the agency's choice; it is not a guaranteed job. Apply through Wisc.Jobs with a resume, DD-214, and VA rating documentation dated within 12 months (Division of Personnel Management 608-267-1012). I did not find current numeric civil service preference points.",
+     "source_url": "https://docs.legis.wisconsin.gov/document/statutes/230.275",
+     "source_title": "Wis. Stat. 230.275 Noncompetitive appointment of certain disabled veterans; WDVA State of Wisconsin Employment page",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Wisconsin Veterans Homes (Chippewa Falls, King, Union Grove)",
+     "category": "other",
+     "min_rating": "none",
+     "details": "WDVA runs three veterans homes that provide 24-hour skilled nursing care to veterans, their spouses, and Gold Star Parents. I did not confirm the admission criteria, cost rules, or any disability-rating link on an official page, so ask the home or WDVA before relying on any specific rule. Homes: Chippewa Falls 715-720-6775, King 715-258-5586, Union Grove 262-838-6700.",
+     "source_url": "https://dva.wi.gov/services/wisconsin-veterans-homes/",
+     "source_title": "Wisconsin DVA - Wisconsin Veterans Homes",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "One-time occupational and professional license fee waiver",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Veterans may qualify for a one-time fee waiver for certain occupational and professional licenses (effective July 1, 2012), including DNR-issued licenses such as guide, taxidermist, and water system operator. Ask WDVA to determine eligibility first, by phone at 1-800-947-8387; the DNR lists the eligible licenses. No disability rating is required.",
+     "source_url": "https://dnr.wisconsin.gov/permits/veterans.html",
+     "source_title": "Wisconsin DNR - Veterans Privileges (Professional Licenses)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "WY",
    "name": "Wyoming",
    "slug": "wyoming",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Wyoming Military Department - Wyoming Veterans Commission",
+    "url": "https://wyomilitary.wyo.gov/veterans/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "The $6,000 property tax exemption is a reduction of $6,000 in assessed value (not market value), so the dollar savings are modest. Laramie County's assessor estimates about $424 of tax savings on real property. It is a flat amount: Wyoming has no larger exemption for 100% or P&T veterans.",
+    "The exemption requires a compensable service-connected disability (10% or higher) certified by the VA, and the veteran must have been a bona fide Wyoming resident for at least 3 years when claiming. The property exemption applies only to your principal residence, and you may claim it in only one county.",
+    "The $6,000 exemption can be used on real property or on vehicle registration fees, not stacked. Laramie County says vehicle licensing may be reduced by $6,000 of assessed value (about $90), capped at about $180 per year.",
+    "The first sworn claim must be filed in person with your county assessor on or before the fourth Monday in May. In later years you can confirm eligibility by phone, mail or other contact by that same date.",
+    "A bill to give 100% P&T veterans a full exemption on their home plus up to 10 acres (2026 HB0068) passed committee but was not taken up by the full House on 2/23/2026, and the 2026 session has ended. It is not law. Do not count on it unless a later session passes it.",
+    "The disabled veteran license plate and the free registration on one vehicle require 50% or more service-connected disability compensation from the VA, and you must be a Wyoming resident at both initial application and each renewal. The plate does NOT allow handicapped parking.",
+    "The lifetime fishing license (50%+) and the lifetime game bird, small game and fish license (100%) are different programs. Game and Fish regulation says '100% disabled' does not refer to disability compensation, so ask the department how a 100% combined rating, P&T or TDIU is treated before assuming either way.",
+    "The state park Lifetime Veteran's Pass (free day use and camping) requires a Wyoming resident veteran who is 50% or more service-connected disabled. The separate free-entry days (Veterans Day, sometimes Flag Day) are one-day events open to all veterans.",
+    "Free tuition under W.S. 19-14-106 is not based on disability rating. It is for Vietnam veterans, overseas combat veterans (Armed Forces Expeditionary Medal or similar service medal, Wyoming resident one year before entering service) and certain survivors and dependents. The statute caps it at 8 semesters within 8 years and a 2.0 GPA applies. A disabled veteran who did not serve in a qualifying overseas conflict does not get it.",
+    "Wyoming has no state individual income tax, so military retirement pay and VA compensation are not taxed by the state.",
+    "State and local government jobs give veterans an interview preference and a 5% scoring advantage (10% if service-connected disability is 10% or more), but only for initial employment, only for honorably discharged veterans who lived in Wyoming at least one year, and not for a veteran already employed by a public department."
+   ],
+   "benefits": [
+    {
+     "benefit": "Veterans property tax exemption ($6,000 assessed value)",
+     "category": "property_tax",
+     "min_rating": "10%",
+     "details": "Reduces the assessed value of your principal residence by $6,000 per year. Qualifies a disabled veteran with a compensable service-connected disability (10% or higher) certified by the VA, with 3 years of Wyoming residency when claiming. File a sworn claim in person with your county assessor by the fourth Monday in May; later years can be confirmed by phone or mail by the same date. A 100% schedular, P&T or TDIU veteran gets the same $6,000, not more.",
+     "source_url": "https://wyoleg.gov/statutes/compress/title39.pdf",
+     "source_title": "Wyo. Stat. 39-13-105 Exemptions (veterans); 39-11-105(a)(xxiv)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Surviving spouse and surviving parent property tax exemption",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "The same $6,000 assessed-value exemption continues for a surviving spouse during widowhood (or surviving parents if no spouse) of a qualifying veteran, or of one who died honorably serving in a qualifying period. Both the veteran and spouse or parents must have been Wyoming residents at the time of death, and the survivor must have been a resident 3 years when claiming. Apply with the county assessor by the fourth Monday in May. The statute ties this to a veteran who qualified under the section, not specifically to a 100% rating.",
+     "source_url": "https://wyoleg.gov/statutes/compress/title39.pdf",
+     "source_title": "Wyo. Stat. 39-13-105(a)(v) and (h)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Use the $6,000 exemption against vehicle registration fees",
+     "category": "property_tax",
+     "min_rating": "10%",
+     "details": "A veteran who qualifies for the exemption may claim unused exemption against county vehicle registration fees instead of (or for the part not used on) real property. Laramie County's assessor says this reduces fees by $6,000 of assessed value (about $90) and is capped near $180 per year. Late claimants may still claim the exemption for vehicle fees after the fourth Monday in May for that year. Bring title or registration showing your name to the county assessor or treasurer. Leased vehicles do not qualify per Laramie County.",
+     "source_url": "https://www.laramiecountywy.gov/Resident-Services/Property-Information/Veterans-Exemptions",
+     "source_title": "Laramie County Veteran's Exemptions; Wyo. Stat. 31-3-101(b)(iii), 39-13-105(g)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": true
+    },
+    {
+     "benefit": "Free registration fee on one vehicle (50%+ disabled veteran)",
+     "category": "vehicle",
+     "min_rating": "50%",
+     "details": "A disabled veteran receiving 50% or more service-connected disability compensation is exempt from the vehicle registration fees on one vehicle that qualifies for a disabled veteran plate. You must be a Wyoming resident at initial application and each renewal. Apply annually through the county treasurer at least 30 days before your registration month.",
+     "source_url": "https://wyoleg.gov/statutes/compress/title31.pdf",
+     "source_title": "Wyo. Stat. 31-3-101(b)(xv) and 31-2-215",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled veteran license plates",
+     "category": "vehicle",
+     "min_rating": "50%",
+     "details": "A disabled veteran receiving 50% or more service-connected disability compensation from the VA may apply for distinctive plates for a passenger car, pickup, motorcycle or multipurpose vehicle that he or she owns or leases, and may buy one additional pair for a motorcycle or multipurpose vehicle at regular fees. Apply to the county treasurer. The plates cannot be used to park in handicapped parking spaces.",
+     "source_url": "https://dot.state.wy.us/home/titles_plates_registration/specialty_plates/Disabled_Vet.html",
+     "source_title": "WYDOT Disabled Veteran Plates; Wyo. Stat. 31-2-215",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Lifetime disabled veteran fishing license (free)",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "A Wyoming resident disabled veteran receiving 50% or more service-connected disability compensation from the VA can get a lifetime fishing license with no fee. Apply to Game and Fish headquarters in Cheyenne or a regional office, or by mail, with proof of residency and a VA or Armed Forces letterhead letter certifying the rating.",
+     "source_url": "https://wgfd.wyo.gov/media/34070/download",
+     "source_title": "Wyoming Game and Fish Disabled Veteran License/Permit Application; Wyo. Stat. 23-2-201(f)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Lifetime game bird, small game and fish license (100% disabled)",
+     "category": "recreation",
+     "min_rating": "100%",
+     "details": "Game and Fish issues lifetime game bird, small game and fish licenses without charge to an honorably discharged resident veteran who is 100% disabled as determined by the VA. Game and Fish regulation says '100% disabled does not refer to disability compensation', and the license stays valid only while you remain a Wyoming resident. Apply with proof of residency and VA letterhead documentation. It does not cover big game licenses.",
+     "source_url": "https://wgfd.wyo.gov/media/34070/download",
+     "source_title": "Wyoming Game and Fish Disabled Veteran License/Permit Application; Wyo. Stat. 23-1-705(d)(ii)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled veteran hunter permit and hunting season extension permit",
+     "category": "recreation",
+     "min_rating": "varies",
+     "details": "Game and Fish lists a Disabled Veteran Disabled Hunter Permit for veterans with a VA decision letter (issued within the past 5 years) showing at least 70% service-connected disability, and a Hunting Season Extension Permit that lets a veteran with a 100% service-connected rating hunt antelope, deer or elk 5 days before the regular season opens. The department's form describes both, but I did not confirm full permit rules (what the disabled hunter permit allows). Apply through Game and Fish headquarters or a regional office.",
+     "source_url": "https://wgfd.wyo.gov/media/34070/download",
+     "source_title": "Wyoming Game and Fish Disabled Veteran License/Permit Application (Commission Reg. Ch. 35, Sec. 5(f) and 10(a)(ii))",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Lifetime Veteran's Pass for state parks and historic sites",
+     "category": "recreation",
+     "min_rating": "50%",
+     "details": "The Wyoming State Parks Lifetime Veteran's Pass allows free day use and camping for life for any Wyoming resident veteran who is 50% or more service-connected disabled. It is a hangtag usable in any vehicle while the pass holder is present. Apply online at Reserve.Wyoming.gov or by mail, email or in person using the permit application on the State Parks page. Wyoming State Parks also waives day-use fees for all veterans on some dates, such as Veterans Day.",
+     "source_url": "https://wyoparks.wyo.gov/index.php/permits-reservations/permits-fees",
+     "source_title": "Wyoming State Parks Permits and Fees",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free tuition at University of Wyoming and community colleges (combat veterans and survivors)",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "Free tuition for up to 8 semesters within 8 years at the University of Wyoming or a Wyoming community college for Vietnam veterans, overseas combat veterans (resident 1 year before service, honorably discharged, Armed Forces Expeditionary Medal or similar campaign medal), and surviving spouses and dependents of qualifying combat veterans or service-connected deaths. Not based on VA rating; you must keep a 2.0 GPA. Tuition only, not fees. Apply through the school's veterans office or the Community College Commission.",
+     "source_url": "https://wyoleg.gov/statutes/compress/title19.pdf",
+     "source_title": "Wyo. Stat. 19-14-106 Free tuition for education of war orphans and veterans",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans interview preference and hiring advantage in public jobs",
+     "category": "employment",
+     "min_rating": "none",
+     "details": "Honorably discharged veterans who lived in Wyoming at least one year, and qualifying surviving spouses, get an interview preference in state and local public departments, the University of Wyoming and school districts, and a 5% advantage on numerical scoring. A veteran with a service-connected disability of 10% or more gets a 10% advantage. Applies to initial employment only, not to a veteran already employed by a public department. Submit documentation of veteran status with your application.",
+     "source_url": "https://wyoleg.gov/statutes/compress/title19.pdf",
+     "source_title": "Wyo. Stat. 19-14-102 Interview preference in public departments",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "No state income tax on military retirement or VA compensation",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Wyoming does not have an individual or corporate income tax, so military retirement pay and VA disability compensation are not taxed by the state. Nothing to file or apply for. Wyoming still has property and sales taxes.",
+     "source_url": "https://www.wyo.gov/about-wyoming",
+     "source_title": "State of Wyoming - About Wyoming",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans' Home of Wyoming (Buffalo)",
+     "category": "other",
+     "min_rating": "none",
+     "details": "State veterans home in Buffalo. Applicants must be unable to earn a living because of wounds, disease, old age or other infirmity, or lack adequate means of support, and must be a dependent of a qualified veteran where admission is proper. Valid Wyoming residence or intent to live there permanently is required. Veterans get preference. Request a pre-admission packet and return it with your DD-214.",
+     "source_url": "https://health.wyo.gov/aging/veteranshome/admissions/",
+     "source_title": "Veterans' Home of Wyoming - Admissions",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "AS",
