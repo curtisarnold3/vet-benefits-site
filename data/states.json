@@ -9113,65 +9113,739 @@
    "name": "American Samoa",
    "slug": "american-samoa",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "American Samoa Government, Veterans and Military Affairs Office (Office of Veterans Affairs)",
+    "url": "https://www.americansamoa.gov/directors"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "American Samoa is a U.S. territory, not a state. Online official information about territorial veteran benefits is very thin. Anything below marked 'needs verification' could not be confirmed from an official page and should be checked by phone before you rely on it.",
+    "The territorial office is listed by the American Samoa Government as the 'Veterans and Military Affairs Office' at the Veterans Building, Lions Park, Pago Pago, AS 96799, phone 684-699-2910 or 684-699-1330, Monday to Friday 7:30 AM to 4 PM. Other pages call it the Office of Veterans Affairs. Confirm the hours and director before visiting.",
+    "Federal VA disability compensation and VA health care are available to veterans living in American Samoa. A VA clinic operates in Tafuna under the VA Pacific Islands Health Care System. The territory does not set VA ratings or pay VA compensation.",
+    "No territorial property tax exemption, vehicle registration waiver, hunting or fishing license benefit, or state employment preference for disabled veterans could be found in an official source. Do not assume mainland or Guam rules apply here.",
+    "For college, American Samoa Community College charges the in-state rate to GI Bill users under federal law (Section 702). This is a resident rate, not a free tuition waiver for disabled veterans. It applies to Chapter 30 and Chapter 33 users who live in American Samoa; check the college for the enrollment-timing conditions.",
+    "Residents file local income tax with the American Samoa Tax Office (Treasury), not the IRS, on income from sources there. U.S. government pay, including active duty pay, is a special case that may still need a U.S. return. Ask the Tax Office or a tax preparer about your situation.",
+    "VA disability compensation is not taxable income under federal law. A VA news article states disability retirement pay for service-related injuries is not taxable in American Samoa, but the territory's own tax law page was not found, so confirm with the Tax Office.",
+    "Land in American Samoa is mostly communally owned, so ordinary home-ownership benefits (such as VA home loans or home-based tax exemptions) may work differently. A 1992 federal report said VA home loans were not available there. That report is old; ask VA about current status.",
+    "Office names, directors, and phone numbers have changed in recent years. Check with the office before relying on any contact detail."
+   ],
+   "benefits": [
+    {
+     "benefit": "Territorial veterans office (claims help and advocacy)",
+     "category": "other",
+     "min_rating": "none",
+     "details": "The American Samoa Government lists a Veterans and Military Affairs Office at the Veterans Building in Lions Park, Pago Pago, phone 684-699-2910. Third-party directories describe claims assistance, benefits information, and appeals help, but the official page lists only contact details, so the exact services are not confirmed. Call before visiting.",
+     "source_url": "https://www.americansamoa.gov/directors",
+     "source_title": "American Samoa Government Cabinet directory: Veterans and Military Affairs Office",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Federal VA disability compensation and health care in the territory",
+     "category": "other",
+     "min_rating": "any service-connected",
+     "details": "Veterans living in American Samoa apply for federal VA benefits like veterans anywhere else. VA health care is coordinated through the VA Pacific Islands Health Care System, and a VA clinic is in Tafuna. The American Samoa government site announced a lab expansion at that clinic. Rating thresholds are federal, not territorial.",
+     "source_url": "https://www.americansamoa.gov/faleomavaegaenihunkinvacliniccelebratesopeningofnewlaboratoryexpansion",
+     "source_title": "American Samoa Government news: VA Clinic laboratory expansion",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "In-state tuition rate at American Samoa Community College for GI Bill users",
+     "category": "education",
+     "min_rating": "none",
+     "details": "ASCC's veteran policy says that under Section 702 of the Veterans Access, Choice and Accountability Act, eligible GI Bill users are 'charged the in-state rate, or otherwise considered a resident, for tuition and fees purposes.' This is a resident rate, not a waiver. No territorial tuition waiver for disabled veterans or dependents was found. Apply through the ASCC Admissions and Veterans office with your VA Certificate of Eligibility.",
+     "source_url": "https://www.amsamoa.edu/policies/veteranaccess.html",
+     "source_title": "ASCC Veteran Access policy (no page date shown)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Territorial income tax treatment of VA disability and military pay",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Residents pay income tax to the American Samoa Tax Office rather than the IRS. VA News states disability retirement pay for service-related injuries is not taxable, and military and retired pay is taxable. IRS Pub. 570 says U.S. government pay may still need to be reported on a U.S. return. The territorial tax code was not found, so confirm with the Treasury Tax Office.",
+     "source_url": "https://news.va.gov/139592/unlocking-veteran-tax-exemptions-across-states-and-u-s-territories/",
+     "source_title": "VA News: Unlocking Veteran tax exemptions across states and U.S. territories",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Federal tax treatment of veterans' benefits",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "IRS Publication 3 lists 'Veterans' benefits (including VA rehabilitation payments)' among items that are not earned income for the EIC, which is consistent with VA benefits not being taxable income. Bona fide residents of American Samoa generally exclude American Samoa-source income on Form 4563, but pay from the U.S. Government for services in American Samoa must be included. Ask a tax preparer about your case.",
+     "source_url": "https://www.irs.gov/publications/p570",
+     "source_title": "IRS Publication 570, Tax Guide for Individuals With Income From U.S. Territories",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Property tax exemption for disabled veterans",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "No American Samoa veterans property tax exemption was found in any official source, and the territory's land is largely communally owned. It may not exist. Ask the Treasury Tax Office and the Veterans and Military Affairs Office whether any exemption applies.",
+     "source_url": "https://www.americansamoa.gov/directors",
+     "source_title": "American Samoa Government Cabinet directory (Treasury and Veterans offices)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Vehicle registration fee waiver or disabled veteran plates",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "No territorial waiver or special plate for disabled veterans was found in an official source. The Department of Public Safety handles vehicle registration; its policy for veterans could not be confirmed. Ask the Veterans and Military Affairs Office.",
+     "source_url": "https://www.americansamoa.gov/directors",
+     "source_title": "American Samoa Government Cabinet directory",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Hunting, fishing licenses and park passes",
+     "category": "recreation",
+     "min_rating": "varies",
+     "details": "No veteran-specific hunting or fishing license or park pass benefit was found. Marine and Wildlife Resources and Parks and Recreation are the offices that would administer any such benefit; confirm directly.",
+     "source_url": "https://www.americansamoa.gov/directors",
+     "source_title": "American Samoa Government Cabinet directory",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Territorial government employment preference for veterans",
+     "category": "employment",
+     "min_rating": "varies",
+     "details": "A territorial veterans hiring preference may exist through the Department of Human Resources, but no official page confirming points or eligibility was found. Ask Human Resources before assuming any preference applies.",
+     "source_url": "https://www.americansamoa.gov/directors",
+     "source_title": "American Samoa Government Cabinet directory (Human Resources)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Home loan availability (VA guaranteed loans)",
+     "category": "other",
+     "min_rating": "any service-connected",
+     "details": "A 1992 GAO report found VA home loans were unavailable in American Samoa because of communal land issues. Current status was not confirmed from an official VA page, so ask the VA regional office before planning around it.",
+     "source_url": "https://www.gao.gov/assets/220/217035.pdf",
+     "source_title": "GAO: Veterans' Benefits (1992), cited from search results; current status unverified",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "GU",
    "name": "Guam",
    "slug": "guam",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Guam Office of Veterans Affairs (Guam Veterans Affairs Office)",
+    "url": "https://gvao.guam.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "Guam is a U.S. territory, not a state. Its laws are in the Guam Code Annotated (GCA) and benefits are run by territorial agencies.",
+    "The Guam residential property tax exemption is for a veteran rated 100% disabled or individually unemployable (TDIU). A combined 70% or 90% rating does not qualify.",
+    "The property tax application is due on or before March 15 and needs a VA benefit letter certified through the Guam VA office. File with the Department of Revenue and Taxation (DRT) Real Property Tax Division.",
+    "The property tax exemption covers one residence only, and not any part used for rental or commercial purposes. Exemption applies only to the portion used as a home.",
+    "The property tax exemption lasts only while you remain 100% or unemployable. A rating reduction ends it. A surviving spouse loses it on remarriage.",
+    "The 2026 Guam veterans tuition waiver (17 GCA Chapter 56) requires Guam residency and home-of-record at entry, an honorable discharge, and exhausting federal education benefits first. Tuition only, not fees, and space-available. A disability rating is not the test.",
+    "Military retired pay is taxable in Guam, since Guam uses a mirror of the federal income tax code. VA disability compensation is not taxable income.",
+    "Guam has no state-style hunting and fishing waiver that we could confirm. Do not assume veteran fee waivers for DAWR hunting licenses.",
+    "Several vehicle and license benefits rest on statutes or bills we could not read in current official codified form. Ask DRT before assuming a fee is waived.",
+    "The Guam Office of Veterans Affairs website footer says 2021 and some information may be outdated. Phone ahead to confirm hours and forms."
+   ],
+   "benefits": [
+    {
+     "benefit": "Real property tax exemption (100% or unemployable)",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "Residential real property owned and occupied by a veteran rated by the VA as 100% disabled or individually unemployable due to service-connected injuries is exempt from real property tax. Rating must be 100% or TDIU (P&T is not stated as required). One residence per person; any commercial or rental portion gets no exemption. Apply with DRT Real Property Tax Division on or before March 15 with a VA benefit letter.",
+     "source_url": "https://www.guamtax.com/forms/ApplicationforVeteranExemption.pdf",
+     "source_title": "Application for Veteran Exemption (DRT Real Property Tax Division) and 11 GCA 24401.1 eligibility sheet",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Property tax exemption: surviving spouses and legal guardians",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "The same 11 GCA 24401.1 exemption extends to an unremarried surviving spouse and to a legal guardian lawfully vested with power for the veteran. The exemption continues only while the spouse is not remarried or the guardian remains vested. Use the same DRT form and March 15 deadline. The page does not state whether the veteran must have been rated 100% at death.",
+     "source_url": "https://www.guamtax.com/forms/ApplicationforVeteranExemption.pdf",
+     "source_title": "Application for Veteran Exemption (DRT)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Property tax exemption: Gold Star spouses and parents",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "Real property owned and occupied as a residence by a Gold Star spouse or parent eligible under 16 GCA 7120.3(b) is exempt under 11 GCA 24401.2. One residence only; commercial portions excluded. This does not depend on a veteran disability rating.",
+     "source_url": "https://www.guamtax.com/forms/ApplicationforVeteranExemption.pdf",
+     "source_title": "11 GCA 24401.2 (DRT eligibility sheet)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Vehicle registration fee waiver, 100% or unemployable veterans",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "Guam legislation (P.L. 30-115 and related bills) provides for waiving the annual license and registration fee for one non-commercial passenger vehicle of a veteran rated 100% disabled or individually unemployable, with a VA decision letter given to DRT. We could not open the current codified text of 16 GCA 7160, and a later bill (149-38) would amend it, so confirm the current rule with DRT Motor Vehicle Division.",
+     "source_url": "https://www.guamlegislature.com/Public_Laws_30th/P.L.%2030-115%20%20Bill%20No.%20298-30%20(COR)%20.pdf",
+     "source_title": "P.L. 30-115 (Bill 298-30), veteran license plate and registration fees",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veteran license plates and fee",
+     "category": "vehicle",
+     "min_rating": "any service-connected",
+     "details": "Guam issues veteran license plates and decals under 16 GCA 7120.2 and veteran plate fee waiver language applies to veterans rated 100% disabled or unemployable per P.L. 30-115. Whether a disability rating is needed for a plain veteran plate, and the current fee, could not be confirmed from an official page. Ask DRT Motor Vehicle Division with your DD-214 and, for the fee waiver, your VA decision letter.",
+     "source_url": "https://www.guamlegislature.com/Public_Laws_30th/P.L.%2030-115%20%20Bill%20No.%20298-30%20(COR)%20.pdf",
+     "source_title": "P.L. 30-115, 16 GCA 7120.2",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veteran designation and fee waiver on driver's license",
+     "category": "vehicle",
+     "min_rating": "none",
+     "details": "Guam law allows a veteran to ask that a veteran designation appear on a Guam driver's license or ID card, with proof of status such as a DD-214 certified by the Office of Veterans Affairs. Secondary sources report driver's license fees are waived for veterans (16 GCA 3102.1), but we could not verify current text or fee rules. Apply at DRT Motor Vehicle Division.",
+     "source_url": "https://www.guamlegislature.com/Bills_Passed_33rd/Bill%20No.%20B333-33%20(COR)%20PASSED.pdf",
+     "source_title": "Bill 333-33 (COR), Veterans Designation for Driver's Licenses",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "University of Guam and GCC tuition waiver for veterans and dependents",
+     "category": "education",
+     "min_rating": "none",
+     "details": "17 GCA Chapter 56 (Guam Veterans Higher Education Benefits Act, added by P.L. 38-99 in February 2026) waives tuition, not fees, at the University of Guam and Guam Community College. In the bill as introduced, a Qualifying Veteran needs Guam residence or home of record at entry, an honorable discharge, 181+ days of active duty, and wartime service or similar; spouses and children up to age 25 may be dependents. Federal education benefits must be used up first, space is available only after paying students register, and a 2.5 undergraduate or 3.0 graduate GPA is needed. Final enacted text and implementing rules were not confirmed.",
+     "source_url": "https://guamlegislature.gov/38th_Guam_Legislature/Bills_Introduced_38th/Bill%20No.%20202-38%20(COR)%20Referred%20Version.pdf",
+     "source_title": "Bill 202-38 (COR) Guam Veterans Higher Education Benefits Act (17 GCA Ch. 56)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Hunting and fishing licenses",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "The Guam Department of Agriculture hunting license form lists a general license fee of $15. We found no confirmed veteran or disabled-veteran fee waiver; a 2008 bill proposed one, but its enactment is not confirmed. Contact the DAWR before assuming any discount.",
+     "source_url": "https://doag.guam.gov/wp-doag-content/uploads/2025/09/DAWR-Hunting-License-Application-Form-09102025.pdf",
+     "source_title": "DAWR Hunting License Application Form (2025)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Income tax on military retired pay and VA compensation",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Guam residents file Guam territorial income tax with DRT, which mirrors the federal Internal Revenue Code, so military retired pay is taxable. VA disability compensation is not included in taxable income. We confirmed this only from federal military benefit library pages, not a DRT page.",
+     "source_url": "https://myarmybenefits.us.army.mil/Benefit-Library/State/Territory-Benefits/Guam",
+     "source_title": "Territory of Guam Military and Veterans Benefits (U.S. Army)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Government of Guam hiring preference points",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "Under 4 GCA 4104, agency forms say veterans with 180 cumulative days of active duty and a discharge other than dishonorable can claim 5 points, with 5 more for a service-connected disability if a VA letter says the veteran is entitled to civil service preference. Points are added to a passing score. The current statute text and any limit on promotions were not confirmed.",
+     "source_url": "https://gwosa2.opaguam.org/sites/default/files/employment_application.pdf",
+     "source_title": "Government of Guam employment application (preference points)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Guam Office of Veterans Affairs claims help and veterans cemetery",
+     "category": "other",
+     "min_rating": "none",
+     "details": "The Guam Office of Veterans Affairs, 172 S. Marine Corps Drive, Asan, assists veterans and families in establishing claims and entitlements under federal law, and makes home and hospital visits for those unable to come in. It also coordinates burial at the Guam Veterans Cemetery and military honors. Phone (671) 475-8388.",
+     "source_url": "https://gvao.guam.gov/about-us/",
+     "source_title": "Guam Office of Veterans Affairs: About Us",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "MP",
    "name": "Northern Mariana Islands",
    "slug": "northern-mariana-islands",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "CNMI Office of Veterans Affairs (Office of the Governor; the statutes call it the Military and Veterans Affairs Office)",
+    "url": "https://governor.cnmi.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "The Northern Mariana Islands is a U.S. Commonwealth, not a state. Its veterans office sits under the Governor and is small, and very few benefits are published online. Only three local benefits could be confirmed from official law texts: a college tuition waiver, a veterans license plate, and a government hiring preference.",
+    "The Northern Marianas College tuition waiver (Public Law 22-16) needs a certified service-connected disability of at least 30 percent, an honorable discharge, and CNMI resident status for tuition purposes. It covers tuition only, not books or fees.",
+    "The tuition waiver is applied only after federal and local tuition-only benefits are used. If you get GI Bill tuition payments that equal or exceed the waiver, the waiver adds nothing for that semester.",
+    "The application for the tuition waiver is due no later than the last class date of the semester or term it applies to. It does not cover courses you withdrew from after the withdrawal period or courses you failed.",
+    "The veterans license plate and the disabled veteran plate (9 CMC 2116, as amended by Public Law 24-23, signed March 2026) require discharge under conditions other than dishonorable. The disabled plate needs certification of at least 10 percent service-connected disability. Apply with your vehicle registration at the Bureau of Motor Vehicles. Fees and parking privileges were not found in the text we read.",
+    "A valid VA Veteran ID Card now counts as proof of veteran status for the plate if you do not have a DD214. A disabled veteran without a DD214 needs certification from the Military and Veterans Affairs Office of at least 10 percent disability.",
+    "The CNMI government hiring preference (Public Law 23-05) adds points only when you apply through the preferential credit of qualification process under the civil service rules. Our reading of the scanned text is 2 points for the disability and family categories and 1 point for the basic category. Confirm with the Office of Personnel Management.",
+    "No CNMI property tax exemption, vehicle registration fee waiver, or hunting and fishing license benefit for veterans was found in any official source. This does not prove none exists. Ask the Division of Revenue and Taxation, the Bureau of Motor Vehicles and the Division of Fish and Wildlife directly.",
+    "CNMI has its own territorial income tax run by the Department of Finance Division of Revenue and Taxation. Federal and Army benefit pages say VA disability compensation and military disability retirement pay are not taxable and military retired pay is taxable, but no CNMI tax code text was found. Confirm with the tax office."
+   ],
+   "benefits": [
+    {
+     "benefit": "Northern Marianas College tuition waiver",
+     "category": "education",
+     "min_rating": "varies",
+     "details": "The College's governing board must waive tuition (not books or fees) for an eligible veteran, defined as a CNMI resident, honorably discharged, who is certified to have at least 30 percent service-connected disability. Apply to the college with evidence of eligibility no later than the last class date of the semester or term. The waiver is reduced by federal and local tuition-only benefits you receive, and does not cover courses withdrawn after the withdrawal period or failed. Dependents are not covered by this law.",
+     "source_url": "https://cnmileg.net/documents/laws/public/22/PL22-16.pdf",
+     "source_title": "Public Law 22-16 (S.B. 22-18, SD1, HD2): tuition waiver for veterans with 30 percent or greater service-connected disability",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veteran and disabled veteran license plates",
+     "category": "vehicle",
+     "min_rating": "10%",
+     "details": "9 CMC 2116 provides veteran license plates, and disabled veteran plates for a person certified as having at least 10 percent disability due to service-related injury and discharged under conditions other than dishonorable. Submit a DD214, a valid VA Veteran ID Card, or certification from the Military and Veterans Affairs Office along with your vehicle registration application. The amendment (Public Law 24-23) was signed in March 2026. Plate fees, number of vehicles and parking privileges were not found.",
+     "source_url": "https://www.cnmileg.net/documents/files/24TH%20UPDATE/PL%2024-23%20(HB%2024-23%20Veterans%20Identification%20Card).pdf",
+     "source_title": "Public Law 24-23 (H.B. 24-23): amending 9 CMC 2116, Veteran or Disabled Veteran License Plates",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "CNMI government veterans' hiring preference",
+     "category": "employment",
+     "min_rating": "none",
+     "details": "The CNMI Government Veterans' Preference Act of 2023 gives preference-eligible people (defined by reference to 5 U.S.C. 2108) added points when applying through the preferential credit of qualification process under the civil service system. The law text appears to give 2 points for the 5 U.S.C. 2108(3)(C)-(G) categories (disabled veterans and certain family members) and 1 point for the (A)-(B) categories. Apply through the CNMI Office of Personnel Management. The exact point tiers come from a scanned copy and need confirming.",
+     "source_url": "https://cnmileg.net/documents/laws/public/23/PL23-05.pdf",
+     "source_title": "Public Law 23-05 (H.B. 23-11): CNMI Government Veterans' Preference Act of 2023",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "VA benefits claims help from the CNMI Office of Veterans Affairs",
+     "category": "other",
+     "min_rating": "any service-connected",
+     "details": "The CNMI Office of Veterans Affairs, under the Office of the Governor, helps veterans file federal VA claims and reports using an accredited benefits counselor, with VA service officers visiting. It also reports VA-contracted airfare for Rota and Tinian veterans traveling to medical appointments. These are federal VA programs reached through the local office, not CNMI-funded payments. Phone listed in its report is 670-664-2650. Details are from agency reports and need confirming with the office.",
+     "source_url": "https://governor.cnmi.gov/",
+     "source_title": "CNMI Office of Veterans Affairs (Office of the Governor); the FY2024 report link no longer loads",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Income tax treatment of VA compensation and military pay",
+     "category": "income_tax",
+     "min_rating": "any service-connected",
+     "details": "The CNMI runs its own territorial income tax through the Department of Finance Division of Revenue and Taxation. Federal military benefit pages say VA disability compensation and military disability retirement pay are not taxable there, and military retired pay is taxable. We found no CNMI tax code text confirming this, so ask the Division of Revenue and Taxation before relying on it.",
+     "source_url": "https://news.va.gov/139592/unlocking-veteran-tax-exemptions-across-states-and-u-s-territories/",
+     "source_title": "VA News: Unlocking veteran tax exemptions across states and U.S. territories",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Northern Marianas College in-state tuition rate for veterans and dependents",
+     "category": "education",
+     "min_rating": "none",
+     "details": "The college reportedly charges the resident tuition rate to qualified veterans and their dependents regardless of residency, to comply with the federal Choice Act. We did not read the college page itself, so the eligibility rules (such as GI Bill use) are unconfirmed. Contact the college's veteran services office.",
+     "source_url": "https://marianas.edu/veteran-services",
+     "source_title": "Northern Marianas College Veteran Services",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "PR",
    "name": "Puerto Rico",
    "slug": "puerto-rico",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "Oficina del Procurador del Veterano de Puerto Rico (OPV)",
+    "url": "https://opv.pr.gov"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "Puerto Rico is a U.S. territory, not a state. There is no state veterans department; the Oficina del Procurador del Veterano (OPV) is the Commonwealth advocate and the main benefit statute is Ley 203-2007 (the Carta de Derechos del Veterano). Property tax is handled by the CRIM (municipal revenue center), not by a state or county assessor.",
+    "Ley 203 defines a veteran as someone who served honorably and has veteran status under federal law, including Reserve or National Guard service that meets the federal rules. A discharge that is not honorable can block these benefits.",
+    "Property tax: there are three separate exemptions. $5,000 for any veteran or surviving spouse, $50,000 for VA ratings of 50% or more, and a full exemption for an 'incapacitado o impedido' veteran. They have different forms, proofs and deadlines at the CRIM.",
+    "Older sources show $50,000 and $500,000 figures. Those were temporary higher amounts for fiscal years 2009-10 through 2018-19. Use $5,000 and $50,000 now, and confirm with the CRIM.",
+    "The home must be your principal residence, and the CRIM requires the property to have no unpaid property tax (or a payment plan) before it approves any exemption. The exemptions apply to the home and land up to 1,000 square meters (urban) or one cuerda (rural).",
+    "A surviving spouse keeps the veteran's benefits only until remarriage. The statute defines a surviving spouse as a person legally married to the veteran when the veteran died.",
+    "The 50% disability exemption must be proven yearly (VA certification as of January 1) unless the VA rating is permanent, in which case one filing is enough.",
+    "The vehicle benefits mostly turn on the veteran being 'impedido' (disabled), on a car provided with VA help, or on a 100% VA rating. The 50% marbete discount covers one vehicle in the veteran's name. Confirm each with a DTOP CESCO office; the statute does not describe the forms.",
+    "Military retirement pay is exempt from Puerto Rico income tax starting with tax year 2025 (Ley 191-2024) for retired veterans who live in Puerto Rico. A separate extra $1,500 personal exemption applies to every veteran.",
+    "Puerto Rico has no veteran exemption for hunting or fishing licenses that I could confirm. Do not assume a free license.",
+    "Always bring the DD-214 (or VA certification) and the VA rating letter. Spanish-language forms are the official ones."
+   ],
+   "benefits": [
+    {
+     "benefit": "Property tax exemption, all veterans (first $5,000)",
+     "category": "property_tax",
+     "min_rating": "none",
+     "details": "Any veteran with honorable service and federal veteran status, or a surviving spouse, is exempt from property tax on the first $5,000 of the assessed value of the home that is the principal residence. Only the veteran's own unit counts if the building has several. File with the CRIM (Centro de Recaudación de Ingresos Municipales) on the BC-89 application, now also online; CRIM lists the deadline as January 1 of the year after you acquired or built the home. Approval can be retroactive up to 3 years. The surviving-spouse benefit ends on remarriage.",
+     "source_url": "https://portal.crim360.com/crimpr/CMS/DOCUMENTOS/download/166.pdf",
+     "source_title": "CRIM Exoneración Contributiva para Fines Residenciales / Exención a Veteranos (Modelo BC-89)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Property tax exemption, VA rating 50% or more (first $50,000)",
+     "category": "property_tax",
+     "min_rating": "50%",
+     "details": "A veteran who receives VA compensation for a disability of 50% or more is exempt on the first $50,000 of assessed value of the home, on land up to 1,000 square meters in urban zones or one cuerda in rural zones. The home must have been the residence of the veteran or immediate family on January 1 of the tax year. It stacks with the $5,000 veteran exemption and with the regular residential exemption. Claim it annually when paying the tax, with the DD-214, a written disability certification from the VA, and a sworn statement of residence; if the VA rating is permanent, one filing is enough. The Ley text does not say TDIU or 100% P&T separately; they are covered as 50% or more.",
+     "source_url": "https://docs.pr.gov/files/OPV/Leyes/Ley%20203%20segun%20enmendada%20Rev%20NOV%202025.pdf",
+     "source_title": "Ley 203-2007, Carta de Derechos del Veterano Puertorriqueño del Siglo XXI, según enmendada (OPV compilation, Rev. Nov 2025)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Full property tax exemption, disabled or impaired veteran",
+     "category": "property_tax",
+     "min_rating": "varies",
+     "details": "A home built, bought or remodeled by a disabled or impaired (incapacitado o impedido) veteran is fully exempt from property tax, including land up to 1,000 square meters in urban zones or one cuerda in rural zones, if it is the residence of the veteran or immediate family. The statute does not state a percentage. CRIM's form lists as proof a disability determination from Social Security or a federal or Commonwealth retirement system, not only a VA rating. CRIM lists the filing deadline as on or before January 31 of the year before the tax year. Ask the CRIM office whether your VA rating (for example 100% P&T) is accepted.",
+     "source_url": "https://portal.crim360.com/crimpr/CMS/DOCUMENTOS/download/166.pdf",
+     "source_title": "CRIM Exoneración Contributiva para Fines Residenciales / Exención a Veteranos (Modelo BC-89)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Vehicle excise tax and license fee exemption, VA-provided vehicle",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "A car provided to a disabled veteran for personal use by or with the help of the VA (for example under the federal automobile grant) is exempt from the Puerto Rico vehicle excise tax and from vehicle license fees. A replacement car keeps the exemption if the first was owned at least 4 years. If sold within 4 years, the buyer must pay the tax. Apply through Hacienda and DTOP/CESCO; I could not confirm the current forms, so ask CESCO.",
+     "source_url": "https://docs.pr.gov/files/OPV/Leyes/Ley%20203%20segun%20enmendada%20Rev%20NOV%202025.pdf",
+     "source_title": "Ley 203-2007, Carta de Derechos del Veterano Puertorriqueño del Siglo XXI, según enmendada (OPV compilation, Rev. Nov 2025), Art. 4(C) Tercero (a)-(c)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "No vehicle license fees or driver license fees at 100% VA disability",
+     "category": "vehicle",
+     "min_rating": "100%",
+     "details": "A veteran declared 100% disabled by the VA does not pay vehicle license fees (derechos de licencia) on a vehicle they own, nor the fees for obtaining a driver's license set in the Vehicle and Traffic Law. If the car is sold, license fees are imposed for that year. The statute does not say how many vehicles or how it is claimed; apply at a DTOP CESCO office with the VA rating letter. Process details need confirmation.",
+     "source_url": "https://docs.pr.gov/files/OPV/Leyes/Ley%20203%20segun%20enmendada%20Rev%20NOV%202025.pdf",
+     "source_title": "Ley 203-2007, Carta de Derechos del Veterano Puertorriqueño del Siglo XXI, según enmendada (OPV compilation, Rev. Nov 2025), Art. 4(C) Tercero (e)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled veteran removable parking placard and veteran parking spaces",
+     "category": "vehicle",
+     "min_rating": "varies",
+     "details": "DTOP must provide every disabled (lisiado) veteran a removable parking placard with a mark identifying the vehicle as that of a disabled veteran. Separately, government agencies and municipalities must reserve at least one marked parking space for veterans, where they have free public parking. A veteran proves status with a DD-214, a driver's license with a veteran designation, a veteran license plate, or a valid disabled-veteran placard. The statute sets no VA percentage; ask a CESCO office what proof it requires.",
+     "source_url": "https://docs.pr.gov/files/OPV/Leyes/Ley%20203%20segun%20enmendada%20Rev%20NOV%202025.pdf",
+     "source_title": "Ley 203-2007, Carta de Derechos del Veterano Puertorriqueño del Siglo XXI, según enmendada (OPV compilation, Rev. Nov 2025), Art. 4(C) Tercero (c)-(d) and Art. 4(F)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "50% discount on annual vehicle registration sticker (marbete), one vehicle",
+     "category": "vehicle",
+     "min_rating": "none",
+     "details": "Veterans get a 50% discount on the annual fee for the marbete of a motor vehicle. Only one vehicle per year, and it must be registered in the veteran's name. No disability rating is required by the text. The agency process (DTOP CESCO or the marbete system) and proof required are not in the statute, so confirm before relying on it.",
+     "source_url": "https://docs.pr.gov/files/OPV/Leyes/Ley%20203%20segun%20enmendada%20Rev%20NOV%202025.pdf",
+     "source_title": "Ley 203-2007, Carta de Derechos del Veterano Puertorriqueño del Siglo XXI, según enmendada (OPV compilation, Rev. Nov 2025), Art. 4(C) Tercero (g)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Income tax: military retirement pension exempt (tax year 2025 onward)",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Ley 191-2024 amended Section 1033.18 of the Puerto Rico Internal Revenue Code to give a full income tax exemption on military pension income to veterans who are retired members of the U.S. Armed Forces and residents of Puerto Rico. It may be claimed on the 2025 return and later. Hacienda was given 180 days to issue rules; check the current Hacienda guidance and forms. VA disability compensation is not addressed by this law.",
+     "source_url": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/2020/0191-2024.pdf",
+     "source_title": "Ley 191-2024 (P. de la C. 1747), amending Sec. 1033.18 of Ley 1-2011",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Income tax: extra $1,500 personal exemption for veterans",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "Every veteran gets an additional personal exemption of $1,500 on the Puerto Rico income tax return. If a married couple files jointly and both are veterans, the additional exemption is $3,000. Under the 2024 amendment, it applies to income not related to the military pension. Claim it on the Hacienda individual return.",
+     "source_url": "https://bvirtualogp.pr.gov/ogp/Bvirtual/leyesreferencia/PDF/2020/0191-2024.pdf",
+     "source_title": "Ley 191-2024 (P. de la C. 1747), Sec. 1033.18(a)(2)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Tuition: 50% discount for veteran's spouse, children and dependents",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Spouses, children and DoD-ID dependents of veterans get a 50% discount on tuition, fees, books and materials at the University of Puerto Rico and other public postsecondary institutions, at undergraduate, technical and graduate levels. Veterans, spouses and children also get admission priority. Children and dependents of service members killed in action or who died in active service due to service get total exemption. No disability rating is required by the text. Apply at the institution's financial aid or veterans office; terms depend on that institution's rules.",
+     "source_url": "https://docs.pr.gov/files/OPV/Leyes/Ley%20203%20segun%20enmendada%20Rev%20NOV%202025.pdf",
+     "source_title": "Ley 203-2007, Carta de Derechos del Veterano Puertorriqueño del Siglo XXI, según enmendada (OPV compilation, Rev. Nov 2025), Art. 4(B)(f)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free tuition for veterans who exhaust federal education benefits",
+     "category": "education",
+     "min_rating": "none",
+     "details": "A veteran who has used up, or is about to use up, federal (GI Bill) education benefits before finishing a degree has the right to free tuition at the University of Puerto Rico and public postsecondary institutions, with preference on aid and scholarships. The benefit cannot exceed what the veteran would receive studying at any Puerto Rico higher education institution. Apply through the institution; confirm how it is administered.",
+     "source_url": "https://docs.pr.gov/files/OPV/Leyes/Ley%20203%20segun%20enmendada%20Rev%20NOV%202025.pdf",
+     "source_title": "Ley 203-2007, Carta de Derechos del Veterano Puertorriqueño del Siglo XXI, según enmendada (OPV compilation, Rev. Nov 2025), Art. 4(B)(e)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Employment preference and 10 added points on exams",
+     "category": "employment",
+     "min_rating": "none",
+     "details": "Government agencies, municipalities and private businesses in Puerto Rico must give a veteran preference in hiring and promotion when qualifications are equal. A veteran who reaches the minimum passing score on an entrance, re-entry or promotion exam gets 10 points or 10%, whichever is greater, added to the score. Veterans are also entitled to reinstatement after active duty. No disability rating is needed. Apply to the employer and show the DD-214.",
+     "source_url": "https://docs.pr.gov/files/OPV/Leyes/Ley%20203%20segun%20enmendada%20Rev%20NOV%202025.pdf",
+     "source_title": "Ley 203-2007, Carta de Derechos del Veterano Puertorriqueño del Siglo XXI, según enmendada (OPV compilation, Rev. Nov 2025), Art. 4(F)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Park, beach and recreation fee discount (10%)",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "Veterans, spouses and minor or disabled children get a 10% discount on the individual fee at national parks areas such as balnearios (beaches), zoos, aquariums, vacation centers, campgrounds and other recreation sites. The benefit passes to the surviving spouse and minor or disabled children. I did not find a DRNA or other agency page on how it is applied, so ask at the site and carry the DD-214.",
+     "source_url": "https://docs.pr.gov/files/OPV/Leyes/Ley%20203%20segun%20enmendada%20Rev%20NOV%202025.pdf",
+     "source_title": "Ley 203-2007, Carta de Derechos del Veterano Puertorriqueño del Siglo XXI, según enmendada (OPV compilation, Rev. Nov 2025), Art. 4(G)(a)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Scholarship for children of veterans (Regimiento 65 de Infantería)",
+     "category": "education",
+     "min_rating": "none",
+     "details": "The Oficina del Procurador del Veterano runs scholarships for children of veterans for the 2026-2027 year. Requirements include a child under 26 (no age limit for a disabled child), Puerto Rico residence, a high school diploma, admission to a school, GPA of at least 2.50, and not receiving VA education benefits. Only one child per family can take part. Apply to OPV (beca65@opv.pr.gov, 787-758-5760); amounts are not stated in the requirements sheet.",
+     "source_url": "https://docs.pr.gov/files/OPV/Beca65/REQUSITOS%20BECAS%20REGIMIENTO%2065%20INFANTERIA%202026-2027%20PDF.pdf",
+     "source_title": "OPV Requisitos Becas Regimiento 65 de Infantería 2026-2027",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    }
+   ]
   },
   {
    "code": "VI",
    "name": "U.S. Virgin Islands",
    "slug": "us-virgin-islands",
    "agency": {
-    "name": "",
-    "url": ""
+    "name": "U.S. Virgin Islands Office of Veterans Affairs",
+    "url": "https://veterans.vi.gov/"
    },
-   "last_verified": null,
-   "status": "pending",
-   "notes": [],
-   "benefits": []
+   "last_verified": "2026-10-18",
+   "status": "verified",
+   "notes": [
+    "The Virgin Islands is a territory, not a state. Many local benefits are for a 'Virgin Islands Veteran' only: someone who entered the armed forces in the Virgin Islands, or was domiciled there while temporarily living elsewhere (for example, at school). Veterans who moved to the territory later may get only the benefits the Office lists as 'Veterans Residing in the USVI'.",
+    "Almost every local benefit starts at the VI Office of Veterans Affairs (St. Croix 340-773-8387, St. Thomas/St. John 340-774-8387). The Office issues a signed eligibility form that you then take to the Tax Assessor, the Bureau of Motor Vehicles, the Housing Finance Authority or UVI. Going to those offices first will not work.",
+    "The full real property tax exemption is for a VA rating of 'permanent and total' disability. A 100% rating that is not marked permanent, and a TDIU rating, are not named in the Office's text. Ask the Office in writing whether TDIU counts before you rely on it.",
+    "The Office's own summary says a veteran with a service-connected disability gets the disabled-veteran plate only with a 'Permanent and Total' designation shown on the VA Benefit Summary Letter. Free regular veteran plates need no rating, but you still pay the Bureau of Motor Vehicles registration fee.",
+    "The free UVI tuition form says you must not be entitled to have the tuition paid by federal veterans funds (such as the GI Bill). Use the federal benefit first where it applies, and use the territory waiver for what it does not cover. The waiver also covers tuition only, not fees.",
+    "The medical travel program for non-service-connected VA appointments is for veterans traveling to VA facilities. The 2020 policy letter and the 2025 Act 8991 changes do not match, and the Office asked the Legislature in 2025 to revisit the Act. Call the Office before booking any flight.",
+    "Civil service preference: the Office's summary lists 10 points for veterans and 15 points for disabled veterans, defined as a service-connected rating of 0% or more. The Virgin Islands Code text was not found, so confirm with the Department of Human Resources.",
+    "This site could not find an official Virgin Islands source on income tax treatment of military retirement pay, or on hunting and fishing license fee exemptions for veterans. Do not assume the answer from other states.",
+    "Policy letters on the Office's site are dated April 15, 2020 and say they can be changed by the Director at any time. The March 2025 summary is the newest official list found."
+   ],
+   "benefits": [
+    {
+     "benefit": "Homestead real property tax exemption (veterans and widowed spouses)",
+     "category": "property_tax",
+     "min_rating": "any service-connected",
+     "details": "The Office's summary says a homestead tax exemption on the real property tax bill is offered to veterans or the widowed spouse of a veteran who occupies their primary home. The dollar amount is not stated on the Office's pages. A veteran here means active service with a discharge other than dishonorable. Get a Veteran Tax Exemption Eligibility Form signed by the Director from the Office of Veterans Affairs, then apply through the territory's tax assessor.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2020/04/Policy-Letter-6-Veterans-Homestead-Tax-Exemptions-.pdf",
+     "source_title": "VI Office of Veterans Affairs Policy Letter #6, Veterans Homestead Tax Exemption (April 15, 2020)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Full real property tax exemption for permanent and total disability",
+     "category": "property_tax",
+     "min_rating": "100% P&T",
+     "details": "The Office's summary says a veteran with a VA service-connected rating for 'permanent and total disability' is exempt from all real property taxes levied by the Tax Assessor on the disabled veteran's homestead. Whether a TDIU rating or a surviving spouse qualifies is not stated. Start with the Office of Veterans Affairs eligibility form, then the Tax Assessor; the deadline is not stated.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2025/03/Summary-of-Local-Benefits-Revised-March-14-2025-.pdf",
+     "source_title": "Summary of State VA Benefits, VI Office of Veterans Affairs (as of March 14, 2025)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free veteran license plates",
+     "category": "vehicle",
+     "min_rating": "none",
+     "details": "A person verified by the Office as a veteran who owns or leases a passenger vehicle registered with the Bureau of Motor Vehicles may apply for veteran plates at no cost. The summary says up to 3 free sets while Policy Letter #1 says 2 sets, so confirm the limit. The BMV registration fee is still charged. The BMV will not register veteran plates without the 'Veteran Eligibility Form - Vehicle Registration' from the Office.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2020/04/Policy-Letter-1-License-Plate.pdf",
+     "source_title": "VI Office of Veterans Affairs Policy Letter #1, Veterans License Plates (April 15, 2020)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Disabled veteran license plate",
+     "category": "vehicle",
+     "min_rating": "100% P&T",
+     "details": "The summary says a Disabled License Plate is for veterans with a 'Permanent and Total' disability designation based on military service, documented on the VA Benefit Summary Letter (1-800-827-1000). Only one disabled plate is allowed per eligible veteran. Parking privileges tied to the plate are not described on the Office's pages. Apply through the Office of Veterans Affairs and then the BMV.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2025/03/Summary-of-Local-Benefits-Revised-March-14-2025-.pdf",
+     "source_title": "Summary of State VA Benefits, VI Office of Veterans Affairs (as of March 14, 2025)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veteran designation on driver's license or ID",
+     "category": "other",
+     "min_rating": "none",
+     "details": "The Bureau of Motor Vehicles can put a 'Veteran' designation on a driver's license or territory ID. The Office's summary says this includes VI National Guard retirees with 20 or more years. Ask the Office for the verification the BMV requires.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2025/03/Summary-of-Local-Benefits-Revised-March-14-2025-.pdf",
+     "source_title": "Summary of State VA Benefits, VI Office of Veterans Affairs (as of March 14, 2025)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free tuition at the University of the Virgin Islands",
+     "category": "education",
+     "min_rating": "none",
+     "details": "Virgin Islands Veterans are authorized to attend UVI with tuition paid under 17 V.I.C. section 471 (the summary says all fees are paid by the veteran). The waiver form requires service with a discharge other than dishonorable, and that you are not entitled to have tuition paid by federal veterans funds. After enrolling, report to the Office, where only the Director can approve the waiver. Dependents are not listed.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2025/01/UVI-Tuition-Waiver-Jan-29-2025.pdf",
+     "source_title": "Veteran UVI Tuition Waiver form (as of January 29, 2025) and Policy Letter #2",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "No-fee UVI CELL and Department of Education courses",
+     "category": "education",
+     "min_rating": "none",
+     "details": "The summary says Virgin Islands Veterans may attend UVI CELL (Community Engagement and Lifelong Learning), or any academic or career and technical course run by the Department of Education, without fee or charge, day or night. Same Office of Veterans Affairs verification and Director approval as the UVI waiver.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2025/03/Summary-of-Local-Benefits-Revised-March-14-2025-.pdf",
+     "source_title": "Summary of State VA Benefits, VI Office of Veterans Affairs (as of March 14, 2025)",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Civil service exam preference points",
+     "category": "employment",
+     "min_rating": "any service-connected",
+     "details": "The Office's summary lists 10 points added to a veteran's score on local civil service examinations and 15 points for disabled veterans. A disabled veteran is one with a service-connected disability currently rated at 0% or more, and the widow or spouse of a disabled veteran gets the same benefit. The Code section was not found, so confirm with the territory's Department of Human Resources.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2025/03/Summary-of-Local-Benefits-Revised-March-14-2025-.pdf",
+     "source_title": "Summary of State VA Benefits, VI Office of Veterans Affairs (as of March 14, 2025)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Off-island medical travel reimbursement",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Under Policy Letter #3, veterans traveling to the closest VA medical facility for a non-service-connected appointment verified by the local clinic get 100% flight reimbursement; companions are covered if the doctor says so in writing, or for age 70 and over. The 2025 Act 8991 reportedly adds up to 2 mainland trips a year, but the Act's text was not read and the Office asked the Legislature to revisit it. Apply through the Office before traveling; funds are limited.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2020/04/Policy-Letter-3-Medical-Travel-Reimbursement.pdf",
+     "source_title": "VI Office of Veterans Affairs Policy Letter #3, Medical Travel Reimbursements (April 15, 2020); OVA testimony Dec. 2, 2025",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Housing Finance Authority home and land loan",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Eligible Virgin Islands Veterans can be certified by the Office for Housing Finance Authority benefits under Title 21 V.I.C. chapter 16, when funds are available. The summary lists a maximum of $220,000 at 3.5% (when available). Get the Veteran Housing Finance Authority Eligibility Form from the Office first.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2020/04/Policy-Letter-7-Housing-Finance-Authority-Home-and-Land-Program.pdf",
+     "source_title": "VI Office of Veterans Affairs Policy Letter #7 and Summary of State VA Benefits",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Burial expense reimbursement and free veterans burial plot",
+     "category": "other",
+     "min_rating": "none",
+     "details": "The summary lists up to $5,000 reimbursed for burial expenses of Virgin Islands Veterans and a free plot in local cemeteries that have a veterans section; a spouse and minor child are also eligible. Policy Letter #4 limits this to veterans who were bona fide residents when they enlisted or were drafted. Apply through the Office.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2020/04/Policy-Letter-4-Burial-Entitlements-for-Veterans-of-the-Virgin-Islands.pdf",
+     "source_title": "VI Office of Veterans Affairs Policy Letter #4, Burial Entitlements",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Veterans taxi medallion auction",
+     "category": "other",
+     "min_rating": "none",
+     "details": "Under Title 20 section 407(c) V.I.C., eligible Virgin Islands Veterans may bid in the annual veterans medallion auction in December. Minimum bids are $20,000 for St. Thomas/St. John and $8,000 for St. Croix; the Office must verify eligibility on the application from the Taxicab Commission.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2020/04/Policy-Letter-5-Veterans-Taxi-Medallion-Auction-.pdf",
+     "source_title": "VI Office of Veterans Affairs Policy Letter #5, Taxi Medallion Auction",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Free emergency ambulance service",
+     "category": "other",
+     "min_rating": "none",
+     "details": "The Office's summary says free emergency ambulance service is available to all veterans residing in the U.S. Virgin Islands. How to enroll is not stated; ask the Office.",
+     "source_url": "https://veterans.vi.gov/wp-content/uploads/2025/03/Summary-of-Local-Benefits-Revised-March-14-2025-.pdf",
+     "source_title": "Summary of State VA Benefits, VI Office of Veterans Affairs (as of March 14, 2025)",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Income tax on military retirement and VA compensation",
+     "category": "income_tax",
+     "min_rating": "none",
+     "details": "The Virgin Islands has its own income tax that follows the federal Internal Revenue Code (the 'mirror code'). No official Bureau of Internal Revenue page on military retirement pay or VA compensation was found, so how they are treated is unconfirmed. Ask the Bureau of Internal Revenue (bir.vi.gov) before filing.",
+     "source_url": "https://bir.vi.gov",
+     "source_title": "V.I. Bureau of Internal Revenue",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    },
+    {
+     "benefit": "Hunting and fishing license fee exemptions",
+     "category": "recreation",
+     "min_rating": "none",
+     "details": "The Department of Planning and Natural Resources requires a recreational fishing license through GoOutdoorsUSVI and says some groups may get fee exemptions. No official source naming veterans was found. Call the Division of Fish and Wildlife (St. Croix 340-773-1082, St. Thomas 340-775-6762).",
+     "source_url": "https://dpnr.vi.gov/press_releases/dpnr-launches-new-online-recreational-fishing-license-system-for-the-virgin-islands/",
+     "source_title": "DPNR: new online recreational fishing license system",
+     "date_verified": "2026-10-18",
+     "needs_verification": true,
+     "varies_by_county": false
+    }
+   ]
   }
  ]
 }
