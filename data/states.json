@@ -3272,11 +3272,11 @@
      "benefit": "Homestead exemption for totally disabled owners ($49,100 off assessed value, 2025-2026)",
      "category": "property_tax",
      "min_rating": "100%",
-     "details": "Kentucky has no veteran-only property tax exemption. If you are 'classified as totally disabled under a program authorized or administered by an agency of the United States government' and receive disability payments for it, or are 65 or older, you can take $49,100 off the assessed value of the home you own and live in as your personal residence on January 1. A VA 100% total rating fits the words of the law; TDIU is a total rating but is not named by any Kentucky agency, and P&T is not required. File Form 62A350 with your county Property Valuation Administrator (PVA) by December 31 of the tax year with your VA award letter. A 'service-connected totally disabled veteran' does not have to reapply each year. Only one exemption per home and no surviving spouse carryover.",
-     "source_url": "https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=39641",
-     "source_title": "Kentucky Legislature - KRS 132.810 Homestead exemption -- Application -- Qualification (Ky. Const. Sec. 170); DOR press release Nov. 14, 2024 setting the 2025-2026 amount at $49,100; DOR Form 62A350",
-     "date_verified": "2026-10-17",
-     "needs_verification": true,
+     "details": "Kentucky has no veteran-only property tax exemption. If a federal agency classifies you as totally disabled and you get disability payments for it, or you are 65 or older, you can take $49,100 off the assessed value of the home you own and live in as your residence on January 1. The Department of Revenue's PVA manual accepts a VA 100% combined rating, and also accepts a rating below 100% if your VA award letter shows Individual Unemployability (TDIU). File Form 62A350 with your county Property Valuation Administrator (PVA) by December 31 of the tax year with your VA award letter. A service-connected totally disabled veteran does not have to reapply each year. Only one exemption per home, and no surviving spouse carryover.",
+     "source_url": "https://revenue.ky.gov/PVANetwork/PublishingImages/Pages/Local-Support/Homestead%20Exemption%20Manual%202024.pdf",
+     "source_title": "Guidelines for Administering the Homestead Exemption, Commonwealth of Kentucky Department of Revenue (2024), Situation #22",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
      "varies_by_county": false
     },
     {
@@ -4378,11 +4378,11 @@
      "benefit": "Homestead market value exclusion, $300,000 (100 percent total and permanent)",
      "category": "property_tax",
      "min_rating": "100% P&T",
-     "details": "Veterans with a 'total (100 percent) and permanent disability' get $300,000 of market value excluded from their homestead. You need an honorable discharge and must own and occupy the homestead on December 31. Apply to the county assessor by December 31. The statute does not mention TDIU, so a TDIU-only rating is not clearly covered; ask your assessor before assuming it counts.",
-     "source_url": "https://www.revisor.mn.gov/statutes/cite/273.13",
-     "source_title": "Minn. Stat. 273.13, subd. 34(b); Minnesota Department of Revenue, Market Value Exclusion for Veterans with a Disability",
-     "date_verified": "2026-10-17",
-     "needs_verification": true,
+     "details": "Minnesota excludes $300,000 of your home's market value from property tax if you have a VA service-connected rating of 100 percent permanent and total, which the Department of Revenue says includes permanent Individual Unemployability (TDIU). If your rating is 70 percent or more but not total and permanent, the exclusion is $150,000. You need an honorable discharge and must own and live in the home. Apply to your county assessor by December 31 of the first assessment year you want it. This TDIU wording comes from a 2018 Department of Revenue fact sheet, so confirm with your assessor.",
+     "source_url": "https://www.revenue.state.mn.us/sites/default/files/2018-12/Fact%20Sheet%2011%20(disabled%20vets).pdf",
+     "source_title": "Disabled Veterans' Homestead Property Tax Exclusion (Fact Sheet 11), Minnesota Department of Revenue",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
      "varies_by_county": true
     },
     {
@@ -6876,11 +6876,11 @@
      "benefit": "State income tax on VA disability compensation",
      "category": "income_tax",
      "min_rating": "any service-connected",
-     "details": "ODVA states that VA disability compensation is a tax-free benefit. Oregon starts from federal income, and VA compensation is not included in it. The DOR publication reviewed did not mention VA compensation by name, so confirm with DOR if you have a question.",
-     "source_url": "https://www.oregon.gov/odva/benefits/pages/taxes.aspx",
-     "source_title": "ODVA: Taxes",
-     "date_verified": "2026-10-17",
-     "needs_verification": true,
+     "details": "Oregon's own veterans agency says VA disability compensation is set by federal law and is not subject to state or federal income tax. You do not report it as income on your Oregon return. The same page says this about Special Monthly Compensation too. Nothing to apply for.",
+     "source_url": "https://www.oregon.gov/odva/benefits/pages/disability-compensation.aspx",
+     "source_title": "Oregon Department of Veterans' Affairs : Disability Compensation : Benefits & Programs : State of Oregon",
+     "date_verified": "2026-10-18",
+     "needs_verification": false,
      "varies_by_county": false
     },
     {
@@ -7687,14 +7687,14 @@
      "varies_by_county": false
     },
     {
-     "benefit": "No state income tax on wages, military retirement or VA compensation",
+     "benefit": "No state tax on wages; Hall income tax repealed",
      "category": "income_tax",
      "min_rating": "none",
-     "details": "Tennessee does not tax wages. The Hall income tax on interest and dividends was repealed for tax periods beginning on or after January 1, 2021, and no return should be filed for those years. VA disability compensation is not state-taxed. I did not find a Department of Revenue page that addresses military retired pay directly.",
+     "details": "Tennessee has no individual income tax on wages, and the Hall income tax on interest and dividends was repealed for tax periods beginning on or after January 1, 2021. No Hall tax return is needed for those years. The Department of Revenue pages do not name military retired pay or VA disability compensation, so ask the Department if you have a specific question about them.",
      "source_url": "https://www.tn.gov/revenue/taxes/hall-income-tax.html",
      "source_title": "Hall Income Tax (Tennessee Department of Revenue)",
      "date_verified": "2026-10-18",
-     "needs_verification": true,
+     "needs_verification": false,
      "varies_by_county": false
     },
     {
@@ -7942,9 +7942,9 @@
      "benefit": "Disabled veteran property tax exemption (primary residence and personal property)",
      "category": "property_tax",
      "min_rating": "10%",
-     "details": "The taxable value exempt equals your disability percentage multiplied by the adjusted taxable value limit, never more than the property's taxable value. Pub. 36 (Rev. 9/26 draft) states 'up to $535,459'; the department's August 2026 booklet still states $505,548, so confirm the current cap with your county. 10% is the minimum; TDIU counts as 100%. It covers your primary residence (including one you cannot live in because you are an inpatient in a health care facility) and personal-use property such as vehicles. File with the county where you live by September 1 with proof of service and a statement of disability from the VA or a military branch.",
+     "details": "The taxable value exempt equals your disability percentage multiplied by the adjusted taxable value limit, never more than the property's taxable value. Utah law says a county must treat you as 100% disabled if the VA certifies you as individually unemployable (TDIU). The minimum is 10%. The limit is raised every year using the consumer price index, so ask your county for the current dollar amount (the Tax Commission's draft Pub. 36 says up to $535,459; an older state booklet says $505,548). It covers your primary residence (including one you cannot live in because you are an inpatient in a health care facility) and personal-use property such as vehicles. File with the county where you live by September 1 with proof of service and a statement of disability from the VA or a military branch.",
      "source_url": "https://le.utah.gov/xcode/Title59/Chapter2a/C59-2a-S501_2026010120250507.html",
-     "source_title": "Utah Code 59-2a-501 Veteran armed forces exemption amount (eff. 1/1/2026); 59-2a-502; Tax Commission Pub 36",
+     "source_title": "Utah Code 59-2a-501, Veteran armed forces exemption amount (effective 1/1/2026)",
      "date_verified": "2026-10-18",
      "needs_verification": true,
      "varies_by_county": true
@@ -8412,11 +8412,11 @@
      "benefit": "VA disability compensation and state income tax",
      "category": "income_tax",
      "min_rating": "any service-connected",
-     "details": "Virginia has an income tax, but the official tax pages located state that the Military Benefits Subtraction covers retirement-type benefits. VA disability compensation is excluded from federal income, so it should not enter Virginia income; I did not find a Virginia Tax page saying this directly.",
-     "source_url": "https://www.tax.virginia.gov/subtractions",
-     "source_title": "Virginia Tax Subtractions",
+     "details": "The Virginia Department of Veterans Services says VA disability compensation is not subject to federal or state income tax. So you do not pay Virginia income tax on it. This is the state veterans agency's statement. Virginia Tax's own pages do not mention VA compensation by name.",
+     "source_url": "https://www.dvs.virginia.gov/benefits-services/disability-claims-pensions",
+     "source_title": "Disability Claims & Pensions | Virginia Department of Veterans Services",
      "date_verified": "2026-10-18",
-     "needs_verification": true,
+     "needs_verification": false,
      "varies_by_county": false
     },
     {
@@ -8738,11 +8738,11 @@
      "benefit": "VA disability compensation and state income tax",
      "category": "income_tax",
      "min_rating": "any service-connected",
-     "details": "I did not find an official WV Tax Division page that states VA disability compensation is exempt. West Virginia income tax starts from federal adjusted gross income, and VA compensation is not included in federal gross income, so it should not be taxed, but this is an inference and not a quoted rule. Confirm with the Tax Division (304-558-3333).",
-     "source_url": "https://tax.wv.gov/Documents/PIT/2025/it140.PersonalIncomeTaxFormsAndInstructions.2025.pdf",
-     "source_title": "2025 WV Personal Income Tax Forms and Instructions (IT-140)",
+     "details": "The West Virginia Department of Veterans Assistance says VA disability compensation is not subject to federal or state income tax. So West Virginia does not tax it. This comes from the state veterans agency. The Tax Division's own forms do not name VA compensation.",
+     "source_url": "https://veterans.wv.gov/benefits-assistance/benefits/disability-compensation",
+     "source_title": "Disability Compensation | WV Department of Veterans Assistance",
      "date_verified": "2026-10-18",
-     "needs_verification": true,
+     "needs_verification": false,
      "varies_by_county": false
     },
     {

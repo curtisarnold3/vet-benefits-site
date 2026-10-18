@@ -1,10 +1,10 @@
 # Needs verification: all flagged rows
 
-Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. **177 state and territory rows** are flagged `needs_verification: true` out of 758 total rows in 56 jurisdictions, plus the federal items at the bottom.
+Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. **171 state and territory rows** are flagged `needs_verification: true` out of 758 total rows in 56 jurisdictions, plus the federal items at the bottom. A first pass on the recurring TDIU and VA-compensation rows is in `docs/research/flag-checks-2026-10-18.md`.
 
 **How to clear a flag:** confirm the row on the cited official page (or find a better one), fix `details` and `source_url` if needed, then set `needs_verification` to `false` in `data/states.json` and run `node scripts/make-state-pages.js`. Each state's full narrative with quoted statute language and its "Could not verify" list is in `docs/research/states-batch-N/XX.md`. Many sites (mass.gov, NY state sites, dvs.virginia.gov, governor.cnmi.gov) block scripted fetches but load in a normal browser.
 
-**Counts by state:** AL 2, AK 0, AS 8, AZ 2, AR 4, CA 0, CO 1, CT 3, DE 3, DC 4, FL 2, GA 2, GU 7, HI 5, ID 4, IL 2, IN 4, IA 3, KS 2, KY 2, LA 3, ME 2, MD 1, MA 2, MI 3, MN 6, MS 2, MO 3, MT 7, NE 1, NV 3, NH 2, NJ 2, NM 3, NY 1, NC 5, ND 3, MP 4, OH 1, OK 5, OR 5, PA 3, PR 7, RI 1, SC 4, SD 1, TN 4, TX 1, VI 6, UT 5, VT 4, VA 3, WA 2, WV 8, WI 2, WY 2
+**Counts by state:** AL 2, AK 0, AS 8, AZ 2, AR 4, CA 0, CO 1, CT 3, DE 3, DC 4, FL 2, GA 2, GU 7, HI 5, ID 4, IL 2, IN 4, IA 3, KS 2, KY 1, LA 3, ME 2, MD 1, MA 2, MI 3, MN 5, MS 2, MO 3, MT 7, NE 1, NV 3, NH 2, NJ 2, NM 3, NY 1, NC 5, ND 3, MP 4, OH 1, OK 5, OR 4, PA 3, PR 7, RI 1, SC 4, SD 1, TN 3, TX 1, VI 6, UT 5, VT 4, VA 2, WA 2, WV 7, WI 2, WY 2
 
 
 ## Alabama (AL) - 2 flagged
@@ -232,11 +232,8 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
   Source: [Kansas Office of Veterans Services - Veteran Homes: Eligibility and Admissions (K.S.A. 76-1908, 76-1954)](https://www.kovs.ks.gov/veteran-homes/eligibility-admissions)  
   Row says: Kansas runs two veterans homes with skilled nursing, dementia care and domiciliary units: the Kansas Soldiers' Home at Fort Dodge and the Kansas Veterans' Home at Winfield (a third home in Topeka is awaiting federal construction funds). You must meet VA veteran status with a discharge 'under conditions other than dishonorable,' need 24-hour skilled nursing care documented by a physician, and have no felony record or sex offender registration. Spouses, surviving spouses and Gold Star Parents may be admitted as space allows. Kansas residency is not required, but Kansas residents get preference, and veterans without adequate means of support get first priority. Charges depend on ability to pay; the Legislative Research Department reports veterans rated 70% or higher pay no resident fees, which we could not confirm on the KOVS site. Apply through KOVS with VA Form 10-10EZ and the Application for Admission.
 
-## Kentucky (KY) - 2 flagged
+## Kentucky (KY) - 1 flagged
 
-- **Homestead exemption for totally disabled owners ($49,100 off assessed value, 2025-2026)** (property_tax, min rating: 100%)  
-  Source: [Kentucky Legislature - KRS 132.810 Homestead exemption -- Application -- Qualification (Ky. Const. Sec. 170); DOR press release Nov. 14, 2024 setting the 2025-2026 amount at $49,100; DOR Form 62A350](https://apps.legislature.ky.gov/law/statutes/statute.aspx?id=39641)  
-  Row says: Kentucky has no veteran-only property tax exemption. If you are 'classified as totally disabled under a program authorized or administered by an agency of the United States government' and receive disability payments for it, or are 65 or older, you can take $49,100 off the assessed value of the home you own and live in as your personal residence on January 1. A VA 100% total rating fits the words of the law; TDIU is a total rating but is not named by any Kentucky agency, and P&T is not required. File Form 62A350 with your county Property Valuation Administrator (PVA) by December 31 of the tax year with your VA award letter. A 'service-connected totally disabled veteran' does not have to reapply each year. Only one exemption per home and no surviving spouse carryover.
 - **Burial in a Kentucky State Veterans Cemetery (five cemeteries, no residency requirement)** (other, min rating: none)  
   Source: [Kentucky Department of Veterans Affairs - Kentucky Veterans Cemeteries (KRS 40.315, effective Jan. 1, 2026)](https://veterans.ky.gov/Cemeteries/Pages/default.aspx)  
   Row says: Kentucky has five state veterans cemeteries: Kentucky Veterans Cemetery West, Central, North, North East and South East. Anyone eligible for a national cemetery under 38 U.S.C. 2402 qualifies, including spouses, minor children and some unmarried adult dependent children. Kentucky residency is not required. Starting January 1, 2026 (2025 Acts ch. 20), Guard and Reserve members who completed their initial service obligation with a discharge other than dishonorable, and Guard members who died on state active duty or Title 32 duty, are also eligible. Burial, plot, vault, headstone and perpetual care are free for the veteran; the KDVA page lists a $500 spousal fee due at the time of death. File the Kentucky Veterans Cemeteries Eligibility Application with KDVA in advance to speed things up.
@@ -289,11 +286,8 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
   Source: [Michigan Veteran Homes - Eligibility](https://www.michigan.gov/mvh/eligibility)  
   Row says: Three state veteran homes (Grand Rapids, Marquette, Chesterfield Township) provide skilled nursing care. Eligibility includes honorably discharged veterans eligible for VA health care or VA long-term nursing care financial assistance, and certain dependents; Michigan residency is not required. Apply by contacting a home directly or a Veteran Service Officer.
 
-## Minnesota (MN) - 6 flagged
+## Minnesota (MN) - 5 flagged
 
-- **Homestead market value exclusion, $300,000 (100 percent total and permanent)** (property_tax, min rating: 100% P&T)  
-  Source: [Minn. Stat. 273.13, subd. 34(b); Minnesota Department of Revenue, Market Value Exclusion for Veterans with a Disability](https://www.revisor.mn.gov/statutes/cite/273.13)  
-  Row says: Veterans with a 'total (100 percent) and permanent disability' get $300,000 of market value excluded from their homestead. You need an honorable discharge and must own and occupy the homestead on December 31. Apply to the county assessor by December 31. The statute does not mention TDIU, so a TDIU-only rating is not clearly covered; ask your assessor before assuming it counts.
 - **Homestead exclusion for surviving spouses and primary family caregivers** (property_tax, min rating: 100% P&T)  
   Source: [Minnesota Department of Revenue, Market Value Exclusion for Veterans with a Disability; Minn. Stat. 273.13, subd. 34(c)-(e)](https://www.revenue.state.mn.us/market-value-exclusion-veterans-disability)  
   Row says: If a veteran who qualified for the $300,000 exclusion dies, it carries over to the surviving spouse, who must hold title and live in the home; it ends on remarriage or when the property is disposed of. The Revenue page also lists a surviving spouse who receives DIC, and says the veteran's disability status is not a factor in that case. A primary family caregiver approved by the VA may qualify if the veteran owns no Minnesota homestead. Apply to the county assessor by December 31. The amount for a DIC spouse and the caregiver tiers should be confirmed with the assessor.
@@ -478,7 +472,7 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
   Source: [OSRHE Policy 3.18, In-State/Out-of-State Status of Enrolled Students](https://okhighered.org/wp-content/uploads/2023/12/Chapter-3-3.18-In-State-Out-of-State-Status-of-Enrolled-Students-2023.pdf)  
   Row says: I did not find a current official statute or State Regents policy that waives tuition for disabled veterans or their dependents. Verified items only: a State Regents policy gives in-state status to discharged service members who file a letter of intent to reside in Oklahoma, and a 2026 bill (HB 3956) to waive tuition for permanently disabled veterans is only introduced. Heroes Promise (children of those killed in the line of duty after 1/1/2000) is not for disabled veterans. Contact ODVA or the State Regents before relying on any waiver.
 
-## Oregon (OR) - 5 flagged
+## Oregon (OR) - 4 flagged
 
 - **Disabled Veteran license plates and permanent registration** (vehicle, min rating: any service-connected)  
   Source: [ORS 805.100 Disabled veterans; DMV Form 6736 and Chapter K](https://www.oregonlegislature.gov/bills_laws/ors/ors805.html)  
@@ -489,9 +483,6 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
 - **State parks Special Access Pass (camping and day-use parking)** (recreation, min rating: any service-connected)  
   Source: [Oregon State Parks: Special Access Pass for Veterans with Disabilities](https://stateparks.oregon.gov/index.cfm?do=v.page&id=19)  
   Row says: Oregon veterans with any level of service-connected disability can get free day-use parking at fee parks and free camping at tent, RV, and standard horse sites. The state parks page says four nights at a time at one park or four per calendar month, valid 10 years, with a VA letter and proof of Oregon address. The ODVA page says four years, and an OPRD rule adopted effective April 6, 2026 refined the pass for Oregon residents; confirm current nights and term with Oregon State Parks. Yurts, cabins, reservation and dump fees are not covered; spouses and survivors do not qualify.
-- **State income tax on VA disability compensation** (income_tax, min rating: any service-connected)  
-  Source: [ODVA: Taxes](https://www.oregon.gov/odva/benefits/pages/taxes.aspx)  
-  Row says: ODVA states that VA disability compensation is a tax-free benefit. Oregon starts from federal income, and VA compensation is not included in it. The DOR publication reviewed did not mention VA compensation by name, so confirm with DOR if you have a question.
 - **ODVA Oregon Veteran Home Loan Program** (other, min rating: none)  
   Source: [ODVA: Home Loans](https://www.oregon.gov/odva/benefits/pages/home-loans.aspx)  
   Row says: State fixed-rate home loans for owner-occupied single-family homes, up to the Fannie Mae limit, purchase only (no refinance), with a lifetime maximum of four home loans. The page shown did not list the state program's eligibility rules or any disability-specific terms; apply through ODVA.
@@ -559,7 +550,7 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
   Source: [Disabled Veteran/Purple Heart Recipient Special Pheasant Hunt](https://gfp.sd.gov/special-pheasant-hunt/)  
   Row says: GFP and nonprofit sponsors hold free special hunts for disabled veterans. The 2025 resident deer hunt required a VA rating of 20% or more service-connected disability, a K award, or Purple Heart; the special pheasant hunt uses the same 20% threshold for residents and nonresidents. Apply by the posted deadline (2025 deer hunt: July 31); dates change yearly.
 
-## Tennessee (TN) - 4 flagged
+## Tennessee (TN) - 3 flagged
 
 - **Property tax relief for surviving spouses of disabled veterans** (property_tax, min rating: 100% P&T)  
   Source: [Comptroller of the Treasury, 2026 Property Tax Relief Program brochure](https://comptroller.tn.gov/content/dam/cot/pa/documents/tax-relief/TaxReliefBrochure.pdf)  
@@ -567,9 +558,6 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
 - **TWRA disabled veteran hunting and fishing license** (recreation, min rating: varies)  
   Source: [Hunting and Fishing Licenses (Tennessee Department of Veterans Services)](https://www.tn.gov/veteran/veteran-benefits/tn-state-benefits/state-parks/hunting-and-fishing-licenses.html)  
   Row says: A one-time $10 hunting and fishing license, valid for life, for Tennessee residents certified by the VA as 100% permanent and totally disabled from a service-connected cause, or 30% or more disabled by reason of war service. This is a TWRA specialty license (listed as Type 198 in the state's veteran benefit matrix), so you apply with TWRA rather than at a normal agent. I could not open the TWRA application page itself.
-- **No state income tax on wages, military retirement or VA compensation** (income_tax, min rating: none)  
-  Source: [Hall Income Tax (Tennessee Department of Revenue)](https://www.tn.gov/revenue/taxes/hall-income-tax.html)  
-  Row says: Tennessee does not tax wages. The Hall income tax on interest and dividends was repealed for tax periods beginning on or after January 1, 2021, and no return should be filed for those years. VA disability compensation is not state-taxed. I did not find a Department of Revenue page that addresses military retired pay directly.
 - **Service-disabled veteran-owned business assistance and handgun permit discount** (other, min rating: varies)  
   Source: [State Benefits and Services for Veterans in Tennessee (Comptroller OREA, March 2026)](https://comptroller.tn.gov/content/dam/cot/orea/advanced-search/2026/VeteransReport.pdf)  
   Row says: The Governor's Office of Business Initiatives and Development helps service-disabled veteran-owned businesses compete for state contracts if the owner has at least a 20 percent service-connected disability. Separately, honorably discharged veterans get $35 off the initial enhanced handgun permit fee ($100 eight-year or $300 lifetime) from the Department of Safety. Neither depends on a higher rating.
@@ -604,8 +592,8 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
 ## Utah (UT) - 5 flagged
 
 - **Disabled veteran property tax exemption (primary residence and personal property)** (property_tax, min rating: 10%)  
-  Source: [Utah Code 59-2a-501 Veteran armed forces exemption amount (eff. 1/1/2026); 59-2a-502; Tax Commission Pub 36](https://le.utah.gov/xcode/Title59/Chapter2a/C59-2a-S501_2026010120250507.html)  
-  Row says: The taxable value exempt equals your disability percentage multiplied by the adjusted taxable value limit, never more than the property's taxable value. Pub. 36 (Rev. 9/26 draft) states 'up to $535,459'; the department's August 2026 booklet still states $505,548, so confirm the current cap with your county. 10% is the minimum; TDIU counts as 100%. It covers your primary residence (including one you cannot live in because you are an inpatient in a health care facility) and personal-use property such as vehicles. File with the county where you live by September 1 with proof of service and a statement of disability from the VA or a military branch.
+  Source: [Utah Code 59-2a-501, Veteran armed forces exemption amount (effective 1/1/2026)](https://le.utah.gov/xcode/Title59/Chapter2a/C59-2a-S501_2026010120250507.html)  
+  Row says: The taxable value exempt equals your disability percentage multiplied by the adjusted taxable value limit, never more than the property's taxable value. Utah law says a county must treat you as 100% disabled if the VA certifies you as individually unemployable (TDIU). The minimum is 10%. The limit is raised every year using the consumer price index, so ask your county for the current dollar amount (the Tax Commission's draft Pub. 36 says up to $535,459; an older state booklet says $505,548). It covers your primary residence (including one you cannot live in because you are an inpatient in a health care facility) and personal-use property such as vehicles. File with the county where you live by September 1 with proof of service and a statement of disability from the VA or a military branch.
 - **Property tax exemption - surviving spouse or minor orphan** (property_tax, min rating: varies)  
   Source: [Utah Code 59-2a-501(3); 59-2a-101 'veteran claimant'](https://le.utah.gov/xcode/Title59/Chapter2a/C59-2a-S501_2026010120250507.html)  
   Row says: The unmarried surviving spouse or minor orphan of a veteran killed in action or who died in the line of duty gets an exemption equal to the total taxable value of the eligible property (59-2a-501(3)). The unmarried surviving spouse or minor orphan of a deceased veteran with a disability is also a covered claimant under 59-2a-101, with the amount tied to the disability percentage on the statement of disability; the full-value rule in (3) lists pre-1921 veterans only for that group. Apply to the county by September 1 and verify the amount with the county.
@@ -634,7 +622,7 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
   Source: [Vermont Veterans' Home: Admissions Eligibility](https://www.vvh.vermont.gov/admissions/eligibility)  
   Row says: State skilled nursing facility; Vermont veterans have admission priority. Eligible veterans served at least ninety days and were discharged under honorable conditions. Apply through the Admissions Department, 802-447-6539.
 
-## Virginia (VA) - 3 flagged
+## Virginia (VA) - 2 flagged
 
 - **Real property tax exemption, surviving spouse of service member killed in line of duty** (property_tax, min rating: varies)  
   Source: [Constitution of Virginia, Art. X, Sec. 6-A](https://law.lis.virginia.gov/constitution/article10/section6-A/)  
@@ -642,9 +630,6 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
 - **Annual registration fee waiver, one vehicle** (vehicle, min rating: any service-connected)  
   Source: [Code of Virginia 46.2-739(C)](https://law.lis.virginia.gov/vacode/title46.2/chapter6/section46.2-739/)  
   Row says: No annual registration fee and no annual special plate fee for one motor vehicle owned and used personally by a disabled veteran with VA-certified service-connected disability (or an unremarried surviving spouse), if it displays DV plates or standard passenger plates. The 2026 statutory text sets no rating minimum; the public DMV plate page still describes narrower categories (loss of limb, blind, or P&T), so confirm with DMV.
-- **VA disability compensation and state income tax** (income_tax, min rating: any service-connected)  
-  Source: [Virginia Tax Subtractions](https://www.tax.virginia.gov/subtractions)  
-  Row says: Virginia has an income tax, but the official tax pages located state that the Military Benefits Subtraction covers retirement-type benefits. VA disability compensation is excluded from federal income, so it should not enter Virginia income; I did not find a Virginia Tax page saying this directly.
 
 ## Washington (WA) - 2 flagged
 
@@ -655,7 +640,7 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
   Source: [Washington Tuition Waiver](https://dva.wa.gov/veterans-their-families/veterans-benefits/education-and-training/washington-tuition-waiver)  
   Row says: WDVA says state law lets colleges and universities waive all or a portion of tuition and fees for eligible veterans and National Guard members, and each school runs its own program with no uniform rating threshold. Contact the school's veteran services office for eligibility and amounts.
 
-## West Virginia (WV) - 8 flagged
+## West Virginia (WV) - 7 flagged
 
 - **Homestead property tax exemption (first $20,000 of assessed value)** (property_tax, min rating: varies)  
   Source: [W. Va. Code 11-6B-3 (and 11-6B-4 claim filing)](https://code.wvlegislature.gov/11-6B-3/)  
@@ -675,9 +660,6 @@ Generated 2026-10-18 from `data/states.json` and `docs/research/federal-*.md`. *
 - **War Orphan Education Program (dependents)** (education, min rating: 100% P&T)  
   Source: [WVDVA Education Benefits - War Orphan Program](https://veterans.wv.gov/benefits-assistance/benefits/education-benefits)  
   Row says: WVDVA says a surviving spouse or child under 26 of a veteran who died on active duty or from a service-connected cause, or of a permanently and totally disabled service-connected veteran, may have tuition and fees waived at WV public schools after DEA/Fry benefits, plus up to $1,000 per semester ($2,000 per year). The enabling statute (W. Va. Code 18-19-1 through 18-19-4) shows as repealed by 2025 HB 3192, so confirm with WVDVA that the program is still operating before relying on it.
-- **VA disability compensation and state income tax** (income_tax, min rating: any service-connected)  
-  Source: [2025 WV Personal Income Tax Forms and Instructions (IT-140)](https://tax.wv.gov/Documents/PIT/2025/it140.PersonalIncomeTaxFormsAndInstructions.2025.pdf)  
-  Row says: I did not find an official WV Tax Division page that states VA disability compensation is exempt. West Virginia income tax starts from federal adjusted gross income, and VA compensation is not included in federal gross income, so it should not be taxed, but this is an inference and not a quoted rule. Confirm with the Tax Division (304-558-3333).
 - **Veterans Re-education Assistance stipend** (education, min rating: none)  
   Source: [WVDVA Education Benefits - Veterans Re-education Assistance](https://veterans.wv.gov/benefits-assistance/benefits/education-benefits)  
   Row says: WVDVA says the Legislature funds a program of up to $500 per semester for veterans enrolled in a certified post-secondary education course, and may assist vocational and non-traditional education case by case. I could not confirm current funding, eligibility details or application deadline.
