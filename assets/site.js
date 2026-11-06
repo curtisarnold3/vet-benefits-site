@@ -99,11 +99,54 @@
     '<div><h3>Benefits</h3><ul><li><a href="'+ROOT+'benefits/">Rating ladder</a></li><li><a href="'+ROOT+'states/">State benefits</a></li><li><a href="'+ROOT+'tools-forms.html">Tools & forms</a></li><li><a href="'+ROOT+'glossary.html">Glossary</a></li></ul></div>'+
     '<div><h3>Help</h3><ul><li><a href="'+ROOT+'get-help.html">Free accredited help (VSOs)</a></li><li><a href="https://www.va.gov/get-help-from-accredited-representative/find-rep/" rel="noopener">VA accredited rep search</a></li><li><a href="'+ROOT+'waitlist.html">Interest list</a></li><li><a href="'+ROOT+'privacy.html">Privacy policy</a></li></ul></div></div>'+
     '<div class="legal"><p><b>General education, not legal, medical, or financial advice.</b> '+esc(C.siteName||'')+' is not the U.S. Department of Veterans Affairs and is not connected to any government agency. Nothing here promises a rating, an outcome, or a dollar amount. Only the VA decides claims. '+esc(C.ownerLine||'')+'. I am pursuing VA accreditation but <b>do not hold it yet</b>, so I cannot represent anyone, prepare or file a claim for anyone, or charge for claims work. For help with your claim, use a <a href="'+ROOT+'get-help.html">free accredited VSO or VA-accredited representative</a>.</p>'+
-    '<p>Pay figures use VA rates effective '+esc(C.ratesEffective||'')+' ('+esc(C.ratesYearLabel||'')+' rates). Rates change every December 1.'+(v?' Page content last verified <b>'+esc(v)+'</b>.':'')+' Rules change; always confirm on <a href="https://www.va.gov" rel="noopener">VA.gov</a> or an official state site before you act.'+(C.plausibleDomain?' This site uses privacy-friendly, cookie-free analytics (Plausible).':' This site sets no cookies and runs no tracking.')+'</p></div></div>';
+    '<p>Pay figures use VA rates effective '+esc(C.ratesEffective||'')+' ('+esc(C.ratesYearLabel||'')+' rates). Rates change every December 1.'+(v?' Page content last verified <b>'+esc(v)+'</b>.':'')+' Rules change; always confirm on <a href="https://www.va.gov" rel="noopener">VA.gov</a> or an official state site before you act.'+(C.plausibleDomain?' This site uses privacy-friendly, cookie-free analytics (Plausible).':' This site sets no cookies and runs no tracking.')+'</p></div><p class="bugrow"><a href="#report-bug" data-bug>Report a bug</a></p></div>';
     ftr.querySelectorAll('[data-waitlist-box]').forEach(function(box){
       box.className='wl';box.innerHTML='<h2>'+esc(box.getAttribute('data-title'))+'</h2>'+wlForm(true);wireForm(box.querySelector('form'));
     });
   }
+
+  /* ---- report a bug: footer link opens a small form (sent through the same Formspree endpoint as the interest list) ---- */
+  document.querySelectorAll('[data-bug]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      var dlg=document.getElementById('bugdlg');
+      if(!dlg){
+        dlg=document.createElement('dialog');dlg.id='bugdlg';dlg.className='bugdlg';dlg.setAttribute('aria-labelledby','bugttl');
+        dlg.innerHTML='<form class="bugform" novalidate data-bugform><h2 id="bugttl">Report a bug</h2>'+
+        '<p class="note">Found something broken, wrong, or confusing? Tell me what happened. Please do <b>not</b> enter your SSN, VA file number, or any medical details.</p>'+
+        '<div class="field"><label for="bugmsg">What went wrong?</label><textarea id="bugmsg" name="message" rows="5" required maxlength="2000"></textarea></div>'+
+        '<div class="field"><label for="bugem">Your email (optional, only if you want a reply)</label><input type="email" id="bugem" name="email" autocomplete="email" maxlength="120" inputmode="email"></div>'+
+        '<div class="hp" aria-hidden="true"><label>Leave this field empty<input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label></div>'+
+        '<div class="err" role="alert" aria-live="assertive" data-err></div>'+
+        '<p style="margin-top:10px"><button class="btn" type="submit">Send bug report</button> <button class="btn sec" type="button" data-close>Close</button></p>'+
+        '<small>We also send the page address and your browser type so the bug can be found. <a href="'+ROOT+'privacy.html">Privacy policy</a></small></form>';
+        document.body.appendChild(dlg);
+        dlg.querySelector('[data-close]').addEventListener('click',function(){dlg.close?dlg.close():dlg.removeAttribute('open')});
+        dlg.addEventListener('click',function(ev){if(ev.target===dlg&&dlg.close)dlg.close()});
+        var f=dlg.querySelector('form'),err=f.querySelector('[data-err]');
+        f.addEventListener('submit',function(ev){
+          ev.preventDefault();err.textContent='';
+          var fd=new FormData(f);
+          if(fd.get('_gotcha')){f.innerHTML='<div class="ok">Thanks.</div>';return}
+          var msg=(fd.get('message')||'').trim(),em=(fd.get('email')||'').trim();
+          if(msg.length<5){err.textContent='Please tell me what went wrong.';f.message.focus();return}
+          if(em&&!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){err.textContent='That email address does not look right. Fix it or leave it blank.';f.email.focus();return}
+          if(/\b\d{3}-?\d{2}-?\d{4}\b/.test(msg)){err.textContent='Please remove numbers that look like an SSN or file number.';return}
+          var url=C.formspreeEndpoint;
+          if(!url||/YOUR_FORM_ID/.test(url)){err.textContent='The form is not connected yet. Please try again later.';return}
+          var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending...';
+          var body={form_type:'bug_report',_subject:'Bug report from '+location.pathname,message:msg,page_url:location.href,browser:navigator.userAgent,screen:window.innerWidth+'x'+window.innerHeight};
+          if(em){body.email=em;body._replyto=em}
+          fetch(url,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(body)})
+          .then(function(r){if(r.ok)return;throw new Error('Server said '+r.status)})
+          .then(function(){f.innerHTML='<h2>Thank you</h2><div class="ok"><b>Bug report sent.</b> I read every one.</div><p style="margin-top:10px"><button class="btn sec" type="button" data-close>Close</button></p>';f.querySelector('[data-close]').addEventListener('click',function(){dlg.close?dlg.close():dlg.removeAttribute('open')})})
+          .catch(function(ex){err.textContent='Could not send: '+ex.message+'. Please try again later.';btn.disabled=false;btn.textContent='Send bug report'});
+        });
+      }
+      if(dlg.showModal){if(!dlg.open)dlg.showModal()}else dlg.setAttribute('open','');
+      var t=dlg.querySelector('textarea');if(t)t.focus();
+    });
+  });
 
   /* ---- external links open safely ---- */
   document.querySelectorAll('a[href^="http"]').forEach(function(a){if(a.host!==location.host){a.rel='noopener';if(!a.target)a.target='_blank'}});

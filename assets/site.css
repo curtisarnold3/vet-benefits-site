@@ -158,3 +158,10 @@ footer.site b{color:var(--text)}
 
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{.crisis,.nav,.wl,footer.site .cols{display:none}body{background:#fff;color:#000}.card{border-color:#999}}
+
+/* report a bug */
+footer.site .bugrow{margin:14px 0 0;text-align:center}
+footer.site .bugrow a{font:700 .95rem/1 var(--head);letter-spacing:.06em;text-transform:uppercase;color:var(--brass)}
+dialog.bugdlg{width:min(560px,calc(100vw - 32px));max-height:calc(100vh - 32px);overflow:auto;background:var(--panel);color:var(--text);border:1.5px solid var(--line);border-radius:8px;padding:20px}
+dialog.bugdlg::backdrop{background:rgba(0,0,0,.65)}
+.bugform textarea{resize:vertical}
